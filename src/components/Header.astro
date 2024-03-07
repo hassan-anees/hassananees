@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import burgerMenu from "../assets/random/burger.svg";
+
+const navLinks = [
+  { name: "contact", link: "#contact" },
+  { name: "about", link: "/about" },
+  { name: "work", link: "/work" },
+  { name: "open source", link: "/#opensource" },
+  { name: "speaking", link: "/#speaking" },
+];
+---
+
+<header>
+  <nav
+    class="p-4 border-b-2 z-10 bg-zinc-50 border-gray-100 fixed w-full backdrop-filter backdrop-blur-lg bg-opacity-50"
+  >
+    <div class="flex justify-between lg:mx-auto max-w-screen-lg">
+      <a class="hover:text-blue-600" href="/"><h6 class="font-bold">Hassan Anees</h6></a>
+      <div class="flex flex-row-reverse justify-end gap-8 text-gray-500">
+        {
+          navLinks.map((nav) => {
+            return (
+              <a class="hidden sm:block font-semibold hover:text-gray-950" href={nav.link}>
+                {nav.name}
+              </a>
+            );
+          })
+        }
+        <div class="">
+          <div class="flex flex-col items-end" id="menuButton">
+            <Image
+              class="hover:shadow-2xl cursor-pointer sm:hidden"
+              src={burgerMenu}
+              alt="Me presenting a security awareness talk at the vba"
+            />
+            <div id="menuList" class="mt-2 hidden flex flex-col-reverse items-end">
+              {
+                navLinks.map((nav) => {
+                  return (
+                    <a class="block sm:hidden font-semibold hover:text-gray-950" href={nav.link}>
+                      {nav.name}
+                    </a>
+                  );
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

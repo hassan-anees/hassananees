@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+  link: string;
+  description: string;
+  tags: string[];
+}
+
+import { Icon } from "astro-icon/components";
+
+const { title, description, link, tags } = Astro.props;
+---
+
+<div class="bg-white p-10 my-8 transition ease-in-out delay-75 hover:shadow-xl">
+  <div class="flex items-center justify-between">
+    <h6 class="font-semibold text-lg">{title}</h6>
+    <a href={link} target="_blank"
+      ><Icon size={50} class={"hover:text-cyan-500"} name="mdi:github" /></a
+    >
+  </div>
+  <p class="my-4">
+    {description}
+  </p>
+  <div class="flex flex-wrap gap-1 items-center">
+    <p><span class="font-semibold">Technologies:</span></p>
+    {
+      tags.map((tag) => {
+        return (
+          <button disabled class="text-white bg-gray-800 px-2 py-1 rounded-sm">
+            {tag}
+          </button>
+        );
+      })
+    }
+  </div>
+</div>

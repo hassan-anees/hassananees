@@ -1,22 +1,37 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ContactForm from "../components/ContactForm.astro";
+import { ViewTransitions } from "astro:transitions";
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html class="scroll-smooth scroll-p-16" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <!-- <ViewTransitions /> -->
+  </head>
+  <body>
+    <Header />
+    <main class="pt-16">
+      <slot />
+    </main>
+    <ContactForm />
+    <Footer />
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
 </html>

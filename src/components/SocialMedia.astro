@@ -1,0 +1,28 @@
+---
+import { Icon } from "astro-icon/components";
+const { color } = Astro.props;
+---
+
+<div class="flex gap-4">
+  <a href="/" class="inline-block overflow-hidden" target="_blank">
+    <Icon
+      size={50}
+      class="text-white hover:text-cyan-500"
+      name="mdi:linkedin"
+    />
+  </a>
+  <a href="/" class="inline-block overflow-hidden" target="_blank">
+    <Icon size={50} class="text-white hover:text-cyan-500" name="mdi:github" />
+  </a>
+  <a
+    href="mailto:hassan.anees@outlook.com"
+    class="inline-block overflow-hidden"
+    target="_blank"
+  >
+    <Icon
+      size={50}
+      class="text-white hover:text-cyan-500"
+      name="mdi:mail-outline"
+    />
+  </a>
+</div>

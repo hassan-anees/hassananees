@@ -1,4 +1,41 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
-<p class="text-black bg-pink-300">this is about</p>
+
+<Layout title="About | Hassan Anees">
+  <div id="about" class="md:mx-auto max-w-screen-md">
+    <div class="p-6 py-14">
+      <h2 class="text-2xl font-bold">About me</h2>
+      <p class="mt-2 mb-4">
+        I began as a research assistant, working on aspects of human cognition like emotion, memory,
+        and creativity. Later I shifted my attention to software engineering, building solutions for
+        startup, medical, and financial industries. I now am in the cybersecurity field where I
+        continue to leverage SWE practices and principles in psychology.
+      </p>
+
+      <h4 class="font-bold text-xl text-black">Education</h4>
+      <div class="text-gray-600">
+        <div class="justify-between">
+          <div class="border-b-2 border-gray-100">
+            <div class="my-4">
+              <h2 class="text-lg font-semibold">MSc, Cybersecurity and Threat Intelligence</h2>
+              <h3 class="font-semibold text-gray-400">Universtiy of Guelph, 2022 — 2023</h3>
+            </div>
+          </div>
+          <div class="border-b-2 border-gray-100">
+            <div class="my-4">
+              <h2 class="text-lg font-semibold">BA, Psychology</h2>
+              <h3 class="font-semibold text-gray-400">Universtiy of Guelph, 2016 — 2021</h3>
+            </div>
+          </div>
+          <div class="border-b-2 border-gray-100">
+            <div class="my-4">
+              <h2 class="text-lg font-semibold">BSc, Computer Science</h2>
+              <h3 class="font-semibold text-gray-400">Universtiy of Guelph, 2016 — 2020</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

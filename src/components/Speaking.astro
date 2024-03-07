@@ -1,0 +1,95 @@
+---
+import { Image } from "astro:assets";
+import CallToAction from "../components/CallToAction.astro";
+import ugra from "../assets/speaking/ugra.jpg";
+import vba from "../assets/speaking/vba.jpeg";
+import owaspClose from "../assets/speaking/owasp-close.jpeg";
+import owaspWide from "../assets/speaking/owasp-wide.jpeg";
+import eqbank from "../assets/speaking/eq.jpg";
+---
+
+<!-- Speaking section -->
+<div id="speaking" class="md:mx-auto max-w-screen-md p-6">
+  <h2 class="text-2xl font-bold">Speaking</h2>
+  <p class="mt-2 mb-4">
+    I have had the privilege to speak professionally at numerous venues. I speak on topics that
+    interest me. At prior conferences and meetups I have spoken on areas from psychology to social
+    engineering.
+  </p>
+
+  <div class="columns-2 my-10 sm:columns-3">
+    <div class="mb-2 h-full cursor-pointer z-40">
+      <Image
+        src={ugra}
+        alt="Me presenting a security awareness talk at the vba"
+        sizes="(max-width: 768px) 213px, 33vw"
+        class="rounded-lg object-cover"
+      />
+    </div>
+    <div class="mb-2">
+      <Image
+        src={eqbank}
+        sizes="(max-width: 768px) 213px, 33vw"
+        alt="Me presenting a insider threat for EQ at UoG"
+        class="rounded-lg object-cover h-22"
+      />
+    </div>
+    <div class="mb-2">
+      <Image
+        src={vba}
+        sizes="(max-width: 768px) 213px, 33vw"
+        alt="Me presenting at the VBA for a security awareness talk to the community"
+        class="rounded-lg object-cover"
+      />
+    </div>
+    <div class="mb-2">
+      <Image
+        src={owaspClose}
+        sizes="(max-width: 768px) 213px, 33vw"
+        alt="Me presenting at Okta for OWASP - close shot"
+        class="rounded-lg object-cover"
+      />
+    </div>
+    <div class="">
+      <Image
+        src={owaspWide}
+        sizes="(max-width: 768px) 213px, 33vw"
+        alt="Me presenting at Okta for OWASP - wide shot"
+        class="rounded-lg object-cover"
+      />
+    </div>
+  </div>
+
+  <!-- Speaking descriptions -->
+  <div class="text-gray-600">
+    <div class="border-b-2 border-gray-100 my-4">
+      <h2 class="text-lg font-semibold">The Psychology of Phishing 🎣</h2>
+      <h3 class="font-semibold text-gray-400">OWASP Toronto x Okta 2024</h3>
+      <p class="mt-2 mb-4">
+        I discuss how you can spot phishing attacks using psychological principles and emerging
+        research to combat phishing.
+      </p>
+    </div>
+
+    <div class="border-b-2 border-gray-100 my-4">
+      <h2 class="text-lg font-semibold">Preventing Insider Risk 🤫</h2>
+      <h3 class="font-semibold text-gray-400">University of Guelph x EQ Bank 2023</h3>
+      <p class="mt-2 mb-4">
+        I talk current security practices, tools, and mitigation strategies to reduce insider risk
+        within organizations.
+      </p>
+    </div>
+
+    <div class="my-4">
+      <h2 class="text-lg font-semibold">Security Awareness 101 🛡️</h2>
+      <h3 class="font-semibold text-gray-400">The Village by the Arboretum 2024</h3>
+      <h3 class="font-semibold text-gray-400">Annual UGRA Meetup 2023</h3>
+      <h3 class="font-semibold text-gray-400">Guelph Public Library 2022</h3>
+      <p class="my-2">
+        General security awareness such as data privacy, password security, MFA, and phishing.
+      </p>
+    </div>
+  </div>
+  <!-- Call to action -->
+  <CallToAction />
+</div>
