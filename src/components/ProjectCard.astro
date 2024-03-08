@@ -11,26 +11,30 @@ import { Icon } from "astro-icon/components";
 const { title, description, link, tags } = Astro.props;
 ---
 
-<div class="bg-white p-10 my-8 transition ease-in-out delay-75 hover:shadow-xl">
+<div class="p-10 my-8 transition ease-in-out delay-75 bg-white group hover:shadow-xl">
   <div class="flex items-center justify-between">
-    <h6 class="font-semibold text-lg">{title}</h6>
-    <a href={link} target="_blank"
-      ><Icon size={50} class={"hover:text-cyan-500"} name="mdi:github" /></a
-    >
+    <h6 class="text-lg font-semibold">{title}</h6>
   </div>
   <p class="my-4">
     {description}
   </p>
-  <div class="flex flex-wrap gap-1 items-center">
+  <div class="flex flex-wrap items-center gap-1 my-4">
     <p><span class="font-semibold">Technologies:</span></p>
     {
       tags.map((tag) => {
         return (
-          <button disabled class="text-white bg-gray-800 px-2 py-1 rounded-sm">
+          <button disabled class="px-2 py-1 text-white bg-gray-800 rounded-sm">
             {tag}
           </button>
         );
       })
     }
   </div>
+
+  <a href={link} target="_blank" class="inline-block">
+    <div class="flex items-center text-gray-700 delay-75 group-hover:text-cyan-500">
+      <p class="italic">View github →</p>
+      <Icon size={30} class={"hover:text-cyan-500"} name="mdi:github" />
+    </div>
+  </a>
 </div>
