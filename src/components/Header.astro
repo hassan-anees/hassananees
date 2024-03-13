@@ -13,15 +13,15 @@ const navLinks = [
 
 <header>
   <nav
-    class="p-4 border-b-2 z-10 bg-zinc-50 border-gray-100 fixed w-full backdrop-filter backdrop-blur-lg bg-opacity-50"
+    class="fixed z-10 w-full p-4 bg-opacity-50 border-b-2 border-gray-100 bg-zinc-50 backdrop-filter backdrop-blur-lg"
   >
-    <div class="flex justify-between lg:mx-auto max-w-screen-lg">
+    <div class="flex justify-between max-w-screen-lg lg:mx-auto">
       <a class="hover:text-blue-600" href="/"><h6 class="font-bold">Hassan Anees</h6></a>
       <div class="flex flex-row-reverse justify-end gap-8 text-gray-500">
         {
           navLinks.map((nav) => {
             return (
-              <a class="hidden sm:block font-semibold hover:text-gray-950" href={nav.link}>
+              <a class="hidden font-semibold sm:block hover:text-gray-950" href={nav.link}>
                 {nav.name}
               </a>
             );
@@ -30,15 +30,15 @@ const navLinks = [
         <div class="">
           <div class="flex flex-col items-end" id="menuButton">
             <Image
-              class="hover:shadow-2xl cursor-pointer sm:hidden"
+              class="cursor-pointer hover:shadow-2xl sm:hidden"
               src={burgerMenu}
               alt="Me presenting a security awareness talk at the vba"
             />
-            <div id="menuList" class="mt-2 hidden flex flex-col-reverse items-end">
+            <div id="menuList" class="flex flex-col-reverse items-end hidden mt-2">
               {
                 navLinks.map((nav) => {
                   return (
-                    <a class="block sm:hidden font-semibold hover:text-gray-950" href={nav.link}>
+                    <a class="block font-semibold sm:hidden hover:text-gray-950" href={nav.link}>
                       {nav.name}
                     </a>
                   );
