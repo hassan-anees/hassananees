@@ -2,14 +2,36 @@
 import SocialMedia from "../components/SocialMedia.astro";
 ---
 
-<footer
-  class="bg-gray-800
-          p-10
-          text-white
-          font-semibold"
->
-  <div class="flex items-center justify-between">
-    <div>&copy; All rights reserved</div>
-    <SocialMedia />
+<footer id="contact" class="py-16 font-semibold text-white bg-gray-950">
+  <div class="max-w-screen-md p-6 md:mx-auto">
+    <div class="flex flex-col items-start">
+      <h1 class="text-4xl font-medium">Get in Touch</h1>
+      <p class="py-2 font-light text-gray-500 dark:text-gray-200">
+        Feel free to reach out for a friendly chat. ☕️
+      </p>
+      <div class="flex gap-3">
+        <a
+          class="font-light text-gray-200 underline underline-offset-2 hover:font-bold hover:text-white"
+          href="https://github.com/hassan-anees"
+          target="_blank">Github</a
+        >
+        <a
+          class="font-light text-gray-200 underline underline-offset-2 hover:font-bold hover:text-white"
+          href="https://www.linkedin.com/in/hassan-anees/"
+          target="_blank">LinkedIn</a
+        >
+        <a
+          class="font-light text-gray-200 underline underline-offset-2 hover:font-bold hover:text-white"
+          href="mailto:hassan.anees@outlook.com">Email</a
+        >
+      </div>
+
+      <!-- <SocialMedia /> -->
+    </div>
+
+    <div class="pt-10">
+      <p class="py-2 font-light text-gray-300">Have a beautiful day. ☀️</p>
+      <div class="font-thin text-gray-400">© Hassan Anees - All rights reserved.</div>
+    </div>
   </div>
 </footer>
