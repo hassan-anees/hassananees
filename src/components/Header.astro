@@ -1,6 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import burgerMenu from "../assets/speaking/burger.svg";
+import { Icon } from "astro-icon/components";
+import hgray from "../assets/speaking/hgray.svg";
+import hlogo from "../assets/speaking/hlogo.svg";
+import hlogoraw from "../assets/speaking/hlogo.svg?raw";
 
 const navLinks = [
   { name: "contact", link: "#contact" },
@@ -8,20 +11,43 @@ const navLinks = [
   { name: "work", link: "/work" },
   { name: "open source", link: "/#opensource" },
   { name: "speaking", link: "/#speaking" },
+  { name: "blog", link: "/blog" },
 ];
+
+const pathname = new URL(Astro.request.url).pathname;
+// change this to blogs later on to make it easier (when you ahve)
+const isBlog = pathname.includes("posts") || pathname.includes("blog");
+console.log(pathname);
+console.log(isBlog);
 ---
 
 <header>
   <nav
-    class="fixed z-10 w-full p-4 bg-opacity-50 border-b-2 border-gray-100 bg-zinc-50 backdrop-filter backdrop-blur-lg"
+    class:list={[
+      {
+        static: isBlog === true,
+      },
+    ]}
+    class="fixed z-10 w-full p-4 text-white bg-gray-950 backdrop-filter backdrop-blur-lg sm:p-4"
   >
-    <div class="flex justify-between max-w-screen-lg lg:mx-auto">
-      <a class="hover:text-blue-600" href="/"><h6 class="font-bold">Hassan Anees</h6></a>
-      <div class="flex flex-row-reverse justify-end gap-8 text-gray-500">
+    <div class="flex items-center justify-between max-w-screen-lg lg:mx-auto">
+      <a href="/" class="">
+        <div class="flex items-baseline">
+          <Image class={"hover:animate-pulse"} src={hlogo} width={30} alt={"Hassan Anees logo"} />
+        </div>
+      </a>
+
+      <!-- <div class="text-red-500 fill-current loader__eyes-container hover:fill-cyan-500">
+        <Fragment set:html={hlogoraw} />
+      </div> -->
+      <div class="flex flex-row-reverse justify-end gap-8 text-gray-300">
         {
           navLinks.map((nav) => {
             return (
-              <a class="hidden font-semibold sm:block hover:text-gray-950" href={nav.link}>
+              <a
+                class="hidden font-semibold sm:block hover:text-cyan-500 hover:underline underline-offset-4"
+                href={nav.link}
+              >
                 {nav.name}
               </a>
             );
@@ -29,16 +55,24 @@ const navLinks = [
         }
         <div class="">
           <div class="flex flex-col items-end" id="menuButton">
-            <Image
-              class="cursor-pointer hover:shadow-2xl sm:hidden"
+            <!-- <Image
+              class="cursor-pointer fill-white hover:shadow-2xl sm:hidden"
               src={burgerMenu}
               alt="Me presenting a security awareness talk at the vba"
+            /> -->
+            <Icon
+              size={30}
+              class="hover:text-cyan-500 hover:cursor-pointer sm:hidden"
+              name="mdi:menu"
             />
             <div id="menuList" class="flex flex-col-reverse items-end hidden mt-2">
               {
                 navLinks.map((nav) => {
                   return (
-                    <a class="block font-semibold sm:hidden hover:text-gray-950" href={nav.link}>
+                    <a
+                      class="block font-semibold sm:hidden hover:hover:text-cyan-500 hover:underline underline-offset-4"
+                      href={nav.link}
+                    >
                       {nav.name}
                     </a>
                   );

@@ -1,26 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import BlogPostThumbnail from "../components/BlogPostThumbnail.astro";
+const allPosts = await Astro.glob("../pages/posts/*.md");
+
+import BlogLayout from "../layouts/BlogLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="blog">
-  <div id="work" class="max-w-screen-md md:mx-auto">
-    <div class="p-6 py-14">
-      <h2 class="text-2xl font-bold">Blog</h2>
-      <p class="mt-2 mb-4">
-        I explore ideas and toy with concepts I am curious about. Mini essays on psychology,
-        technology, and philosophy.
-      </p>
-
-      <div id="industry" class="mb-10 text-gray-600">
-        <h4 class="text-xl font-bold text-black">Industry</h4>
-        <div class="border-b-2 border-gray-100">
-          <div class="my-4">
-            <h2 class="text-lg font-semibold">Test blog one</h2>
-            <h3 class="font-semibold text-gray-400">philosphy, psychology</h3>
-            <p class="mt-2 mb-4">Brief description of the blog post itself.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</Layout>
+<Layout title="blog page">
+  <ul>
+    {allPosts.map((post) => <BlogPostThumbnail url={post.url} title={post.frontmatter.title} />)}
+  </ul></Layout
+>
