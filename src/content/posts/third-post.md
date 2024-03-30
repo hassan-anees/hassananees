@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Third post"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 22 2022"
+author: Hassan Anees
 heroImage: "/blog-placeholder-2.jpg"
 ---
 

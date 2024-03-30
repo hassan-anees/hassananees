@@ -1,24 +1,29 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Prose from "../components/Prose.astro";
 import Image from "astro/components/Image.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { Icon } from "astro-icon/components";
-const { frontmatter } = Astro.props;
+type Props = CollectionEntry<"posts">["data"];
+
+const { title, author, description, pubDate, image } = Astro.props;
+console.log("HELLO");
+console.log(Astro.props);
 
 const tags = ["Psychology", "Science"];
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={title}>
   <div id="" class="pt-16 pb-4 font-semibold text-black bg-zinc-50">
     <div class="max-w-3xl p-6 md:mx-auto">
       <div class="">
         <!-- <Image src={frontmatter.heroImage} alt={frontmatter.title} class="w-full h-96" /> -->
-        <h1 class="text-6xl">{frontmatter.title}</h1>
+        <h1 class="text-6xl">{title}</h1>
         <!-- <p class="font-light text-gray-500 italics"><em>{frontmatter.description}</em></p> -->
-        <p class="text-gray-500">by {frontmatter.author}</p>
-        <p class="text-yellow-500">{frontmatter.pubDate.toString()}</p>
+        <p class="text-gray-500">by {author}</p>
+        <p class="text-yellow-500">{pubDate}</p>
         <!-- <div class="flex gap-3 pt-2 font-lg">
           <a href="https://twitter.com/intent/tweet?url={url}&text={description}&via={username}"
             ><Icon name="devicon:linkedin" size={30} class="" /></a

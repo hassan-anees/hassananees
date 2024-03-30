@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 author: Hassan Anees
 pubDate: "Jul 01 2022"
 title: My Third Blog Post

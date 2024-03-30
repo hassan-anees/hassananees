@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 author: Hassan Anees
 title: "First post"
 description: "Lorem ipsum dolor sit amet"

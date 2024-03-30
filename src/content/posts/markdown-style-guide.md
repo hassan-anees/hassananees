@@ -1,7 +1,6 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 author: Hassan Anees
-pubDate: "Jul 01 2022"
+pubDate: "July 01 2022"
 title: "Markdown Style Guide"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
 heroImage: "../../layouts/assets/speaking/herotest.jpeg"
@@ -61,7 +60,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 #### Output
 
-![blog placeholder](/blog-placeholder-about.jpg)
+![blog placeholder](/../../layouts/assets/speaking/herotest.jpeg)
 
 ## Blockquotes
 
