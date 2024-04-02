@@ -1,7 +1,25 @@
 ---
-const { url, title } = Astro.props;
+const { url, title, pubDate, description } = Astro.props;
 ---
 
-<li>
-  <a href={url}>{title}</a>
-</li>
+<a href={url}>
+  <div class="flex flex-col py-5 my-4 mt-auto border-b-2 border-gray-100 group">
+    <h3
+      class="py-4 text-lg font-bold transition duration-300 ease-in-out text-zinc-900 group-hover:text-cyan-600"
+    >
+      {title}
+    </h3>
+    <p class="font-serif font-light">{description}</p>
+    <a
+      class="py-2 font-serif italic text-pink-600 transition-all duration-300 ease-in-out group"
+      href={url}
+    >
+      <span
+        class="bg-left-bottom bg-gradient-to-r from-pink-600 to-pink-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+      >
+        Read Full Post
+      </span>
+    </a>
+    <p class="text-gray-500 font-extralight">{pubDate}</p>
+  </div>
+</a>

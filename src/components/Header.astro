@@ -6,19 +6,18 @@ import hlogo from "../assets/speaking/hlogo.svg";
 import hlogoraw from "../assets/speaking/hlogo.svg?raw";
 
 const navLinks = [
-  { name: "contact", link: "#contact" },
-  { name: "about", link: "/about" },
-  { name: "work", link: "/work" },
-  { name: "open source", link: "/#opensource" },
-  { name: "speaking", link: "/#speaking" },
-  { name: "blog", link: "/blog" },
+  { name: "Contact", link: "#contact" },
+  { name: "About", link: "/about" },
+  { name: "Work", link: "/work" },
+  { name: "Open Source", link: "/#opensource" },
+  { name: "Blog", link: "/blog" },
 ];
 
 const pathname = new URL(Astro.request.url).pathname;
 // change this to blogs later on to make it easier (when you ahve)
 const isBlog = pathname.includes("posts") || pathname.includes("blog");
-console.log(pathname);
-console.log(isBlog);
+// console.log(pathname);
+// console.log(isBlog);
 ---
 
 <header>
@@ -28,7 +27,7 @@ console.log(isBlog);
         static: isBlog === true,
       },
     ]}
-    class="fixed z-10 w-full p-4 text-white bg-gray-950 backdrop-filter backdrop-blur-lg sm:p-4"
+    class="fixed z-10 w-full p-3 text-white bg-zinc-950 backdrop-filter backdrop-blur-lg sm:p-3"
   >
     <div class="flex items-center justify-between max-w-screen-lg lg:mx-auto">
       <a href="/" class="">
@@ -45,7 +44,7 @@ console.log(isBlog);
           navLinks.map((nav) => {
             return (
               <a
-                class="hidden font-semibold sm:block hover:text-cyan-500 hover:underline underline-offset-4"
+                class="hidden font-semibold transition duration-300 ease-in-out sm:block hover:text-cyan-500"
                 href={nav.link}
               >
                 {nav.name}
@@ -70,7 +69,7 @@ console.log(isBlog);
                 navLinks.map((nav) => {
                   return (
                     <a
-                      class="block font-semibold sm:hidden hover:hover:text-cyan-500 hover:underline underline-offset-4"
+                      class="block font-semibold transition duration-300 ease-in-out sm:hidden hover:text-cyan-500"
                       href={nav.link}
                     >
                       {nav.name}

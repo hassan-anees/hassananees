@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Prose from "../components/Prose.astro";
+import banner from "../assets/speaking/herotest.jpeg";
 import Image from "astro/components/Image.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -9,21 +10,27 @@ import { Icon } from "astro-icon/components";
 type Props = CollectionEntry<"posts">["data"];
 
 const { title, author, description, pubDate, image } = Astro.props;
-console.log("HELLO");
-console.log(Astro.props);
+// console.log(image);
+// console.log(Astro.props);
 
 const tags = ["Psychology", "Science"];
 ---
 
 <Layout title={title}>
-  <div id="" class="pt-16 pb-4 font-semibold text-black bg-zinc-50">
+  <div id="" class="pt-16 font-semibold text-black">
     <div class="max-w-3xl p-6 md:mx-auto">
       <div class="">
-        <!-- <Image src={frontmatter.heroImage} alt={frontmatter.title} class="w-full h-96" /> -->
-        <h1 class="text-6xl">{title}</h1>
+        <!-- <img width={1020} height={510} src={image} alt="" /> -->
+
+        <h1 class="text-3xl text-zinc-800 font-extrabold sm:text-[40px]">{title}</h1>
         <!-- <p class="font-light text-gray-500 italics"><em>{frontmatter.description}</em></p> -->
-        <p class="text-gray-500">by {author}</p>
-        <p class="text-yellow-500">{pubDate}</p>
+        <div class="flex gap-3 py-4">
+          <p class="text-zinc-500">{pubDate}</p>
+          <p class="text-zinc-500">|</p>
+          <p class="text-zinc-500">{author}</p>
+        </div>
+        <div class="border-2 border-t-cyan-600 max-w-44"></div>
+
         <!-- <div class="flex gap-3 pt-2 font-lg">
           <a href="https://twitter.com/intent/tweet?url={url}&text={description}&via={username}"
             ><Icon name="devicon:linkedin" size={30} class="" /></a
@@ -49,10 +56,13 @@ const tags = ["Psychology", "Science"];
             })
           }
         </div> -->
+        <!-- <div class="bg-auto">
+          <Image src={banner} alt={title} class="m-auto aspect-video" />
+        </div> -->
       </div>
     </div>
   </div>
-  <div class="max-w-3xl p-6 font-serif md:py-6 md:mx-auto">
+  <div class="max-w-3xl px-6 py-2 md:mx-auto">
     <Prose>
       <slot />
     </Prose>
