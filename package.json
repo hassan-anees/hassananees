@@ -16,6 +16,7 @@
     "@iconify-json/devicon": "^1.1.36",
     "@iconify-json/meteocons": "^1.1.4",
     "@iconify/icons-devicon": "^1.2.17",
+    "@julian_cataldo/astro-lightbox": "^0.10.11",
     "@unpic/astro": "^0.0.44",
     "astro": "^4.4.9",
     "astro-icon": "^1.1.0",
@@ -27,6 +28,7 @@
     "@iconify-json/mdi": "^1.1.64",
     "@tailwindcss/typography": "^0.5.12",
     "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0"
+    "prettier-plugin-astro": "^0.13.0",
+    "sass": "^1.74.1"
   }
 }

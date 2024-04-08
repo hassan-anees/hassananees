@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import CallToAction from "../components/CallToAction.astro";
 import ugra from "../assets/speaking/ugra.jpg";
+import ugrawide from "../assets/speaking/ugrawide.jpeg";
 import vba from "../assets/speaking/vba.jpeg";
 import owaspClose from "../assets/speaking/owasp-close.jpeg";
 import owaspWide from "../assets/speaking/owasp-wide.jpeg";
@@ -17,45 +18,47 @@ import eqbank from "../assets/speaking/eq.jpg";
     interest that rotate between security, technology, and psychology.
   </p>
 
-  <div class="my-10 columns-2 sm:columns-3">
-    <div class="z-40 h-full mb-2 cursor-pointer">
+  <div class="grid grid-cols-2 gap-2 my-6 sm:grid-cols-3">
+    <div class="overflow-hidden aspect-w-1 aspect-h-1" data-lightbox="true">
       <Image
         src={ugra}
-        alt="Me presenting a security awareness talk at the vba"
-        sizes="(max-width: 768px) 213px, 33vw"
-        class="object-cover rounded-lg"
+        alt="Me presenting a security awareness talk at the the annual URGA meeting"
+        class="object-cover w-full h-full rounded-lg"
       />
     </div>
-    <div class="mb-2">
-      <Image
-        src={eqbank}
-        sizes="(max-width: 768px) 213px, 33vw"
-        alt="Me presenting a insider threat for EQ at UoG"
-        class="object-cover rounded-lg h-22"
-      />
-    </div>
-    <div class="mb-2">
-      <Image
-        src={vba}
-        sizes="(max-width: 768px) 213px, 33vw"
-        alt="Me presenting at the VBA for a security awareness talk to the community"
-        class="object-cover rounded-lg"
-      />
-    </div>
-    <div class="mb-2">
+    <div class="overflow-hidden aspect-w-1 aspect-h-1" data-lightbox="true">
       <Image
         src={owaspClose}
-        sizes="(max-width: 768px) 213px, 33vw"
         alt="Me presenting at Okta for OWASP - close shot"
-        class="object-cover rounded-lg"
+        class="object-cover w-full h-full rounded-lg"
       />
     </div>
-    <div class="">
+    <div class="overflow-hidden aspect-w-1 aspect-h-1" data-lightbox="true">
+      <Image
+        src={vba}
+        alt="Me presenting a security awareness talk at the vba"
+        class="object-cover object-right w-full h-full rounded-lg"
+      />
+    </div>
+    <div class="overflow-hidden aspect-w-1 aspect-h-1" data-lightbox="true">
+      <Image
+        src={ugrawide}
+        alt="Wide shot of my colleagues at the the annual URGA meeting"
+        class="object-cover w-full h-full rounded-lg"
+      />
+    </div>
+    <div class="overflow-hidden aspect-w-1 aspect-h-1" data-lightbox="true">
       <Image
         src={owaspWide}
-        sizes="(max-width: 768px) 213px, 33vw"
         alt="Me presenting at Okta for OWASP - wide shot"
-        class="object-cover rounded-lg"
+        class="object-cover w-full h-full rounded-lg"
+      />
+    </div>
+    <div class="overflow-hidden aspect-w-1 aspect-h-1" data-lightbox="true">
+      <Image
+        src={eqbank}
+        alt="Me presenting about insider threat for EQ at UoG"
+        class="object-cover w-full h-full rounded-lg"
       />
     </div>
   </div>
@@ -93,3 +96,36 @@ import eqbank from "../assets/speaking/eq.jpg";
   <!-- Call to action -->
   <CallToAction />
 </div>
+
+<style>
+  /* relevant styles */
+  .img__wrap {
+    position: relative;
+    height: 250px;
+    width: 257px;
+  }
+
+  .img__description {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    padding: 10px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition:
+      opacity 0.2s,
+      visibility 0.2s;
+  }
+
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
