@@ -4,14 +4,14 @@ import ProjectCard from "../components/ProjectCard.astro";
 
 <!-- Open Source -->
 <div id="opensource" class="bg-zinc-50 py-14">
-  <div class="md:mx-auto max-w-screen-md px-6">
+  <div class="max-w-screen-md px-6 md:mx-auto">
     <div class="">
       <h2 class="text-2xl font-bold">Open source</h2>
-      <div class="">
+      <div class="" id="tooling">
         <ProjectCard
           title="AWS E2E Deployment Tool"
           link="https://github.com/hassan-anees/aws-e2ee/"
-          description="Creates a end-to-end encrypted template for developers to deploy a NoSQL database deployed on AWS. A python based library is used as the client, AWS Key Management System is used to manage keys."
+          description="Creates an end-to-end encrypted template for developers to deploy a NoSQL database deployed on AWS. A python-based library is used as the client, and AWS Key Management System is used to manage keys."
           tags={["AWS", "Python"]}
         />
         <ProjectCard
@@ -23,7 +23,7 @@ import ProjectCard from "../components/ProjectCard.astro";
         <ProjectCard
           title="COVID-19 Canada Dashboard"
           link="https://github.com/hassan-anees/COVID-19CanadaMap"
-          description="A geospatial visualization of active COVID-19 cases in Canada and a closer look at Ontario. Used governmental data in combination with R scripting and leaflet to outline a choropleth map. Visualisation communicates areas that are highly affected with COVID-19."
+          description="A geospatial visualization of active COVID-19 cases in Canada and a closer look at Ontario. Used governmental data in combination with R scripting and leaflet to outline a choropleth map. Visualisation communicates areas that are highly affected by COVID-19."
           tags={["R", "Python"]}
         />
       </div>

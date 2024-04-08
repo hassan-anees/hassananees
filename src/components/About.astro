@@ -1,0 +1,154 @@
+---
+import Image from "astro/components/Image.astro";
+import aboutpfp from "../assets/speaking/aboutpfp.jpeg";
+import { Icon } from "astro-icon/components";
+---
+
+<div id="about" class="py-14 bg-slate-50">
+  <div class="max-w-screen-md px-6 md:mx-auto">
+    <div class="flex flex-col gap-10 mt-4 sm:flex-row">
+      <div class="mx-auto">
+        <div class="overflow-hidden border-4 rounded-full border-cyan-600 w-72 h-72">
+          <Image
+            src={aboutpfp}
+            alt="Hassan Anees"
+            class="object-cover object-center w-full h-full scale-125"
+          />
+        </div>
+        <div class="mt-2 text-center">
+          <a
+            href="https://www.linkedin.com/in/hassan-anees/"
+            class="inline-block overflow-hidden"
+            target="_blank"
+          >
+            <Icon
+              size={30}
+              class="transition duration-300 ease-in-out hover:text-cyan-500"
+              name="mdi:linkedin"
+            />
+          </a>
+          <a
+            href="https://github.com/hassan-anees"
+            class="inline-block overflow-hidden"
+            target="_blank"
+          >
+            <Icon
+              size={30}
+              class="transition duration-300 ease-in-out hover:text-cyan-500"
+              name="mdi:github"
+            />
+          </a>
+          <a
+            href="mailto:hassan.anees@outlook.com"
+            class="inline-block overflow-hidden"
+            target="_blank"
+          >
+            <Icon
+              size={30}
+              class="transition duration-300 ease-in-out hover:text-cyan-500"
+              name="mdi:email"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="">
+        <h2 class="text-2xl font-bold">About me</h2>
+        <div class="prose max-w-none">
+          <p class="">
+            I began as a research assistant, working on aspects of human cognition like emotion,
+            memory, and creativity.
+          </p>
+          <p class="">
+            Later I shifted my attention to software engineering, building solutions for startup,
+            medical, and financial industries.
+          </p>
+
+          <p class="">
+            Now I'm in the cybersecurity field where I continue to leverage SWE practices and
+            principles in psychology.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- the timeline 1 -->
+
+    <!-- timeline 2 -->
+    <div class="max-w-screen-sm pt-4 mx-auto">
+      <div class="mx-auto mb-3 text-center border-2 max-w-32 border-t-cyan-600"></div>
+
+      <p class="pb-4 prose max-w-none">
+        I studied at the University of Guelph. Learned tons and networked with amazing peers and
+        mentors. Below are some notable highlights.
+      </p>
+    </div>
+
+    <div class="max-w-screen-md mx-auto">
+      <ol
+        class="border-s border-neutral-300 md:flex md:justify-center md:gap-6 md:border-s-0 md:border-t"
+      >
+        <!--First item-->
+        <li>
+          <div class="flex items-center pt-2 flex-start md:block md:pt-0">
+            <div
+              class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-cyan-600 md:-mt-[5px] md:me-0 md:ms-0"
+            >
+            </div>
+            <p class="mt-2 text-sm text-neutral-500">December 2020</p>
+          </div>
+          <div class="pb-5 mt-2 ms-4 md:ms-0">
+            <h4 class="mb-1.5 text-xl font-semibold">BSc, Computer Science</h4>
+            <p class="mb-3 text-neutral-500">
+              Utilized machine learning, cloud computing, and data science. Studied and worked under
+              the Gillis research lab. Using natural language processing to analyze mental health
+              data provided by the <a
+                class="font-bold text-cyan-500"
+                href="https://www.talklife.com/">TalkLife</a
+              > platform.
+            </p>
+          </div>
+        </li>
+
+        <!--Second item-->
+        <li>
+          <div class="flex items-center pt-2 flex-start md:block md:pt-0">
+            <div
+              class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-cyan-600 md:-mt-[5px] md:me-0 md:ms-0"
+            >
+            </div>
+            <p class="mt-2 text-sm text-neutral-500">August 2021</p>
+          </div>
+          <div class="pb-5 mt-2 ms-4 md:ms-0">
+            <h4 class="mb-1.5 text-xl font-semibold">BA, Psychology</h4>
+            <p class="mb-3 text-neutral-500">
+              Focused on cognitive, social, and abnormal psychology. Completed my thesis on memory
+              and cognition. Worked within the Self-Injury and Mental Health lab, aiding in rural
+              suicidality research.
+            </p>
+          </div>
+        </li>
+
+        <!--Third item-->
+        <li>
+          <div class="flex items-center pt-2 flex-start md:block md:pt-0">
+            <div
+              class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-cyan-600 md:-mt-[5px] md:me-0 md:ms-0"
+            >
+            </div>
+            <p class="mt-2 text-sm text-neutral-500">October 2023</p>
+          </div>
+          <div class="pb-5 mt-2 ms-4 md:ms-0">
+            <h4 class="mb-1.5 text-xl font-semibold">MSc, Cybersecurity</h4>
+            <p class="mb-3 text-neutral-500">
+              Gained industry and academic experience in security and threat intelligence. Leveraged
+              cloud computing and machine learning to create <a
+                href="#tooling"
+                class="font-bold text-cyan-500">security tooling</a
+              >. Researched social engineering mechanisms from a psychological perspective.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>

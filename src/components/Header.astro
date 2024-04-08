@@ -7,7 +7,7 @@ import hlogoraw from "../assets/speaking/hlogo.svg?raw";
 
 const navLinks = [
   { name: "Contact", link: "#contact" },
-  { name: "About", link: "/about" },
+  { name: "About", link: "/#about" },
   { name: "Work", link: "/work" },
   { name: "Open Source", link: "/#opensource" },
   { name: "Blog", link: "/blog" },
@@ -27,7 +27,7 @@ const isBlog = pathname.includes("posts") || pathname.includes("blog");
         static: isBlog === true,
       },
     ]}
-    class="fixed z-10 w-full p-3 text-white bg-zinc-950 backdrop-filter backdrop-blur-lg sm:p-3"
+    class="fixed z-10 w-full px-6 py-3 text-white bg-zinc-950 backdrop-filter backdrop-blur-lg sm:p-3"
   >
     <div class="flex items-center justify-between max-w-screen-lg lg:mx-auto">
       <a href="/" class="">
