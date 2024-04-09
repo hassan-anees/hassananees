@@ -19,7 +19,7 @@ import eqbank from "../assets/speaking/eq.jpg";
     interest that rotate between security, technology, and psychology.
   </p>
 
-  <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+  <div x-data="{ imgModal : false, imgModalSrc : { src: '', alt: '' }, imgModalDesc : '' }">
     <template
       @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;"
       x-if="imgModal"
@@ -69,7 +69,7 @@ import eqbank from "../assets/speaking/eq.jpg";
     <div class="grid grid-cols-2 gap-2 my-6 sm:grid-cols-3">
       <div class="overflow-hidden aspect-w-1 aspect-h-1">
         <a
-          @click="$dispatch('img-modal', {  imgModalSrc: 'src/assets/speaking/ugra.jpg', imgModalDesc: '' })"
+          @click="$dispatch('img-modal', {  imgModalSrc: '/ugra.jpg', imgModalDesc: '' })"
           class="cursor-pointer"
         >
           <Image
@@ -81,7 +81,7 @@ import eqbank from "../assets/speaking/eq.jpg";
       </div>
       <div class="overflow-hidden aspect-w-1 aspect-h-1">
         <a
-          @click="$dispatch('img-modal', {  imgModalSrc: 'src/assets/speaking/owasp-close.jpeg', imgModalDesc: '' })"
+          @click="$dispatch('img-modal', {  imgModalSrc: '/owasp-close.jpeg', imgModalDesc: '' })"
           class="cursor-pointer"
         >
           <Image
@@ -93,7 +93,7 @@ import eqbank from "../assets/speaking/eq.jpg";
       </div>
       <div class="overflow-hidden aspect-w-1 aspect-h-1">
         <a
-          @click="$dispatch('img-modal', {  imgModalSrc: 'src/assets/speaking/vba.jpeg', imgModalDesc: '' })"
+          @click="$dispatch('img-modal', {  imgModalSrc: '/vba.jpeg', imgModalDesc: '' })"
           class="cursor-pointer"
         >
           <Image
@@ -105,7 +105,7 @@ import eqbank from "../assets/speaking/eq.jpg";
       </div>
       <div class="overflow-hidden aspect-w-1 aspect-h-1">
         <a
-          @click="$dispatch('img-modal', {  imgModalSrc: 'src/assets/speaking/ugrawide.jpeg', imgModalDesc: '' })"
+          @click="$dispatch('img-modal', {  imgModalSrc: '/ugrawide.jpeg', imgModalDesc: '' })"
           class="cursor-pointer"
         >
           <Image
@@ -117,7 +117,7 @@ import eqbank from "../assets/speaking/eq.jpg";
       </div>
       <div class="overflow-hidden aspect-w-1 aspect-h-1">
         <a
-          @click="$dispatch('img-modal', {  imgModalSrc: 'src/assets/speaking/owasp-wide.jpeg', imgModalDesc: '' })"
+          @click="$dispatch('img-modal', {  imgModalSrc: '/owasp-wide.jpeg', imgModalDesc: '' })"
           class="cursor-pointer"
         >
           <Image
@@ -129,7 +129,7 @@ import eqbank from "../assets/speaking/eq.jpg";
       </div>
       <div class="overflow-hidden aspect-w-1 aspect-h-1">
         <a
-          @click="$dispatch('img-modal', {  imgModalSrc: 'src/assets/speaking/eq.jpg', imgModalDesc: '' })"
+          @click="$dispatch('img-modal', {  imgModalSrc: '/eq.jpg', imgModalDesc: '' })"
           class="cursor-pointer"
         >
           <Image
