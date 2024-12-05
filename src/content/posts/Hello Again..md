@@ -2,7 +2,7 @@
 author: Hassan Anees
 pubDate: April 9 2024
 title: Hello Again.
-description: I'm not very good at writing. This platform is meant help me get better.
+description: I'm not very good at writing. This platform is meant to help me get better at prose.
 heroImage:
 ---
 
