@@ -31,3 +31,8 @@ Another coding example
 #Python window
 print('hello')
 ```
+
+```html
+<!-- src/content/index.html -->
+<div>File name comment example</div>
+```
