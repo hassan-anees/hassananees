@@ -9,6 +9,9 @@ content:
     view:
       fields: [ title, date, published ] # title is the first entry and thus will be set to primary
     fields:
+      - name: author
+        label: Author
+        type: string
       - name: title
         label: Title
         type: string
@@ -18,3 +21,6 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: pubDate
+        label: pubDate
+        type: date
