@@ -43,3 +43,10 @@ Another attempt
 # File name: hello.py
 print('hello')
 ```
+
+```kql
+# File name: hunting.kql
+DeviceEvents
+| where name contains "hassan"
+| take 10
+```
