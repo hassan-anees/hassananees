@@ -36,3 +36,10 @@ print('hello')
 <!-- src/content/index.html -->
 <div>File name comment example</div>
 ```
+
+Another attempt
+
+```python
+# File name: hello.py
+print('hello')
+```
