@@ -24,5 +24,3 @@ content:
       - name: pubDate
         label: pubDate
         type: date
-        options: 
-          format: dd-MM-yyyy
