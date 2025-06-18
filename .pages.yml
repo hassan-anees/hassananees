@@ -6,3 +6,10 @@ content:
     label: Posts
     type: collection
     path: src/content/posts
+    view:
+      fields: [ title, date, published ] # title is the first entry and thus will be set to primary
+      sort: [ date, title, published ]
+      default:
+        search: ''
+        sort: date
+        order: desc
