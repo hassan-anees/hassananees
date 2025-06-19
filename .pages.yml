@@ -1,6 +1,12 @@
 media:
-  input: src/assets
-  output: ../../assets
+  - name: images
+    label: Images
+    input: src/assets
+    output: ../../assets
+  - name: documents
+    label: Documents
+    input: src/documents
+    output: ../../documents
 content:
   - name: posts
     label: Posts
