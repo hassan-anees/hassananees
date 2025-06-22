@@ -13,7 +13,7 @@ content:
     type: collection
     path: src/content/posts
     view:
-      fields: [ title, date, published ] # title is the first entry and thus will be set to primary
+      fields: [ title, date, published, pubDate, body ] # title is the first entry and thus will be set to primary
     fields:
       - name: author
         label: Author
