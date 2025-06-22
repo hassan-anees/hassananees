@@ -5,8 +5,8 @@ media:
     output: ../../assets
   - name: documents
     label: Documents
-    input: src/documents
-    output: ../../documents
+    input: public/documents
+    output: ../../../public/documents
 content:
   - name: posts
     label: Posts
