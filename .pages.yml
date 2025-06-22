@@ -24,9 +24,6 @@ content:
       - name: description
         label: Description
         type: string
-      - name: body
-        label: Body
-        type: rich-text
       - name: pubDate
         label: pubDate
         type: date
@@ -38,4 +35,7 @@ content:
         options:
           multiple: true
           media: documents
-      
+      - name: body
+        label: Body
+        type: rich-text
+    
