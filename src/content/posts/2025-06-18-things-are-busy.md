@@ -8,7 +8,7 @@ This is another test
 
 [download now](/text.txt)
 
-[Download the presentation](/datalabeling.pdf)
+[Download the presentation](/documents/datalabeling.pdf)
 
 > how is life
 
