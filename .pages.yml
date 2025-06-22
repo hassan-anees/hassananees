@@ -29,6 +29,12 @@ content:
         type: date
         options:
           format: yyyy-MM-dd
+      - name: cover
+        label: Cover Image
+        type: file
+        options:
+          multiple: false
+          media: images
       - name: attachments
         label: Attachments
         type: file
