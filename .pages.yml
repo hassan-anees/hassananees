@@ -25,7 +25,7 @@ content:
         label: Description
         type: string
       - name: pubDate
-        label: pubDate
+        label: Publishing Date
         type: date
         options:
           format: yyyy-MM-dd
