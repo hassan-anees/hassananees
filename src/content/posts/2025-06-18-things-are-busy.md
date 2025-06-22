@@ -8,6 +8,8 @@ This is another test
 
 [download now](/text.txt)
 
+[simple download](../../documents/simple.txt)
+
 > how is life
 
 ```python
