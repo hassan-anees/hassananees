@@ -6,7 +6,7 @@ pubDate: 2025-06-16
 ---
 This is another test
 
-[Check here now](/test.txt)
+[download now](/text.txt)
 
 > how is life
 
