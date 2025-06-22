@@ -35,6 +35,7 @@ content:
         options:
           multiple: false
           media: images
+          path: src/assets
       - name: attachments
         label: Attachments
         type: file
