@@ -6,6 +6,8 @@ pubDate: 2025-06-16
 ---
 This is another test
 
+[Check here now](/test.txt)
+
 > how is life
 
 ```python
