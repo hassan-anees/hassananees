@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import BlogPostThumbnail from "../components/BlogPostThumbnail.astro";
 
-const allPosts = await getCollection("posts");
+const allPosts = (await getCollection("posts")).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
 ---
 
 <Layout title="Blog | Hassan Anees">
@@ -18,6 +20,7 @@ const allPosts = await getCollection("posts");
             url={`/posts/${post.slug}`}
             title={post.data.title}
             pubDate={post.data.pubDate.toLocaleDateString("en-US", {
+              timeZone: "UTC",
               month: "long",
               day: "2-digit",
               year: "numeric",
