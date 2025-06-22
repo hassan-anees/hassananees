@@ -32,3 +32,10 @@ content:
         type: date
         options:
           format: yyyy-MM-dd
+      - name: attachments
+        label: Attachments
+        type: file
+        options:
+          multiple: true
+          media: documents
+      
