@@ -1,0 +1,27 @@
+---
+const {
+  title = "Home - Hassan Anees",
+  description = "Welcome to my website. I write about recent talks and anything that's gotten me curious. Have a gander and say hi",
+  canonical = "https://hassananees.com",
+  image = "/favi.svg",
+  ...props
+} = Astro.props;
+---
+
+<!-- <link rel="sitemap" href="/sitemap-index.xml" /> -->
+<title>{title}</title>
+<meta name="description" content="Welcome to my new Astro site!" />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/svg+xml" href="/favi.svg" />
+<meta name="generator" content={Astro.generator} />
+<!-- Open Graph tags -->
+<meta property="og:title" content={title} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta property="og:image:alt" content="" />
