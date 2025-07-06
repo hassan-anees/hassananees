@@ -1,0 +1,24 @@
+---
+const {
+  title = "Home | Hassan Anees",
+  description = "I'm a software developer turned security engineer with a background in psychology. I share recent talks and insights on topics ranging from technology to human behavior.",
+  canonical = Astro.url,
+  image = "https://hassananees.com/favi.svg",
+  ...props
+} = Astro.props;
+---
+
+<!-- <link rel="sitemap" href="/sitemap-index.xml" /> -->
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/svg+xml" href="/favi.svg" />
+<meta name="generator" content={Astro.generator} />
+<!-- Open Graph tags -->
+<meta property="og:title" content={title} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta property="og:image:alt" content="" />
