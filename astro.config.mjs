@@ -6,5 +6,6 @@ import expressiveCode from "astro-expressive-code";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), icon(), expressiveCode()]
+  integrations: [tailwind(), icon(), expressiveCode()],
+  site: "https://hassananees.com",
 });
