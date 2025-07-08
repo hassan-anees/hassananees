@@ -3,9 +3,9 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import BlogPostThumbnail from "../components/BlogPostThumbnail.astro";
 
-const allPosts = (await getCollection("posts")).sort(
-  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
-);
+const allPosts = (await getCollection("posts"))
+  .filter((post) => (import.meta.env.PROD ? post.data.draft !== true : true))
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 
 <Layout title="Blog | Hassan Anees">
