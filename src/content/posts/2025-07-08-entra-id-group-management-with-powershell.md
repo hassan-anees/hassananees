@@ -32,7 +32,8 @@ The information above is limited. We do not see additional information such as t
 Let's first get the source of the group
 
 ```powershell
-# File name: Grab the user and their associated groups along with the group source
+# File name: user-groups-source.ps1
+# Grab the user and their associated groups along with the group source
 $groups = Get-AzureADUserMembership -ObjectId "user@domain.com" -All $true | Where-Object {$_.ObjectType -eq "Group"}
 
 $groups | ForEach-Object {
