@@ -2,6 +2,7 @@
 author: Hassan Anees
 title: Entra ID Group Management with PowerShell
 description: "Some useful PowerShell commands for Entra group management. "
+pubDate: 2025-07-08
 draft: true
 ---
 ### Grab all groups for a single user
