@@ -13,7 +13,7 @@ content:
     type: collection
     path: src/content/posts
     view:
-      fields: [ cover, title, body, date, published, pubDate,  ] # title is the first entry and thus will be set to primary
+      fields: [ cover, title, body, date, published, pubDate, draft ] # title is the first entry and thus will be set to primary
     fields:
       - name: author
         label: Author
@@ -29,6 +29,10 @@ content:
         type: date
         options:
           format: yyyy-MM-dd
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
       - name: cover
         label: Cover Image
         type: image
