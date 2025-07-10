@@ -7,7 +7,7 @@ media:
     label: Documents
     input: public/documents
     output: ../../../public/documents
-  - name: cover
+  - name: covers
     label: Covers
     input: public/covers
     output: ../../../public/covers
@@ -42,8 +42,7 @@ content:
         type: image
         options:
           multiple: false
-          media: Covers
-          path: public/covers
+          media: covers
       - name: attachments
         label: Attachments
         type: file
