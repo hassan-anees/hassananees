@@ -10,7 +10,7 @@ Privileged Identity Management (PIM) is a cool feature. I've been working on imp
 
 ### High-Level
 
-Here's the overall gist to get things going. For a more detailed guide skip \[the beginning\](# The Beginning)
+Here's the overall gist to get things going. For a more detailed guide skip [the beginning](#the-beginning)
 
 1.  Create Entra role assignable groups
     
