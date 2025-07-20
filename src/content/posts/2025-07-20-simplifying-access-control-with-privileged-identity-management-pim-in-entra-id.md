@@ -2,6 +2,8 @@
 author: Hassan Anees
 title: Simplifying Access Control with Privileged Identity Management (PIM) in
   Entra ID
+description: Exploring Identity and Access Management within Microsoft with
+  Privileged Identity Management (PIM)
 pubDate: 2025-07-20
 draft: true
 ---
@@ -9,7 +11,7 @@ Privileged Identity Management (PIM) is a cool feature. I've been working on imp
 
 # High-Level
 
-Here's the overall gist to get things going. For a more detailed guide skip [the beginning](# The Beginning)
+Here's the overall gist to get things going. For a more detailed guide skip \[the beginning\](# The Beginning)
 
 1.  Create Entra role assignable groups
     
@@ -27,7 +29,6 @@ Here's the overall gist to get things going. For a more detailed guide skip [the
 You need the following Entra ID role to start leveraging PIM.
 
 *   Privileged Role Administrator
-    
 
 This will allow you to do the following
 
