@@ -6,6 +6,8 @@ description: Exploring Identity and Access Management within Microsoft with
 pubDate: 2025-07-20
 draft: true
 ---
+# Testing
+
 Privileged Identity Management (PIM) is a cool feature. I've been working on implementing it across our organization for several months. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles.
 
 ### High-Level
@@ -33,3 +35,20 @@ You need the following Entra ID role to start leveraging PIM.
 This will allow you to do the following
 
 *   Create Entra
+    
+
+### H3
+
+Text is here as a placeholder
+
+### H3 Placeholder
+
+Text is here as a placeholder
+
+# h1 placeholder
+
+Text is here as a placeholder
+
+# h1 placeholder
+
+text is here as placeholder
