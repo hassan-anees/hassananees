@@ -16,6 +16,7 @@ content:
     label: Posts
     type: collection
     path: src/content/posts
+    filename: '{primary}.md'
     view:
       fields: [ cover, title, body, date, published, pubDate, draft ] # title is the first entry and thus will be set to primary
     fields:
