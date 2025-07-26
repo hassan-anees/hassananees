@@ -1,8 +1,8 @@
 ---
 author: Hassan Anees
 title: Simplifying Access Control with Privileged Identity Management (PIM)
-description: Exploring Identity and Access Management within Microsoft with
-  Privileged Identity Management (PIM) within Entra ID
+description: A step-by-step walkthrough on lowering exposure for your privileged
+  accounts in Entra ID with Privileged Identity Management (PIM).
 pubDate: 2025-07-20
 draft: true
 ---
@@ -97,11 +97,11 @@ We're done with the configuration, let's use it! We can now activate the role go
 
 The current configuration will auto elevate you into the role. There is an option to require approval for added visibility and control. You can do this by:
 
-1.  Heading over to **Privileged Identity Management** menu \> **Manage** \> **Roles**
+1.  Heading over to **Privileged Identity Management** menu > **Manage** > **Roles**
     
 2.  Select the role **Global Administrator**
     
-3.  Click **Role settings** \> **Edit**
+3.  Click **Role settings** > **Edit**
     
 4.  Hit **Require approval to activate** to add users who approve/deny requests
     
