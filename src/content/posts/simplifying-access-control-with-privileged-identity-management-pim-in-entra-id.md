@@ -57,7 +57,7 @@ Let's create the an Entra role assignable group called "Dummy Group - Global Adm
 7.  Hit **Create**
     
 
-**image placeholder**
+![](../../assets/technology/dummy-ga-group.png)
 
 Now that we have created the group and added members, we can assign it the Global Administrator role.
 
@@ -76,9 +76,7 @@ Now that we have created the group and added members, we can assign it the Globa
 6.  Click **Assign**
     
 
-**image placeholder for the eligible section**
-
-**image placeholder for the assign role section**
+![](../../assets/technology/ga-role-assignment-pim-process.png)
 
 ### Activating roles with PIM
 
@@ -95,9 +93,11 @@ We're done with the configuration, let's use it! We can now activate the role go
 5.  Set your required duration and justification and hit **Activate**
     
 
+![](../../assets/technology/pim-activation-process.png)
+
 The current configuration will auto elevate you into the role. There is an option to require approval for added visibility and control. You can do this by:
 
-1.  Heading over to **Privileged Identity Management** menu > **Manage** > **Roles**
+1.  Heading over to **Privileged Identity Management** menu > **Manage (Microsoft Entra roles)** > **Manage (Roles)**
     
 2.  Select the role **Global Administrator**
     
@@ -106,7 +106,7 @@ The current configuration will auto elevate you into the role. There is an optio
 4.  Hit **Require approval to activate** to add users who approve/deny requests
     
 
-**image placeholder**
+![](../../assets/technology/edit-pim-settings-ga.png)
 
 Under these role settings you have the option to adjust how long a role can be activated for, requiring MFA, and adding it to a Conditional Access authentication context.
 
