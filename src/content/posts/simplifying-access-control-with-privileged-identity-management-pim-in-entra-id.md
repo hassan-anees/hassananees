@@ -57,7 +57,7 @@ Let's create the an Entra role assignable group called "Dummy Group - Global Adm
 7.  Hit **Create**
     
 
-![](../../assets/technology/dummy-ga-group.png)
+![Creating a group in Entra ID](../../assets/technology/dummy-ga-group.png)
 
 Now that we have created the group and added members, we can assign it the Global Administrator role.
 
@@ -76,7 +76,7 @@ Now that we have created the group and added members, we can assign it the Globa
 6.  Click **Assign**
     
 
-![](../../assets/technology/ga-role-assignment-pim-process.png)
+![Assigning Global Administrator role to the group](../../assets/technology/ga-role-assignment-pim-process.png)
 
 ### Activating roles with PIM
 
