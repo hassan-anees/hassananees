@@ -40,7 +40,7 @@ As for licensing, any of the following will suffice:
 
 Let's create the an Entra role assignable group called "Global Administrators (God Mode)".
 
-> _Note: You have a limit of 500 role assignable groups within your tenant._
+> **_Note_**_: You have a limit of 500 role assignable groups within your tenant._
 
 1.  Start by heading over to [entra.microsoft.com](http://entra.microsoft.com) > **Groups**
     
@@ -61,7 +61,7 @@ Let's create the an Entra role assignable group called "Global Administrators (G
 
 Now that we have created the group and added members, we can assign it the Global Administrator role.
 
-> Note: If you added the role in the previous step then the added users will already have the as **active** by default instead of needing to **elevate**. We require users to be **eligible** for the role.
+> **Note**: If you added the role in the previous step then the added users will already have the as **active** by default instead of needing to **elevate**. We require users to be **eligible** for the role.
 
 1.  Select the newly created group
     
