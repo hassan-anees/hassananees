@@ -8,7 +8,7 @@ draft: true
 ---
 Privileged Identity Management (PIM) is a cool feature. I've been working on implementing it across our organization for several months. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles. It leaves an audit trail and limits the duration for the privileged role.
 
-For the purpose of this demo, we'll create a security groups called "Global Administrators (God Mode)" where members of this groups can **elevate** to the Global Administrator role. This ensures that admins are not perpetually in a highly privileged role and leaves an audit trail on when it was utilized.
+For the purpose of this demo, we'll create a security group called "Global Administrators (God Mode)" where members of this groups can **elevate** to the Global Administrator role. This ensures that admins are not perpetually in a highly privileged role and leaves an audit trail on when it was utilized.
 
 Here's the overall gist to get things going:
 
@@ -108,6 +108,6 @@ The current configuration will auto elevate you into the role. There is an optio
 
 **image placeholder**
 
-Under these role settings you have the option to adjust the maximum duration a role can be activated for as well as requiring MFA or adding it to a Conditional Access authentication context.
+Under these role settings you have the option to adjust how long a role can be activated for, requiring MFA, and adding it to a Conditional Access authentication context.
 
 There's tons more you can do with PIM that was not covered here. Maybe in another post I'll touch on PIM for groups and Azure resources. If you have any questions, I'd love to hear from you. Hope this helped.
