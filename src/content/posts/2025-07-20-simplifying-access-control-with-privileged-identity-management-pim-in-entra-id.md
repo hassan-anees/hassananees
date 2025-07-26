@@ -6,7 +6,7 @@ description: Exploring Identity and Access Management within Microsoft with
 pubDate: 2025-07-20
 draft: true
 ---
-Privileged Identity Management (PIM) is a cool feature. I've been working on implementing it across our organization for several months. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles. It leaves an audit trail and limits the duration for the privileged role.
+Privileged Identity Management (PIM) is a cool feature. I've been working on implementing it across our organization for the last little while. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles. It leaves an audit trail and limits the duration for the privileged role.
 
 For the purpose of this demo, we'll create a security group called "Global Administrators (God Mode)" where members of this groups can **elevate** to the Global Administrator role. This ensures that admins are not perpetually in a highly privileged role and leaves an audit trail for when it's utilized.
 
@@ -40,7 +40,7 @@ As for licensing, any of the following will suffice:
 
 Let's create the an Entra role assignable group called "Global Administrators (God Mode)".
 
-> Note that you have a limit of 500 role assignable groups within your tenant.
+> _Note: You have a limit of 500 role assignable groups within your tenant._
 
 1.  Start by heading over to [entra.microsoft.com](http://entra.microsoft.com) > **Groups**
     
@@ -61,7 +61,7 @@ Let's create the an Entra role assignable group called "Global Administrators (G
 
 Now that we have created the group and added members, we can assign it the Global Administrator role.
 
-> Note that if you added the role in the previous step then the added users will by default have the role already **active** for them instead of needing to **elevate**. We require users to be **eligible** for the role.
+> Note: If you added the role in the previous step then the added users will already have the as **active** by default instead of needing to **elevate**. We require users to be **eligible** for the role.
 
 1.  Select the newly created group
     
