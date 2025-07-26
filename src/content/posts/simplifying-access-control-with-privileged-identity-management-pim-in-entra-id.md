@@ -8,7 +8,7 @@ draft: true
 ---
 Privileged Identity Management (PIM) is a cool feature. I've been working on implementing it across our organization for the last little while. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles. It leaves an audit trail and limits the duration for the privileged role.
 
-For the purpose of this demo, we'll create a security group called "Global Administrators (God Mode)" where members of this groups can **elevate** to the Global Administrator role. This ensures that admins are not perpetually in a highly privileged role and leaves an audit trail for when it's utilized.
+For the purpose of this demo, we'll create a security group called "Dummy Group - Global Administrators" where members of this groups can **elevate** to the Global Administrator role. This ensures that admins are not perpetually in a highly privileged role and leaves an audit trail for when it's utilized.
 
 Here's the overall gist to get things going:
 
@@ -38,7 +38,7 @@ As for licensing, any of the following will suffice:
 
 ### Getting Started
 
-Let's create the an Entra role assignable group called "Global Administrators (God Mode)".
+Let's create the an Entra role assignable group called "Dummy Group - Global Administrators".
 
 > **_Note_**_: You have a limit of 500 role assignable groups within your tenant._
 
