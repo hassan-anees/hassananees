@@ -8,7 +8,7 @@ draft: true
 ---
 Privileged Identity Management (PIM) is a cool feature. I've been working on implementing it across our organization for several months. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles. It leaves an audit trail and limits the duration for the privileged role.
 
-For the purpose of this demo, we'll create a security group called "Global Administrators (God Mode)" where members of this groups can **elevate** to the Global Administrator role. This ensures that admins are not perpetually in a highly privileged role and leaves an audit trail on when it was utilized.
+For the purpose of this demo, we'll create a security group called "Global Administrators (God Mode)" where members of this groups can **elevate** to the Global Administrator role. This ensures that admins are not perpetually in a highly privileged role and leaves an audit trail for when it's utilized.
 
 Here's the overall gist to get things going:
 
