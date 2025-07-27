@@ -1,9 +1,10 @@
 ---
 author: Hassan Anees
-pubDate: "July 01 2022"
-title: "Markdown Style Guide"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-heroImage: "../../assets/speaking/herotest.jpeg"
+title: Hello Again. Markdown
+description: I'm not very good at writing. This platform is meant to help me get
+  better at prose.
+pubDate: 2024-04-09
+draft: false
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

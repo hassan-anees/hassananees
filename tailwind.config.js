@@ -6,19 +6,30 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Urbanist", ...defaultTheme.fontFamily.sans],
+        serif: ["Urbanist", ...defaultTheme.fontFamily.sans], // override serif to use Urbanist
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
             "h1 + *": {
-              marginTop: "0",
+              marginTop: "0rem",
+            },
+            "h2 + *": {
+              marginTop: "0rem",
+            },
+            "h3 + *": {
+              marginTop: "0rem",
             },
             "ul + *": {
-              marginTop: "0",
+              marginTop: "0rem",
             },
             "ol + *": {
-              marginTop: "0",
+              marginTop: "0rem",
             },
+            p: { color: "rgb(55, 65, 81)" },
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:last-of-type::after": { content: "none" },
+            blockquote: { fontWeight: "normal" },
           },
         },
       }),
