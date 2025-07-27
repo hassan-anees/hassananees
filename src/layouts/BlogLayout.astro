@@ -6,6 +6,8 @@ import banner from "../assets/speaking/herotest.jpeg";
 import Image from "astro/components/Image.astro";
 import { Icon } from "astro-icon/components";
 import { SEO } from "astro-seo";
+import "medium-zoom/dist/style.css";
+
 type Props = CollectionEntry<"posts">["data"];
 
 const { title, author, description, pubDate, image } = Astro.props;
@@ -16,7 +18,7 @@ const tags = ["Psychology", "Science"];
 ---
 
 <Layout title={title} description={description} image={image}>
-  <div id="" class="pt-16 font-semibold text-black">
+  <div id="" class="font-semibold text-black">
     <div class="max-w-3xl p-6 md:mx-auto">
       <div class="">
         <!-- <img width={1020} height={510} src={image} alt="" /> -->
@@ -76,3 +78,35 @@ const tags = ["Psychology", "Science"];
     </Prose>
   </div>
 </Layout>
+
+<script>
+  import mediumZoom from "medium-zoom";
+
+  // Add captions to images with alt text
+  document.querySelectorAll(".prose img").forEach((img) => {
+    const imgElement = img as HTMLImageElement;
+    if (imgElement.alt && imgElement.alt.trim() !== "") {
+      // Check if already wrapped in figure
+      if (imgElement.parentElement?.tagName !== "FIGURE") {
+        const fig = document.createElement("figure");
+        const caption = document.createElement("figcaption");
+        caption.textContent = imgElement.alt;
+        caption.className = "text-center text-sm text-gray-600 mt-2 italic";
+
+        // Insert figure before the image
+        const parent = imgElement.parentNode;
+        if (parent) {
+          parent.insertBefore(fig, imgElement);
+          // Move image into figure
+          fig.appendChild(imgElement);
+          // Add caption
+          fig.appendChild(caption);
+        }
+      }
+    }
+  });
+
+  mediumZoom(".prose img", {
+    margin: 24,
+  });
+</script>
