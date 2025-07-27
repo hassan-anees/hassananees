@@ -4,7 +4,7 @@ title: Simplifying Access Control with Privileged Identity Management (PIM)
 description: A step-by-step walkthrough on lowering exposure for your privileged
   accounts in Entra ID with Privileged Identity Management (PIM).
 pubDate: 2025-07-20
-draft: true
+draft: false
 ---
 Privileged Identity Management (PIM) is a cool feature. I've been working on implementing it across our organization for the last little while. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles. It leaves an audit trail and limits the duration for the privileged role.
 
