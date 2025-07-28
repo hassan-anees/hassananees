@@ -6,7 +6,7 @@ description: A step-by-step walkthrough on lowering exposure for your privileged
 pubDate: 2025-07-20
 draft: false
 ---
-Privileged Identity Management (PIM) is a cool feature. I've been working on implementing it across our organization for the last little while. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles. It leaves an audit trail and limits the duration for the privileged role.
+Privileged Identity Management (PIM) is a cool feature. I've been toying around with it in Entra ID for a little while. In short, it's a technology that allows administrators to elevate just-in-time to privileged roles. It leaves an audit trail and limits the duration for the privileged role.
 
 For the purpose of this demo, we'll create a security group called "Dummy Group - Global Administrators" where members of this groups can **elevate** to the Global Administrator role. This ensures that admins are not perpetually in a highly privileged role and leaves an audit trail for when it's utilized.
 
