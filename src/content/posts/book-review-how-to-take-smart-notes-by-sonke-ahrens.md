@@ -2,7 +2,7 @@
 author: Hassan Anees
 title: Book Review - How to Take Smart Notes by Sönke Ahrens
 description: I learned a lot on the Zettelkasten note taking system. However,
-  even more so on the importance of writing when it comes to learrning.
+  even more so on the importance of writing when it comes to learning.
 pubDate: 2025-08-06
 draft: true
 ---
