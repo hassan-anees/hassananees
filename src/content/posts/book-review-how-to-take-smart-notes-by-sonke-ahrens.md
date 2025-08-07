@@ -17,22 +17,22 @@ draft: true
 
 ### Book Impressions
 
-How to Take Smart Notes by Sönke Ahrens was a fun read worth sharing. The book is a great primer on Zettelkasten's, but it truly shines when describing how critical writing is when it comes to learning.
+How to Take Smart Notes by Sönke Ahrens was a fun read worth sharing. The book is a great primer on Zettelkastens, but it truly shines when describing how critical writing is when it comes to learning.
 
-The book describes how you can use a Zettelkasteen to facilitate learning. A Zettelkasten is a note taking methodology. **Zettel** refers to slip of paper (a note) and **kasten** meaning a catalog or box. When combined, it roughly translates to slip-box.
+The book describes how you can use a Zettelkastens to facilitate learning. A Zettelkasten is a note taking methodology. **Zettel** refers to a slip of paper (a note) and **kasten** meaning a catalog or box. When combined, it roughly translates to slip-box.
 
-This methodology was popularized by Niklas Luhmann, a german social scientist. Ahrens describes how Luhmann uses this system to produce notes that served as the foundation for 60+ books and 400+ articles.
+This methodology was popularized by Niklas Luhmann, a German social scientist. Ahrens describes how Luhmann used this system to produce notes that served as the foundation for 60+ books and 400+ articles.
 
-Ahrens breaks down the 3 types of notes that would make up your Zettelkasten into the following:
+Ahrens identifies three types of notes in a Zettelkasten:
 
-1.  Fleeting notes - notes that captures everyday thoughts. Things you would like to remember for later.
+1.  Fleeting notes - Notes that capture everyday thoughts. Things you would like to remember for later. Moments of brilliance.
     
-2.  Literature notes - notes on pieces of literature that caught your attention and that you may want to connect to existing notes.
+2.  Literature notes - Notes on pieces of literature that caught your attention and that you may want to connect to existing notes.
     
 3.  Permanent notes - finalized notes that link to other notes within your Zettelkasten.
     
 
-The combination of these notes make up the Zettelkasten. However, I did not find Ahrens's book to be a clear "how-to" guide to create a robust Zettelkasten system. Instead, Ahren focuses instead on the significance of writing when it comes to learning. To be able to grasp a concept you must be able to write it in your own words. That means to teach it to yourself and others. Writing and teaching are the catalyst for true learning.
+The combination of these notes make up the Zettelkasten. However, I did not find Ahrens's book to be a clear "how-to" guide to creating a robust Zettelkasten system. Instead, Ahren focuses on the significance of writing when it comes to learning. To be able to grasp a concept you must be able to write it in your own words. That means to teach it to yourself and others. Writing and teaching are the catalysts for true learning.
 
 ### Favourite Quote
 
