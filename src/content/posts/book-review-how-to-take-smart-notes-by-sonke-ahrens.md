@@ -34,10 +34,14 @@ Ahrens identifies three types of notes in a Zettelkasten:
 
 The combination of these notes makes the Zettelkasten. However, I did not find Ahrens's book to be a clear "how-to" guide to creating a robust Zettelkasten system. Instead, Ahren focuses on the significance of writing when it comes to learning. To be able to grasp a concept you must be able to write it in your own words. That means to teach it to yourself and others. Writing and teaching are the catalysts for true learning.
 
-Since reading this book, I have shifted the way I learn. My Zettelkasten is slowly building with ideas that I find interesting. It's like a conversation with myself since I have to make some effort to connect a note to an existing note. Where I find the Zettelkasten system lacking is when it comes to STEM-related notes. Topics that lean towards the humanities (philosophy, sociology, etc) tend to do quite well as I find them easier to connect. However, highly technical notes like walkthroughs on programming do poorly as they are very specific. Perhaps more abstract technical concepts would do well in the Zettelkasten system. For now, I am enjoying the process of piecing together and expanding ideas that caught my attention with smart notes.
+Since reading this book, I have shifted the way I learn. My Zettelkasten is slowly building with ideas that I find interesting. It's like a conversation with myself since I have to make some effort to connect a note to an existing note.
+
+I found the Zettelkasten system lacking is when it comes to STEM-related notes. Topics that lean towards the humanities (philosophy, sociology, etc) tend to do quite well as I find them easier to connect. However, highly technical notes like walkthroughs on programming do poorly as they are very specific. Perhaps more abstract technical concepts would do well in the Zettelkasten system.
+
+For now, I am enjoying the process of piecing together and expanding ideas that caught my attention with smart notes. Highly recommend the book.
 
 ### Favourite Quote
 
 > "Writing, taking notes and thinking about how ideas connect is exactly the kind of elaboration that is needed to learn. Not learning from what we read because we don’t take the time to elaborate on it is the real waste of time."
 > 
-> \- Sönke Ahrens, _How to Take Smart Notes_
+> \- Sönke Ahrens, How to Take Smart Notes
