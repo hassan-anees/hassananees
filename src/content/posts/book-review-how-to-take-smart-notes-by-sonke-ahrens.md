@@ -36,7 +36,7 @@ The combination of these notes makes the Zettelkasten. However, I did not find A
 
 Since reading this book, I have shifted the way I learn. My Zettelkasten is slowly building with ideas that I find interesting. It's like a conversation with myself since I have to make some effort to connect a note to an existing note.
 
-I found the Zettelkasten system lacking is when it comes to STEM-related notes. Topics that lean towards the humanities (philosophy, sociology, etc) tend to do quite well as I find them easier to connect. However, highly technical notes like walkthroughs on programming do poorly as they are very specific. Perhaps more abstract technical concepts would do well in the Zettelkasten system.
+While this system is comprehensive it is not perfect. I find it lacking when it comes to STEM-related notes. Topics that lean towards the humanities (philosophy, sociology, etc) tend to do quite well as I find them easier to connect. However, highly technical notes like walkthroughs on programming do poorly as they are very specific. Perhaps more abstract technical concepts would do well in the Zettelkasten system.
 
 For now, I am enjoying the process of piecing together and expanding ideas that caught my attention with smart notes. Highly recommend the book.
 
