@@ -8,16 +8,16 @@ draft: true
 ---
 ### The Book at a High-Level
 
-*   Motivation for learning drops dead when people are not in control of the direction of learning and fail to make connections to existing knowledge.
+*   Motivation for learning drops dead when people are not in control of their direction of learning.
     
 *   The benefit of writing above all else is that it's the best tool for learning and generating insights worth sharing.
     
-*   Ideas should be developed from the bottom-up instead of top-down.
+*   Ideas should be developed from the bottom-up instead of top-down
     
 
 ### Book Impressions
 
-How to Take Smart Notes by Sönke Ahrens was a fun read worth sharing. The book is a great primer on Zettelkastens, but it truly shines when describing how critical writing is when it comes to learning.
+How to Take Smart Notes by Sönke Ahrens was a fun read worth sharing. The book is a great primer on Zettelkastens, but it truly shines when describing the importance of writing when it comes to learning.
 
 The book describes how you can use a Zettelkastens to facilitate learning. A Zettelkasten is a note taking methodology. **Zettel** refers to a slip of paper (a note) and **kasten** meaning a catalog or box. When combined, it roughly translates to slip-box.
 
@@ -27,12 +27,14 @@ Ahrens identifies three types of notes in a Zettelkasten:
 
 1.  Fleeting notes - Notes that capture everyday thoughts. Things you would like to remember for later. Moments of brilliance.
     
-2.  Literature notes - Notes on pieces of literature that caught your attention and that you may want to connect to existing notes.
+2.  Literature notes - Notes on pieces of literature that caught your attention while reading and would be useful to connect to existing notes.
     
-3.  Permanent notes - finalized notes that link to other notes within your Zettelkasten.
+3.  Permanent notes (or Main Notes) - Finalized notes that link to other notes within your Zettelkasten.
     
 
 The combination of these notes make up the Zettelkasten. However, I did not find Ahrens's book to be a clear "how-to" guide to creating a robust Zettelkasten system. Instead, Ahren focuses on the significance of writing when it comes to learning. To be able to grasp a concept you must be able to write it in your own words. That means to teach it to yourself and others. Writing and teaching are the catalysts for true learning.
+
+Since reading this book, I have shifted the way I learn. My Zettelkasten is slowly building with ideas that I find interest in. It's almost like a conversation with myself since I have to make some effort to connect a note to an existing note.
 
 ### Favourite Quote
 
