@@ -34,7 +34,9 @@ Ahrens identifies three types of notes in a Zettelkasten:
 
 The combination of these notes make up the Zettelkasten. However, I did not find Ahrens's book to be a clear "how-to" guide to creating a robust Zettelkasten system. Instead, Ahren focuses on the significance of writing when it comes to learning. To be able to grasp a concept you must be able to write it in your own words. That means to teach it to yourself and others. Writing and teaching are the catalysts for true learning.
 
-Since reading this book, I have shifted the way I learn. My Zettelkasten is slowly building with ideas that I find interest in. It's almost like a conversation with myself since I have to make some effort to connect a note to an existing note.
+Since reading this book, I have shifted the way I learn. My Zettelkasten is slowly building with ideas that I find interest in. It's like a conversation with myself since I have to make some effort to connect a note to an existing note. Where I find the Zettelkasten system lacking is when it comes to STEM related notes. Topics that lean towards the humanities (philosophy, sociology, etc) tend to do quite well as I find them easier to connect. However, highly technical notes like walkthroughs on programming do poorly as they are very specific. Perhaps more abstract technical concepts would do well in the Zettelkasten system. For now, I am enjoying the process of piecing together and expanding ideas that caught my attention with smart notes.
+
+![](../../assets/zettel-ex-1.png)
 
 ### Favourite Quote
 
