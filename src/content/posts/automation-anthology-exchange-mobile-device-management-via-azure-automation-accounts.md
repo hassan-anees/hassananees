@@ -1,6 +1,6 @@
 ---
 author: Hassan Anees
-title: "Automation Anthology: Exchange Mobile Device Management via Azure
+title: "Atomic Automations: Exchange Mobile Device Management via Azure
   Automation Accounts"
 description: Mobile device management
 pubDate: 2025-08-17
@@ -13,3 +13,16 @@ Note that this applies to the to the day-to-day administrative tasks as well as 
 **Scenario:** Let's go with the scenario that we would like to block access.
 
 **What the Manual Process Looks Like**
+
+1.  Go to Exchange Online: [admin.exchange.microsoft.com](http://admin.exchange.microsoft.com)
+    
+2.  Select "Mailboxes"
+    
+3.  Search and select specific user
+    
+4.  Select "Manage mobile devices"
+    
+5.  Click "Block access"
+    
+
+![Exchange Online Mobile Device Management](../../assets/technology/automation-account-exchange/opening-mobile-device-exchange-online.png)
