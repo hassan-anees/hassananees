@@ -26,3 +26,15 @@ Note that this applies to the to the day-to-day administrative tasks as well as 
     
 
 ![Exchange Online Mobile Device Management](../../assets/technology/automation-account-exchange/opening-mobile-device-exchange-online.png)
+
+Doing the above is fine for single instances, but this becomes unfeasible in an enterprise environment where there big batches of new and departing users on a recurring basis or circumstances calls for time-sensitive actions.
+
+### Introducing Azure Automation Accounts
+
+.... details for the automation account
+
+*   Need to create managed system assigned identity
+    
+*   Permissions needed on YOU to make the account: Automation Contributor (Azure Based Permissions)
+    
+*   Permissions needed for the automation account in general (Exchange Admin Role on the account)
