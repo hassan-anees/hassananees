@@ -6,7 +6,7 @@ description: Mobile device management
 pubDate: 2025-08-17
 draft: true
 ---
-Most people find that managing mobile devices on the Exchange Online platform tedious when dealing multiple users. Plenty of time is spent when on-boarding and off-boarding users and even during the incident response process when blocking access. This article is geared towards demonstrating how you can alleviate this pain point with automation accounts.
+Most people find that managing mobile devices on the Exchange Online platform tedious when dealing multiple users. Plenty of time is spent during on-boarding, off-boarding and incident response procedures. This article is geared towards demonstrating how you can alleviate this pain point with automation accounts.
 
 Note that this applies to the to the day-to-day administrative tasks as well as time-sensitive incident response related actions.
 
