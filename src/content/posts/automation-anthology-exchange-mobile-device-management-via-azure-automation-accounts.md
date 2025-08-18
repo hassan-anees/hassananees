@@ -8,7 +8,9 @@ description: I'm going to walk you through how you can use Azure Automation
 pubDate: 2025-08-17
 draft: true
 ---
-Most people find managing mobile devices tedious on the Exchange Online platform when dealing multiple users. Plenty of time is spent during on-boarding, off-boarding and incident response procedures. This article is geared towards demonstrating how you can alleviate this pain point with automation accounts within Azure. In particular, i'm going to walk you through how you can use Azure Automation Accounts to tap into Exchange Online. You'll learn how to:
+Most people find managing mobile devices tedious on the Exchange Online platform when dealing multiple users. Plenty of time is spent during on-boarding, off-boarding and incident response procedures.
+
+This article is geared towards demonstrating how you can alleviate this pain point with Automation Accounts within Azure. I'm going to walk you through how you can use Azure Automation Accounts to tap into Exchange Online. You'll learn how to:
 
 *   Create an Azure Automation Account
     
@@ -23,9 +25,21 @@ Most people find managing mobile devices tedious on the Exchange Online platform
 *   Manage mobile devices with PowerShell
     
 
-**Scenario:** For this demo let's assume that we need to automate a device clean up process which will involve removing account only data and deleting the device.
+**What this article is _NOT_**
 
-**What the Manual Process Looks Like**
+This article is not meant to be a "best-practices" guide on managing Exchange, Managed Identities, or Azure resources. It is meant to demonstrate how you can connect the dots.
+
+With that out of the way, let's have some fun.
+
+**The Scenario:** For this demo let's assume that we need to automate a device clean up process which will involve removing account only data and deleting the device.
+
+### Prerequisites
+
+You will need the _Automation Contributor_ role to create [Automation Accounts](https://learn.microsoft.com/en-us/azure/automation/overview) (an [Azure built-in role](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)). You will also need the _Privileged Role Administrator_ role (an [Entra built-in role](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)) to add permissions to your managed identity.
+
+**The not so fun manual process...**
+
+Before jumping into the automation, let's see how the manual process looks like. We will automate the workflow below.
 
 1.  Go to Exchange Online: [admin.exchange.microsoft.com](http://admin.exchange.microsoft.com)
     
@@ -44,11 +58,8 @@ Doing the above is fine for single instances, but this becomes unfeasible in an 
 
 ### Introducing Azure Automation Accounts
 
+While I said this is not an Azure Automation tutorial, I will give a brief primer. You can think of Automation Accounts as scheduled  
 Automation Accounts can be quite a handy  
 .... details for the automation account
 
-*   Need to create managed system assigned identity
-    
-*   Permissions needed on YOU to make the account: Automation Contributor (Azure Based Permissions)
-    
-*   Permissions needed for the automation account in general (Exchange Admin Role on the account)
+This was meant to be a very brief overview on how you can leverage automation accounts. This is not meant to be a tutorial on managing Exchange, Managed Identities, or
