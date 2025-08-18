@@ -4,8 +4,7 @@ title: "Atomic Automations: Exchange Mobile Device Management with Azure
   Automation Accounts"
 description: I'm going to walk you through how you can use Azure Automation
   Accounts to tap into Exchange Online. This will help everything from
-  day-to-day tasks to more sensitive IR related procedures.Mobile device
-  management can becomes ardous when dealing with a batch of users
+  day-to-day tasks to more sensitive IR related procedures.
 pubDate: 2025-08-17
 draft: true
 ---
