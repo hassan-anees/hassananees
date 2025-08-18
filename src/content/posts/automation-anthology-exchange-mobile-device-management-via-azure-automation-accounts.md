@@ -35,7 +35,7 @@ With that out of the way, let's have some fun.
 
 ### Prerequisites
 
-You will need the _Automation Contributor_ role to create [Automation Accounts](https://learn.microsoft.com/en-us/azure/automation/overview) (an [Azure built-in role](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)). You will also need the _Privileged Role Administrator_ role (an [Entra built-in role](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)) to add permissions to your managed identity.
+You will need the _Automation Contributor_ role (an [Azure built-in role](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)) to create [Automation Accounts](https://learn.microsoft.com/en-us/azure/automation/overview). You will also need the _Privileged Role Administrator_ role (an [Entra built-in role](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)) to add permissions to your managed identity.
 
 **The not so fun manual process...**
 
