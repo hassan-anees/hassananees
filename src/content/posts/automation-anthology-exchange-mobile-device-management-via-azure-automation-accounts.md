@@ -10,19 +10,21 @@ draft: true
 ---
 Most people find managing mobile devices tedious on the Exchange Online platform when dealing multiple users. Plenty of time is spent during on-boarding, off-boarding and incident response procedures.
 
-This article is geared towards demonstrating how you can alleviate this pain point with Automation Accounts within Azure. I'm going to walk you through how you can use Azure Automation Accounts to tap into Exchange Online. You'll learn how to:
+This article is geared towards demonstrating how you can alleviate this pain point with Automation Accounts within Azure. For those coming from AWS, the equivalent would be Systems Manager. For those starting fresh, think of Automation Accounts as cloud-hosted scripts that handle automating a specific task.
 
-*   Create an Azure Automation Account
+I'm going to walk you through how you can use Azure Automation Accounts to tap into Exchange Online. You'll learn how to:
+
+1.  Create an Azure Automation Account
     
-*   Create a managed identity
+2.  Create a managed identity
     
-*   Create a Azure Automation Runbook
+3.  Create a Azure Automation Runbook
     
-*   Assign roles to managed identities
+4.  Assign roles to managed identities
     
-*   Authenticate to Exchange Online with managed Identities
+5.  Authenticate to Exchange Online with managed Identities
     
-*   Manage mobile devices with PowerShell
+6.  Manage mobile devices with PowerShell
     
 
 **What this article is _NOT_**
@@ -56,10 +58,6 @@ Before jumping into the automation, let's see how the manual process looks like.
 
 Doing the above is fine for single instances, but this becomes unfeasible in an enterprise environment where there big batches of new and departing users on a recurring basis or circumstances calls for time-sensitive actions.
 
-### Introducing Azure Automation Accounts
+### Getting Started with Automation Accounts
 
-While I said this is not an Azure Automation tutorial, I will give a brief primer. You can think of Automation Accounts as scheduled  
-Automation Accounts can be quite a handy  
-.... details for the automation account
-
-This was meant to be a very brief overview on how you can leverage automation accounts. This is not meant to be a tutorial on managing Exchange, Managed Identities, or
+1.  Creat
