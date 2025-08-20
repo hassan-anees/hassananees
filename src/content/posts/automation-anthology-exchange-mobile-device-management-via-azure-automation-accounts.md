@@ -7,7 +7,7 @@ description: I'm going to walk you through how you can use Azure Automation
 pubDate: 2025-08-17
 draft: true
 ---
-Most people find Exchange Online management a bit tedious when dealing multiple users. Plenty of time is spent during on-boarding, off-boarding and incident response procedures.
+Most people find Exchange Online management a bit tedious when dealing multiple users. Plenty of time is spent in either on-boarding, off-boarding and incident response procedures.
 
 This article is geared towards demonstrating how you can alleviate this pain point with Automation Accounts within Azure. For those coming from AWS, the equivalent would be Systems Manager. For those starting fresh, think of Automation Accounts as cloud-hosted scripts that handle automating a specific task.
 
