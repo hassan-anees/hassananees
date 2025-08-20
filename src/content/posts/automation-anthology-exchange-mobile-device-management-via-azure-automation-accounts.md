@@ -7,7 +7,7 @@ description: I'm going to walk you through how you can use Azure Automation
 pubDate: 2025-08-17
 draft: true
 ---
-Most people find managing mobile devices tedious on the Exchange Online platform when dealing multiple users. Plenty of time is spent during on-boarding, off-boarding and incident response procedures.
+Most people find Exchange Online management a bit tedious when dealing multiple users. Plenty of time is spent during on-boarding, off-boarding and incident response procedures.
 
 This article is geared towards demonstrating how you can alleviate this pain point with Automation Accounts within Azure. For those coming from AWS, the equivalent would be Systems Manager. For those starting fresh, think of Automation Accounts as cloud-hosted scripts that handle automating a specific task.
 
@@ -32,7 +32,7 @@ This article is not meant to be a "best-practices" guide on managing Exchange, M
 
 With that out of the way, let's have some fun.
 
-**The Scenario:** For this demo let's assume that we need to automate a device clean up process which will involve removing account only data and deleting the device.
+**The Scenario:** For this demo let's assume that we need to automatically block a mobile device from accessing their mail-box.
 
 ### Prerequisites
 
