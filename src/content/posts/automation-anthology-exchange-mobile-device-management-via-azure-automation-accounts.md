@@ -23,7 +23,7 @@ I'm going to walk you through how you can use Azure Automation Accounts to tap i
     
 5.  Authenticate to Exchange Online with managed Identities
     
-6.  Manage mobile devices with PowerShell
+6.  Manage Exchange Online with PowerShell
     
 
 **What this article is _NOT_**
