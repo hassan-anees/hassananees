@@ -36,7 +36,12 @@ With that out of the way, let's have some fun.
 
 ### Prerequisites
 
-You will need the _Automation Contributor_ role (an [Azure built-in role](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)) to create [Automation Accounts](https://learn.microsoft.com/en-us/azure/automation/overview). You will also need the _Privileged Role Administrator_ role (an [Entra built-in role](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)) to add permissions to your managed identity.
+You will need the _Automation Contributor_ role (an [Azure built-in role](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)) to create [Automation Accounts](https://learn.microsoft.com/en-us/azure/automation/overview). You will also need the _Privileged Role Administrator_ role (an [Entra built-in role](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)) to add permissions to your [managed identity](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview). You will also require:
+
+*   An Azure Subscription
+    
+*   A resource group under that Subscription
+    
 
 **The not so fun manual process...**
 
@@ -57,12 +62,23 @@ Before jumping into the automation, let's see how the manual process looks like.
 
 Doing the above is fine for single instances, but this becomes unfeasible in an enterprise environment where there big batches of new and departing users on a recurring basis or circumstances calls for time-sensitive actions.
 
-### Automation Kick-Off: Getting Started with Automation Accounts
+### Automation Kick-Off: Creating the Automation Account
 
-If you have not already, elevate to Automation Contributor by heading over to [Privileged Identity Management (PIM)](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/).
+If you are leveraging [Privileged Identity Management (PIM)](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) for access management, now is the time to elevate to Automation Contributor.
 
 1.  Head on over to [portal.azure.com](http://portal.azure.com)
     
-2.  Search for "Automation Account"
+2.  Search for **Automation Account**
     
-3.  Click on "
+3.  Click on **Create**
+    
+4.  Enter Automation Account details (Name, Subscription, Resource group, Region)
+    
+5.  Under the _Advanced_ tab, ensure that **System-assigned** identity is enabled
+    
+6.  For the _Networking_ tab, select **public access** (utilizing **private access** requires you to set up a **private endpoint** and **vnets** which = $$$ and complexity. This is a POC)
+    
+7.  Review and click **Create**
+    
+
+![](../../assets/technology/automation-account-exchange/creating-automation-account.png)
