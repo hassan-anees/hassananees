@@ -17,7 +17,7 @@ I'm going to walk you through how you can use Azure Automation Accounts to tap i
     
 2.  Create a managed identity
     
-3.  Create a Azure Automation Runbook
+3.  Create a Runbook
     
 4.  Assign roles to managed identities
     
@@ -28,11 +28,11 @@ I'm going to walk you through how you can use Azure Automation Accounts to tap i
 
 **What this article is _NOT_**
 
-This article is not meant to be a "best-practices" guide on managing Exchange, Managed Identities, or Azure resources. It is meant to demonstrate how you can connect the dots.
+This article is not meant to be a "best-practices" guide on managing Exchange Online, Managed Identities, or Azure resources. It is meant to demonstrate how you can connect the dots.
 
 With that out of the way, let's have some fun.
 
-**The Scenario:** For this demo let's assume that we need to automatically block a mobile device from accessing their mail-box.
+**The Scenario:** For this demo, we will wipe company data from a mobile device listed in Exchange Online in a safe and reliable way.
 
 ### Prerequisites
 
@@ -50,13 +50,19 @@ Before jumping into the automation, let's see how the manual process looks like.
     
 4.  Select "Manage mobile devices"
     
-5.  Click "Account Only Remote Wipe Device" followed by "Delete Device"
+5.  Click "Account Only Remote Wipe Device"
     
 
 ![Exchange Online Mobile Device Management](../../assets/technology/automation-account-exchange/opening-mobile-device-exchange-online.png)
 
 Doing the above is fine for single instances, but this becomes unfeasible in an enterprise environment where there big batches of new and departing users on a recurring basis or circumstances calls for time-sensitive actions.
 
-### Getting Started with Automation Accounts
+### Automation Kick-Off: Getting Started with Automation Accounts
 
-1.  Creat
+If you have not already, elevate to Automation Contributor by heading over to [Privileged Identity Management (PIM)](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/).
+
+1.  Head on over to [portal.azure.com](http://portal.azure.com)
+    
+2.  Search for "Automation Account"
+    
+3.  Click on "
