@@ -42,6 +42,8 @@ You will need the _Automation Contributor_ role (an [Azure built-in role](https:
     
 *   A resource group under that Subscription (this is where the Automation account will live)
     
+*   Exchange Online Resource
+    
 
 **The not so fun manual process...**
 
@@ -64,7 +66,7 @@ Doing the above is fine for single instances, but this becomes unfeasible in an 
 
 ### Getting Started
 
-Let's create the Automation account called "Automation-Account-Workshop". We will also be creating a managed identity. To do this, you need the Automation Contributor role, so if you are using [Privileged Identity Management (PIM)](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) to manage accounts then make sure to elevate under the correct Azure scope.
+Let's create the Automation account called "Automation-Account-Workshop". We will also be creating a managed identity. To do this, you need the Automation Contributor role, so if you are using [Privileged Identity Management (PIM)](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) to manage accounts then make sure to elevate under the correct Azure scope. Now do the following to create the Automation account:
 
 1.  Head on over to [portal.azure.com](http://portal.azure.com)
     
@@ -81,4 +83,10 @@ Let's create the Automation account called "Automation-Account-Workshop". We wil
 7.  Review and click **Create**
     
 
-![](../../assets/technology/automation-account-exchange/creating-automation-account-workshop.png)
+![Creating an Automation account within Azure](../../assets/technology/automation-account-exchange/creating-automation-account-workshop.png)
+
+Before jumping into anything else, we need to check if our Exchange Resource is up
+
+Now that we have created the Automation account, we finish setting up the enviornment by downloaded the necessary dependencies needed to access Exchange Online.
+
+Now that we have created the Automation account, we can create the associated runbook (a fancy name for a cloud-hosted script) that will.
