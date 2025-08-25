@@ -13,18 +13,18 @@ This article will demonstrate how you can alleviate these pain points with Autom
 
 I'm going to walk you through how you can use Azure Automation accounts to tap into Exchange Online. You'll learn how to:
 
-1.  Create an Azure Automation account
+1.  Create a Azure Automation account and managed identity
     
-2.  Create a managed identity
+2.  Assign permissions to managed identities
     
-3.  Assign permissions and roles to managed identities
+3.  Create a Runbook
     
-4.  Create a Runbook
+4.  Authenticate to Exchange Online with managed Identities
     
-5.  Authenticate to Exchange Online with managed Identities
+5.  Manage Exchange Online with PowerShell
     
-6.  Manage Exchange Online with PowerShell
-    
+
+You can skip to the [Getting Started](#getting-started) section if you already know the basic requirements.
 
 **What this article is _NOT_**
 
@@ -32,17 +32,17 @@ This article is not meant to be a "best-practices" guide on managing Exchange On
 
 With that out of the way, let's have some fun.
 
-**The Scenario:** For this demo, we will wipe company data from a mobile device listed in Exchange Online in a safe and reliable way.
+**The Scenario:** For this demo, we will wipe company data from a mobile device listed in Exchange Online in a safe and reliable way with an Automation account.
 
 ### Prerequisites
 
-You will need the _Automation Contributor_ role (an [Azure built-in role](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)) to create [Automation accounts](https://learn.microsoft.com/en-us/azure/automation/overview). Make you have this role under the correct Azure resource where your Automation account will live. You will also need the _Privileged Role Administrator_ role (an [Entra built-in role](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)) to add permissions to your [managed identity](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview). Both roles can be permanently assigned or elevated to using [Privileged Identity Management (PIM)](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/). You will also require:
+You will need the _Automation Contributor_ role (an [Azure built-in role](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)) to create [Automation accounts](https://learn.microsoft.com/en-us/azure/automation/overview). Make sure you have this role under the correct Azure resource where your Automation account will live. You will also need the _Privileged Role Administrator_ role (an [Entra built-in role](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)) to add permissions to your [managed identity](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview). Both roles can be permanently assigned or elevated to by using [Privileged Identity Management (PIM)](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/). You will also require:
 
 *   An Azure Subscription
     
 *   A resource group under that Subscription (this is where the Automation account will live)
     
-*   Office 365 Exchange Online resource within Entra ID. Below is a snippet of PowerShell to check if you do. If not, utilize this [resource](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps#what-to-do-if-the-office-365-exchange-online-resource-is-not-available-in-microsoft-entra-id)
+*   Office 365 Exchange Online resource within Entra ID. Below is a snippet of PowerShell that checks if the resource exists. If nothing shows up, then you will have to set this up. Utilize this [resource](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps#what-to-do-if-the-office-365-exchange-online-resource-is-not-available-in-microsoft-entra-id) to do so
     
 
 ```powershell
@@ -51,9 +51,9 @@ Connect-MgGraph
 Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
 ```
 
-**Some Context: The not so fun manual process...**
+**The Baseline Manual Process**
 
-For some reference, below is the manual workflow.
+For some reference, below is the manual workflow that will be automated.
 
 1.  Go to Exchange Online: [admin.exchange.microsoft.com](http://admin.exchange.microsoft.com)
     
@@ -74,7 +74,7 @@ Doing the above is fine for single instances, but this becomes unfeasible in an 
 
 Let's create the Automation account called "Automation-Account-Workshop". We will also be creating a managed identity in this step.
 
-1.  Elevate with [PIM](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) to the Azure built-in role Automation Contributor _(if applicable, otherwise skip)_
+1.  Elevate to the Automation Contributor role with [PIM](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) _(if applicable, otherwise skip)_
     
 2.  Head on over to [portal.azure.com](http://portal.azure.com)
     
@@ -93,15 +93,22 @@ Let's create the Automation account called "Automation-Account-Workshop". We wil
 
 ![Creating an Automation account within Azure](../../assets/technology/automation-account-exchange/creating-automation-account-workshop.png)
 
-Now that we have created the Automation account we can finish setting up the managed identity piece by granting it the necessary permissions and Entra roles.
+Now that we have created the Automation account we can finish setting up the managed identity piece by granting it the necessary permissions.
 
 ### Granting Permissions to the Managed Identity
 
-We are doing two things here.
+We need to assign both permissions and an Entra role to the managed identity. Remember, a **permission** is granular, usually a single action whereas a **role** is a collection of permissions. At a high-level, the managed identity will be able to do the following:
 
-1.  Giving the ability to reach out to Exchange Online
+1.  Reach out to Exchange Online (managed identity is assigned a **permission**)
     
-2.  Perform tasks within Exchange Online (limited to what the assigned role can do).
+2.  Perform tasks within Exchange Online (managed identity is assigned an Entra **role**)
+    
+
+We'll start with the first part of assigning the managed identity the permission needed to reach out to Exchange Online.
+
+1.  Elevate to the Privileged Role Administrator role with [PIM](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) _(if applicable, otherwise skip)_
+    
+2.  Navigate to Automation account [portal.azure.com](http://portal.azure.com) >. **Automation accounts >** Search click for **Automation-Account-Workshop**
     
 
 What we are doing in this section is granting the necessary permissions and roles for our Automation account to reach out to Exchange Online and perform any tasks we There are two parts to this section.
