@@ -1,6 +1,6 @@
 ---
 author: Hassan Anees
-title: "Automation Anthology: Tap into Exchange Online with Azure Automation Accounts"
+title: Tap into Exchange Online with Azure Automation Accounts
 description: I'm going to walk you through how you can use Azure Automation
   accounts to tap into Exchange Online. This will help everything from
   day-to-day tasks to more sensitive IR related procedures.
@@ -110,31 +110,36 @@ We'll start with the first part of assigning the managed identity the permission
     
 2.  Navigate to Automation account [portal.azure.com](http://portal.azure.com) > **Automation accounts >** Search and click **Automation-Account-Workshop**
     
-3.  Navigate to **Account Settings** > **Identity** \> Copy the **Object** **(principal) Id**. We will use this later in our script to assign permissions.
+3.  Navigate to **Account Settings** > **Identity** > Copy the **Object** **(principal) Id**. We will use this later in our script to assign permissions
     
 
-![](../../assets/technology/automation-account-exchange/enabling-system-assigned-managed-identity.png)
+<p style="text-align: center"><img src="../../assets/technology/automation-account-exchange/copying-managed-identity.png" alt="Grabbing the object id for the managed identity"></p>
 
-4.  Assign the **Exchange.ManageAsApp** API permission for the managed identity to call Exchange Online by running the script below. Note that we are replacing MI\_ID variable with the value obtained from the last step
+4.  Execute the script below to assign the **Exchange.ManageAsApp** API permission to the managed identity which allows it call Exchange Online.
+    
+    > Note that we are replacing MI\_ID variable with the value obtained from the last step. For more information on this step, use this [reference](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps#step-4-grant-the-exchangemanageasapp-api-permission-for-the-managed-identity-to-call-exchange-online)
     
 
 ```powershell
 # assigning-permissions-to-managed-identity.ps1
-#Connecting to assign permissions via Microsoft Graph
+# Connecting to assign permissions via Microsoft Graph
 Connect-MgGraph -Scopes AppRoleAssignment.ReadWrite.All,Application.Read.All
 
 $MI_ID = "<object-id-obtained-in-previous-step>"
 
+# The id (GUID) for the Exchange.ManageAsApp API permission. This is the same for all organizations
 $AppRoleID = "dc50a0fb-09a3-484d-be87-e023b12c6440"
 
+# This value is different for all organizations
 $ResourceID = (Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'").Id
 
+# Here you are assigning the permissions
 New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $MI_ID -PrincipalId $MI_ID -AppRoleId $AppRoleID -ResourceId $ResourceID
 ```
 
-What we are doing in this section is granting the necessary permissions and roles for our Automation account to reach out to Exchange Online and perform any tasks we There are two parts to this section.
+After the successful execution of the script, our managed identity has the authorization to reach out to Exchange Online. If the prior step did not work, double check the prerequisites and utilize this [reference](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps#step-4-grant-the-exchangemanageasapp-api-permission-for-the-managed-identity-to-call-exchange-online).
 
-First is granting the Exchange.ManageAsApp API permission for the managed identity. This will let the managed identity reach out to Exchange Online. Second is granting the managed Identity an Entra role which will allow it to
+We'll now move on to the second part of assigning the managed identity the role needed to execute actions within Exchange Online. For the purpose of simplicity, we will go more broader than necessary by assigning a privileged role like Exchange Administrator. Note that you can go much more granular if you know exactly what types of actions you want
 
 Now that we have created the Automation account we can finish setting up the managed identity piece by granting it the necessary Entra roles. For the purpose of this demo, we will go broader than necessary by assigning the managed identity.
 
