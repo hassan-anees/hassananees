@@ -17,7 +17,7 @@ I'm going to walk you through how you can use Azure Automation accounts to tap i
     
 2.  Assign permissions to managed identities
     
-3.  Create a Runbook that authenticates to and manages Exchange Online with managed Identities
+3.  Create a Runbook that authenticates to and manages Exchange Online
     
 
 You can skip to the [Getting Started](#getting-started) section if you already know the basic requirements.
