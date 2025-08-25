@@ -113,7 +113,7 @@ We'll start with the first part of assigning the managed identity the permission
 3.  Navigate to **Account Settings** > **Identity** > Copy the **Object** **(principal) Id**. We will use this later in our script to assign permissions
     
 
-<p style="text-align: center"><img src="../../assets/technology/automation-account-exchange/copying-managed-identity.png" alt="Grabbing the object id for the managed identity"></p>
+![](../../assets/technology/automation-account-exchange/copying-managed-identity.png)
 
 4.  Execute the script below to assign the **Exchange.ManageAsApp** API permission to the managed identity which allows it call Exchange Online.
     
@@ -143,7 +143,7 @@ We'll now move on to the second part of assigning the managed identity the role 
 
 Now that we have created the Automation account we can finish setting up the managed identity piece by granting it the necessary Entra roles. For the purpose of this demo, we will go broader than necessary by assigning the managed identity.
 
-1.  Open the
+1.  Open the stuff
     
 2.  Elevate with [PIM](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) to the Entra built-in role Privileged Role Administrator _(if applicable, otherwise skip)_
     
