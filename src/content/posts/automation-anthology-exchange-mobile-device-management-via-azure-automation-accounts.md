@@ -110,6 +110,27 @@ We'll start with the first part of assigning the managed identity the permission
     
 2.  Navigate to Automation account [portal.azure.com](http://portal.azure.com) >. **Automation accounts >** Search click for **Automation-Account-Workshop**
     
+3.  Navigate to **Account Settings** > **Identity** \> Copy the **Object** **(principal) Id**. We will use this later in our script to assign permissions.
+    
+
+![](../../assets/technology/automation-account-exchange/enabling-system-assigned-managed-identity.png)
+
+4.  Assign the **Exchange.ManageAsApp** API permission for the managed identity to call Exchange Online by running the scrip below. Note that we are replacing. MI\_ID with the value obtained from the last step
+    
+
+```powershell
+# assigning-permissions-to-managed-identity.ps1
+#Connecting to assign permissions via Microsoft Graph
+Connect-MgGraph -Scopes AppRoleAssignment.ReadWrite.All,Application.Read.All
+
+$MI_ID = "<object-id-obtained-in-previousstep>"
+
+$AppRoleID = "dc50a0fb-09a3-484d-be87-e023b12c6440"
+
+$ResourceID = (Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'").Id
+
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $MI_ID -PrincipalId $MI_ID -AppRoleId $AppRoleID -ResourceId $ResourceID
+```
 
 What we are doing in this section is granting the necessary permissions and roles for our Automation account to reach out to Exchange Online and perform any tasks we There are two parts to this section.
 
@@ -121,8 +142,6 @@ Now that we have created the Automation account we can finish setting up the man
     
 2.  Elevate with [PIM](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) to the Entra built-in role Privileged Role Administrator _(if applicable, otherwise skip)_
     
-
-![](../../assets/technology/automation-account-exchange/enabling-system-assigned-managed-identity.png)
 
 For this demo, we are going to be a bit more by downloaded the necessary dependencies needed to access Exchange Online.
 
