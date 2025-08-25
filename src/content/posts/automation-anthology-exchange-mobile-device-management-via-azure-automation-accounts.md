@@ -51,7 +51,7 @@ Connect-MgGraph
 Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
 ```
 
-**The Baseline Manual Process**
+### The Baseline Manual Process
 
 For some reference, below is the manual workflow that will be automated.
 
@@ -101,21 +101,21 @@ We need to assign both permissions and an Entra role to the managed identity. Re
 
 1.  Reach out to Exchange Online (managed identity is assigned a **permission**)
     
-2.  Perform tasks within Exchange Online (managed identity is assigned an Entra **role**)
+2.  Perform tasks within Exchange Online (managed identity is assigned a **role**)
     
 
 We'll start with the first part of assigning the managed identity the permission needed to reach out to Exchange Online.
 
 1.  Elevate to the Privileged Role Administrator role with [PIM](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) _(if applicable, otherwise skip)_
     
-2.  Navigate to Automation account [portal.azure.com](http://portal.azure.com) >. **Automation accounts >** Search click for **Automation-Account-Workshop**
+2.  Navigate to Automation account [portal.azure.com](http://portal.azure.com) > **Automation accounts >** Search and click **Automation-Account-Workshop**
     
 3.  Navigate to **Account Settings** > **Identity** \> Copy the **Object** **(principal) Id**. We will use this later in our script to assign permissions.
     
 
 ![](../../assets/technology/automation-account-exchange/enabling-system-assigned-managed-identity.png)
 
-4.  Assign the **Exchange.ManageAsApp** API permission for the managed identity to call Exchange Online by running the scrip below. Note that we are replacing. MI\_ID with the value obtained from the last step
+4.  Assign the **Exchange.ManageAsApp** API permission for the managed identity to call Exchange Online by running the script below. Note that we are replacing MI\_ID variable with the value obtained from the last step
     
 
 ```powershell
@@ -123,7 +123,7 @@ We'll start with the first part of assigning the managed identity the permission
 #Connecting to assign permissions via Microsoft Graph
 Connect-MgGraph -Scopes AppRoleAssignment.ReadWrite.All,Application.Read.All
 
-$MI_ID = "<object-id-obtained-in-previousstep>"
+$MI_ID = "<object-id-obtained-in-previous-step>"
 
 $AppRoleID = "dc50a0fb-09a3-484d-be87-e023b12c6440"
 
