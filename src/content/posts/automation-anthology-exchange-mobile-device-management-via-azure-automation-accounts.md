@@ -139,7 +139,7 @@ New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $MI_ID -PrincipalId 
 
 After the successful execution of the script, our managed identity has the authorization to reach out to Exchange Online. If the prior step did not work, double check the prerequisites and utilize this [reference](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps#step-4-grant-the-exchangemanageasapp-api-permission-for-the-managed-identity-to-call-exchange-online).
 
-We'll now move on to the second part of assigning the managed identity the role needed to execute actions within Exchange Online. For the purpose of simplicity, we will go more broader than necessary by assigning a privileged role like Exchange Administrator. Note that you can go much more granular if you know exactly what types of actions you want
+We'll now move on to the second part of assigning the managed identity the role needed to execute actions within Exchange Online. For the purpose of simplicity, we will go more broader than necessary by assigning a privileged role like Exchange Administrator. You you can go much more granular if you know exactly what types of actions you want and
 
 Now that we have created the Automation account we can finish setting up the managed identity piece by granting it the necessary Entra roles. For the purpose of this demo, we will go broader than necessary by assigning the managed identity.
 
