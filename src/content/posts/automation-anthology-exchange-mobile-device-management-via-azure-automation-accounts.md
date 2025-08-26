@@ -139,15 +139,76 @@ We'll move on to the second part of assigning the role needed to execute actions
 
 1.  Navigate to [entra.microsoft.com](http://entra.microsoft.com) > **Roles**
     
-2.  Elevate with [PIM](https://hassananees.com/posts/simplifying-access-control-with-privileged-identity-management-pim-in-entra-id/) to the Entra built-in role Privileged Role Administrator _(if applicable, otherwise skip)_
+2.  Select **Roles & admins**
+    
+3.  Search and select **Exchange Administrator**
+    
+4.  Click on **Add assignments**
+    
+5.  Select **members**
+    
+6.  Copy and paste the object id of the managed identity (it will be seen as an enterprise application)
+    
+7.  Hit **Select**
     
 
-For this demo, we are going to be a bit more by downloaded the necessary dependencies needed to access Exchange Online.
+![Assigning Entra role(s) to a managed identity](../../assets/technology/automation-account-exchange/assign-entra-roles.png)
 
-Now that we have created the Automation account, we can create the associated runbook (a fancy name for a cloud-hosted script) that will.
+This wraps up the roles and permissions part for the managed identity. We'll move to the final phase of creating the runbook within the Automation account.
 
-```python
-print('helllo')
+### Runbook Creation
+
+We've done the leg work to to ensure that the managed identity has the right access. This section will focus on creating a runbook that will tap into Exchange Online and execute some actions. To expand, runbooks is a fancy term for the scripts hosted within the Automation account.
+
+So let's jump back to the Automation account to finish configuring the environment and creating the runbook.
+
+1.  Navigate to [portal.azure.com](http://portal.azure.com) \> **Automation account**
+    
+2.  Search and select "Automation-Account-Workshop"
+    
+3.  Click on **Process Automation** \> **Runbooks** \> Click on **Create a runbook**
+    
+4.  Under the _Basics_ tab, select **PowerShell** for the **Runbook type** and **5.1** for the **Runtime version**
+    
+5.  Enter the details for the remaining items and click **Create**
+    
+
+![](../../assets/technology/automation-account-exchange/create-runbook-exchange.png)
+
+We have created the runbook, but now we require the associated script to execute our action to remove company data.
+
+```powershell
+# remove-company-data.ps1
+
+param (
+    [Parameter(Mandatory=$true)]
+    [string]$UserPrincipalName
+)
+
+#Connecting via managed identity. That managed identity is using ExchangeAsApp.api - leveraged from the enterprise application for exchange online within Entra
+Connect-ExchangeOnline -ManagedIdentity -Organization <your-organization>.onmicrosoft.com
+
+
+Get-MobileDevice -Mailbox $UserPrincipalName | ForEach-Object {
+    Write-Output "-------------------------------"
+    Write-Output "The following device will be deleted"
+    Write-Output "Friendly Name: $($_.FriendlyName)" 
+    Write-Output "Identity: $($_.Identity)"
+    Write-Output "DeviceId: $($_.DeviceId)"
+    Write-Output "DeviceOS: $($_.DeviceOS)" 
+    Write-Output "DeviceType: $($_.DeviceType)"
+    Write-Output "DeviceUserAgent: $($_.DeviceUserAgent)"
+    Write-Output "EAS Version: $($_.ClientVersion)"
+    Write-Output "-------------------------------"
+
+    $errorMsg = $null
+    Clear-MobileDevice -AccountOnly -Identity $_.Identity -NotificationEmailAddresses "youremail@yourorganization.com" -Confirm:$false -ErrorAction SilentlyContinue -ErrorVariable errorMsg
+}
+
 ```
 
-There is some things needed to be done
+1.  Select **Edit** > **Edit in portal**
+    
+2.  Add your PowerShell script here. I'll be providing a basic PowerShell script below that will
+    
+3.  The following script will take in a parameter
