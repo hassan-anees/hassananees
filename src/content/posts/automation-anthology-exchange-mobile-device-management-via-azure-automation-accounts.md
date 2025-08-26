@@ -53,13 +53,13 @@ For some reference, below is the manual workflow that will be automated.
 
 1.  Go to Exchange Online: [admin.exchange.microsoft.com](http://admin.exchange.microsoft.com)
     
-2.  Select "Mailboxes"
+2.  Select **Mailboxes**
     
-3.  Search and select specific user
+3.  Search and select a specific user
     
-4.  Select "Manage mobile devices"
+4.  Select **Manage mobile devices**
     
-5.  Click "Account Only Remote Wipe Device"
+5.  Click **Account Only Remote Wipe Device**
     
 
 ![Exchange Online Mobile Device Management](../../assets/technology/automation-account-exchange/opening-mobile-device-exchange-online.png)
@@ -147,3 +147,9 @@ Now that we have created the Automation account we can finish setting up the man
 For this demo, we are going to be a bit more by downloaded the necessary dependencies needed to access Exchange Online.
 
 Now that we have created the Automation account, we can create the associated runbook (a fancy name for a cloud-hosted script) that will.
+
+```python
+print('helllo')
+```
+
+There is some things needed to be done
