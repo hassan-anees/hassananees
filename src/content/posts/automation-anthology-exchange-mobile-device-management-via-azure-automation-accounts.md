@@ -20,7 +20,7 @@ I'm going to walk you through how you can use Azure Automation accounts to tap i
 3.  Create a Runbook that authenticates to and manages Exchange Online
     
 
-You can skip to the [Getting Started](#getting-started) section if you already know the basic requirements.
+You can skip to the [Getting Started](#getting-started) section want to jump into technical weeds and already know the basic requirements. Otherwise, continue on for a softer introduction.
 
 **What this article is _NOT_**
 
@@ -162,11 +162,11 @@ We've done the leg work to to ensure that the managed identity has the right acc
 
 So let's jump back to the Automation account to finish configuring the environment and creating the runbook.
 
-1.  Navigate to [portal.azure.com](http://portal.azure.com) \> **Automation account**
+1.  Navigate to [portal.azure.com](http://portal.azure.com) > **Automation account**
     
 2.  Search and select "Automation-Account-Workshop"
     
-3.  Click on **Process Automation** \> **Runbooks** \> Click on **Create a runbook**
+3.  Click on **Process Automation** > **Runbooks** > Click on **Create a runbook**
     
 4.  Under the _Basics_ tab, select **PowerShell** for the **Runbook type** and **5.1** for the **Runtime version**
     
@@ -204,7 +204,6 @@ Get-MobileDevice -Mailbox $UserPrincipalName | ForEach-Object {
     $errorMsg = $null
     Clear-MobileDevice -AccountOnly -Identity $_.Identity -NotificationEmailAddresses "youremail@yourorganization.com" -Confirm:$false -ErrorAction SilentlyContinue -ErrorVariable errorMsg
 }
-
 ```
 
 1.  Select **Edit** > **Edit in portal**
