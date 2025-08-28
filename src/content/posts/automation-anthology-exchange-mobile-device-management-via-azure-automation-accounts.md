@@ -158,7 +158,7 @@ This wraps up the roles and permissions part for the managed identity. We'll mov
 
 ### Runbook Creation and Configuration
 
-We've done the leg work to to ensure that the managed identity has the right access. This section will focus on creating a runbook that will tap into Exchange Online and execute some actions.
+We've done the leg work to ensure that the managed identity has the right access. This section will focus on creating a runbook that will tap into Exchange Online and execute some actions.
 
 Let's jump back to the Automation account to finish configuring the environment and creating the runbook. First we'll need to install three modules to ensure that our runbook has the requires dependencies to run.
 
