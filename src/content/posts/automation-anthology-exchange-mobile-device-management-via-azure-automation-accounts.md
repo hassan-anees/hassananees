@@ -223,6 +223,7 @@ Get-MobileDevice -Mailbox $UserPrincipalName | ForEach-Object {
     Write-Output "The following device will be deleted"
     $_ | Format-List  # This shows the entire object in a readable format
     Write-Output "-------------------------------"
+
 # Using the -AccountOnly flag is needed to remove the container only
    Clear-MobileDevice -AccountOnly -Identity $_.Identity -NotificationEmailAddresses "youremail@yourorganization.com" -Confirm:$false
 }
