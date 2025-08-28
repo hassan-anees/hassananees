@@ -186,7 +186,7 @@ We have created the runbook, but now we require the script to execute our action
 4.  Wipes the container (Exchange mailbox) for each device
     
 
-> **Note that you should test and validate within your own environment first**. Utilize this [resource](https://learn.microsoft.com/en-us/exchange/clients/exchange-activesync/remote-wipe) to understand the impact of utilizing the "Clear-MobileDevice" command as using it incorrectly can **wipe the entire device**. The goal is to wipe the container (Exchange mailbox) only
+> **Note that you should test and validate within your own environment first**. Utilize this [resource](https://learn.microsoft.com/en-us/exchange/clients/exchange-activesync/remote-wipe) to understand the impact of utilizing the "Clear-MobileDevice" command as using it incorrectly can potentially **wipe the entire device**. The goal is to wipe the container (Exchange mailbox) only
 
 ```powershell
 # remove-company-data.ps1
