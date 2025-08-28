@@ -170,11 +170,11 @@ Let's jump back to the Automation account to finish configuring the environment 
     
 4.  Click on **Add a module**
     
-5.  Select **Browse from gallery** >Select **Click here to browse from gallery** > Search for **PowerShellGet**
+5.  Select **Browse from gallery** >Select **Click here to browse from gallery** > Search for **PackageManagement**
     
 6.  Choose **Runtime version** as **5.1**
     
-7.  Repeat for steps 4 - 6 for the **PackageManagement** and **ExchangeOnlineManagement** modules
+7.  Repeat for steps 4 - 6 for the **PowerShellGet** and **ExchangeOnlineManagement** modules
     
 
 ![](../../assets/technology/automation-account-exchange/add-module-exchange.png)
