@@ -231,10 +231,10 @@ Get-MobileDevice -Mailbox $UserPrincipalName | ForEach-Object {
 
 The sample script is intended to be a basic starting point. You can add input validation, format the data, and add try-catch statements. Test within your own environment as the wipe command will behave differently depending whether the mailbox on a native mail client or an outlook client. From my brief testing I found the following.
 
-| <p style="text-align: center">Device OS</p> | <p style="text-align: center">Outlook Mail Client</p> | <p style="text-align: center">Native Mail Client</p> |
+| Device OS | Outlook Mail Client | Native Mail Client |
 | --- | --- | --- |
-| <p style="text-align: center">iOS</p> | <p style="text-align: center"><strong>✅ (container only wipe)</strong></p> | <p style="text-align: center">✅ <strong>(container only wipe)</strong></p> |
-| <p style="text-align: center">Android</p> | <p style="text-align: center">✅ <strong>(container only wipe)</strong></p> | <p style="text-align: center">❌ <strong>(fails container only wipe)</strong></p> |
+| iOS | **✅ (container only wipe)** | ✅ **(container only wipe)** |
+| Android | ✅ **(container only wipe)** | ❌ **(fails container only wipe)** |
 
 Let's now add the script to the Automation account
 
