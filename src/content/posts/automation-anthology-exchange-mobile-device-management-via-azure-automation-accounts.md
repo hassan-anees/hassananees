@@ -156,11 +156,30 @@ We'll move on to the second part of assigning the role needed to execute actions
 
 This wraps up the roles and permissions part for the managed identity. We'll move to the final phase of creating the runbook within the Automation account.
 
-### Runbook Creation
+### Runbook Creation and Configuration
 
-We've done the leg work to to ensure that the managed identity has the right access. This section will focus on creating a runbook that will tap into Exchange Online and execute some actions. To expand, runbooks is a fancy term for the scripts hosted within the Automation account.
+We've done the leg work to to ensure that the managed identity has the right access. This section will focus on creating a runbook that will tap into Exchange Online and execute some actions.
 
-So let's jump back to the Automation account to finish configuring the environment and creating the runbook.
+So let's jump back to the Automation account to finish configuring the environment and creating the runbook. First we'll need to install three modules to ensure that our runbook has the requires dependencies to run.
+
+1.  Navigate to [portal.azure.com](http://portal.azure.com) > **Automation account**
+    
+2.  Search and select "Automation-Account-Workshop"
+    
+3.  Click on **Shared Resources** > **Modules**
+    
+4.  Click on **Add a module**
+    
+5.  Select **Browse from gallery** >Select **Click here to browse from gallery** > Search for **PowerShellGet**
+    
+6.  Choose **Runtime version** as **5.1**
+    
+7.  Repeat for steps 4 - 6 for the **PackageManagement** and **ExchangeOnlineManagement** modules
+    
+
+![](../../assets/technology/automation-account-exchange/exchange-modules.png)
+
+Now to create the runbook (think a runbook as a fancy name for a cloud hosted script).
 
 1.  Navigate to [portal.azure.com](http://portal.azure.com) > **Automation account**
     
