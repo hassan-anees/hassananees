@@ -28,7 +28,7 @@ This article is not meant to be a "best-practices" guide on managing Exchange On
 
 With that out of the way, let's have some fun.
 
-**The Scenario:** For this demo, we will wipe company data from a mobile device listed in Exchange Online in a safe and reliable way with an Automation account.
+**The Scenario:** For this demo, we will wipe an Exchange mailbox on a mobile device. In essence, we are removing company data from a mobile device and preventing it from connecting to Exchange.
 
 ### Prerequisites
 
@@ -175,7 +175,18 @@ So let's jump back to the Automation account to finish configuring the environme
 
 ![](../../assets/technology/automation-account-exchange/create-runbook-exchange.png)
 
-We have created the runbook, but now we require the associated script to execute our action to remove company data.
+We have created the runbook, but now we require the script to execute our actions on Exchange Online. I'll provide a basic script that will do the following.
+
+1.  Take in a user principal name (the target user)
+    
+2.  Connect to Exchange Online via managed identity
+    
+3.  Lists the mobile devices on which the mailbox is synced
+    
+4.  Wipes the container (Exchange mailbox) for each device
+    
+
+> **Note that you should test and validate within your own environment first**. Utilize this [resource](https://learn.microsoft.com/en-us/exchange/clients/exchange-activesync/remote-wipe) to understand the impact of utilizing the "Clear-MobileDevice" command as using it incorrectly can **wipe the entire device**. The goal is to wipe the container (Exchange mailbox) only
 
 ```powershell
 # remove-company-data.ps1
@@ -185,29 +196,28 @@ param (
     [string]$UserPrincipalName
 )
 
-#Connecting via managed identity. That managed identity is using ExchangeAsApp.api - leveraged from the enterprise application for exchange online within Entra
-Connect-ExchangeOnline -ManagedIdentity -Organization <your-organization>.onmicrosoft.com
-
+# Connecting via managed identity. That managed identity is using ExchangeAsApp.api - leveraged from the enterprise application for Exchange Online within Entra
+Connect-ExchangeOnline -ManagedIdentity -Organization "<your-organization>.onmicrosoft.com"
 
 Get-MobileDevice -Mailbox $UserPrincipalName | ForEach-Object {
     Write-Output "-------------------------------"
     Write-Output "The following device will be deleted"
-    Write-Output "Friendly Name: $($_.FriendlyName)" 
-    Write-Output "Identity: $($_.Identity)"
-    Write-Output "DeviceId: $($_.DeviceId)"
-    Write-Output "DeviceOS: $($_.DeviceOS)" 
-    Write-Output "DeviceType: $($_.DeviceType)"
-    Write-Output "DeviceUserAgent: $($_.DeviceUserAgent)"
-    Write-Output "EAS Version: $($_.ClientVersion)"
+    $_ | Format-List  # This shows the entire object in a readable format
     Write-Output "-------------------------------"
-
-    $errorMsg = $null
-    Clear-MobileDevice -AccountOnly -Identity $_.Identity -NotificationEmailAddresses "youremail@yourorganization.com" -Confirm:$false -ErrorAction SilentlyContinue -ErrorVariable errorMsg
+# Using the -AccountOnly flag is needed to remove the container only
+   Clear-MobileDevice -AccountOnly -Identity $_.Identity -NotificationEmailAddresses "youremail@yourorganization.com" -Confirm:$false
 }
 ```
 
+The sample script is intended to be a basic starting point. You can add input validation, format the data, and add try-catch statements. Test within your own environment as the wipe command will behave differently depending whether the mailbox on a native mail client or an outlook client. From my brief testing I found the following.
+
+| Device OS | Outlook Mail Client | Native Mail Client |
+| --- | --- | --- |
+| iOS | **✅ (container only wipe)** | ✅ **(container only wipe)** |
+| Android | ✅ **(container only wipe)** | ❌ **(fails container only wipe)** |
+
+Let's now add the script to the Automation account
+
 1.  Select **Edit** > **Edit in portal**
     
-2.  Add your PowerShell script here. I'll be providing a basic PowerShell script below that will
-    
-3.  The following script will take in a parameter
+2.  Add your PowerShell script here
