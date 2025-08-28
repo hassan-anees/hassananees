@@ -160,7 +160,7 @@ This wraps up the roles and permissions part for the managed identity. We'll mov
 
 We've done the leg work to to ensure that the managed identity has the right access. This section will focus on creating a runbook that will tap into Exchange Online and execute some actions.
 
-So let's jump back to the Automation account to finish configuring the environment and creating the runbook. First we'll need to install three modules to ensure that our runbook has the requires dependencies to run.
+Let's jump back to the Automation account to finish configuring the environment and creating the runbook. First we'll need to install three modules to ensure that our runbook has the requires dependencies to run.
 
 1.  Navigate to [portal.azure.com](http://portal.azure.com) > **Automation account**
     
@@ -177,7 +177,7 @@ So let's jump back to the Automation account to finish configuring the environme
 7.  Repeat for steps 4 - 6 for the **PackageManagement** and **ExchangeOnlineManagement** modules
     
 
-![](../../assets/technology/automation-account-exchange/exchange-modules.png)
+![](../../assets/technology/automation-account-exchange/add-module-exchange.png)
 
 Now to create the runbook (think a runbook as a fancy name for a cloud hosted script).
 
