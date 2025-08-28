@@ -179,7 +179,7 @@ Let's jump back to the Automation account to finish configuring the environment 
 
 ![](../../assets/technology/automation-account-exchange/add-module-exchange.png)
 
-Now to create the runbook (think a runbook as a fancy name for a cloud hosted script).
+With the dependencies out of the way we can create the runbook. To expand further, you can think of a runbook as a fancy name for a cloud hosted script.
 
 1.  Navigate to [portal.azure.com](http://portal.azure.com) > **Automation account**
     
