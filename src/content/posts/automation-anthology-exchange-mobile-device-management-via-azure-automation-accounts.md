@@ -241,3 +241,10 @@ Let's now add the script to the Automation account
 1.  Select **Edit** > **Edit in portal**
     
 2.  Add your PowerShell script here
+    
+
+![](../../assets/technology/automation-account-exchange/runbook-execution.png)
+
+You will get a device confirmation
+
+![](../../assets/technology/automation-account-exchange/confirmation.png)
