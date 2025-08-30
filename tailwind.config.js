@@ -20,7 +20,7 @@ export default {
             "h3 + *": {
               marginTop: "0rem",
             },
-            // Better list spacing controls
+            // Better list spacing controls - for ol and li
             "ul > li": {
               marginTop: "0.25rem", // Adjust this value
               marginBottom: "0.25rem",
