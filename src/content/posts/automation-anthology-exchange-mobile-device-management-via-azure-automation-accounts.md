@@ -5,7 +5,7 @@ description: I'm going to walk you through how you can use Azure Automation
   accounts to tap into Exchange Online. This will help everything from
   day-to-day tasks to more sensitive IR related procedures.
 pubDate: 2025-08-17
-draft: true
+draft: false
 ---
 Most people find Exchange Online management a bit tedious when dealing with multiple users. Plenty of time is spent in either on-boarding, off-boarding or incident response procedures.
 
