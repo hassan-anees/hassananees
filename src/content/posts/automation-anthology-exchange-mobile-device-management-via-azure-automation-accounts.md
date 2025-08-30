@@ -192,7 +192,7 @@ With the dependencies out of the way we can create the runbook. To expand furthe
 5.  Enter the details for the remaining items and click **Create**
     
 
-![](../../assets/technology/automation-account-exchange/create-runbook-exchange.png)
+![Creating a new runbook within the Automation account](../../assets/technology/automation-account-exchange/create-runbook-exchange.png)
 
 We have created the runbook, but now we require the script to execute our actions on Exchange Online. I'll provide a basic script that will do the following.
 
