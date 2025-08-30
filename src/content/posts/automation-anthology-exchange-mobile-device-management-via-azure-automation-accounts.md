@@ -248,7 +248,7 @@ Let's now add the script to the Automation account.
     
 5.  Click **Start**. Note that the execution will take couple of minutes. To test the PowerShell script more rapidly, you can run the script locally, but you will have to connect with delegated permissions (change line 8).
     
-6.  Verify the results are correct and return to the prior screen to click on **Publish** to confirm the changes
+6.  Verify the results and return to the prior screen to click on **Publish** to confirm the changes
     
 
 > As mentioned earlier, we are primarily concerned with the **ClientType** being **Outlook** as it provides reliable results for wiping the container (mailbox) from the device. The second thing of note is the **Identity** value as this uniquely identifies the mobile device and is used within the **Clear-MobileDevice** command.
