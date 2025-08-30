@@ -257,8 +257,8 @@ Let's now add the script to the Automation account.
 
 ![Wipe confirmation email](../../assets/technology/automation-account-exchange/confirmation.png)
 
-### Takeaways
+### Bravo! You Made It To the End 👏
 
-This walk-through was meant to get you started on how you can leverage Automation accounts and mend them together with existing processes. The example should serve as a starting point as there's plenty more which can improved (error handling, data parsing, additional functionality).
+This demo should serve as a starting point as there's plenty more which can improved (error handling, data parsing, additional functionality).
 
-We can even take this a step further and have automation accounts be triggered by playbooks within Sentinel, but maybe that's a write up for another day. If you have any questions, I’d love to hear from you! Hope this helped.
+We can even take this a step further and have Automation accounts be triggered by playbooks within Sentinel, but maybe that's a write up for another day. If you have any questions, I’d love to hear from you! Hope this helped.
