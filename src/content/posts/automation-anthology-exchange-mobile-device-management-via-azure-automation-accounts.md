@@ -7,13 +7,13 @@ description: I'm going to walk you through how you can use Azure Automation
 pubDate: 2025-08-17
 draft: true
 ---
-Most people find Exchange Online management a bit tedious when dealing multiple users. Plenty of time is spent in either on-boarding, off-boarding or incident response procedures.
+Most people find Exchange Online management a bit tedious when dealing with multiple users. Plenty of time is spent in either on-boarding, off-boarding or incident response procedures.
 
 This article will demonstrate how you can alleviate these pain points with Automation accounts. For those coming from AWS, the equivalent would be Systems Manager. For those starting fresh, think of Automation accounts as cloud-hosted scripts that handle automating a specific task.
 
 I'm going to walk you through how you can use Azure Automation accounts to tap into Exchange Online. You'll learn how to:
 
-1.  Create a Azure Automation account and managed identity
+1.  Create an Azure Automation account and managed identity
     
 2.  Assign permissions to managed identities
     
@@ -64,7 +64,7 @@ For some reference, below is the manual workflow that will be automated.
 
 ![Exchange Online Mobile Device Management](../../assets/technology/automation-account-exchange/opening-mobile-device-exchange-online.png)
 
-Doing the above is fine for single instances, but this becomes unfeasible in an enterprise environment where there big batches of new and departing users on a recurring basis or circumstances calls for time-sensitive actions.
+Doing the above is fine for single instances, but this becomes unfeasible in an enterprise environment where there big batches of new and departing users on a recurring basis or circumstances call for time-sensitive actions.
 
 ### Getting Started
 
@@ -160,7 +160,7 @@ This wraps up the roles and permissions part for the managed identity. We'll mov
 
 We've done the leg work to ensure that the managed identity has the right access. This section will focus on creating a runbook that will tap into Exchange Online and execute some actions.
 
-Let's jump back to the Automation account to finish configuring the environment and creating the runbook. First we'll need to install three modules to ensure that our runbook has the requires dependencies to run.
+Let's jump back to the Automation account to finish configuring the environment and creating the runbook. First we'll need to install three modules to ensure that our runbook has the required dependencies to run.
 
 1.  Navigate to [portal.azure.com](http://portal.azure.com) > **Automation account**
     
@@ -246,7 +246,7 @@ Let's now add the script to the Automation account.
     
 4.  Within **Test pane** enter the user principal name of the target (ex. [testaccount@redacted.com](mailto:testaccount@redacted.com))
     
-5.  Click **Start**. Note that the execution will take couple of minutes. To test the PowerShell script more rapidly, you can run the script locally, but you will have to connect with delegated permissions (change line 8).
+5.  Click **Start**. Note that the execution will take couple of minutes. To test the PowerShell script more rapidly, you can run the script locally, but you will have to connect with delegated permissions (see line 8).
     
 6.  Verify the results and return to the prior screen to click on **Publish** to confirm the changes
     
@@ -259,6 +259,6 @@ Let's now add the script to the Automation account.
 
 ### Bravo! You Made It To the End 👏
 
-This demo should serve as a starting point as there's plenty more which can improved (error handling, data parsing, additional functionality).
+This demo should serve as a starting point as there's plenty more which can be improved (error handling, data parsing, additional functionality).
 
 We can even take this a step further and have Automation accounts be triggered by playbooks within Sentinel, but maybe that's a write up for another day. If you have any questions, I’d love to hear from you! Hope this helped.
