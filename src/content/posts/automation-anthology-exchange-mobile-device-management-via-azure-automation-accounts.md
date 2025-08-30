@@ -177,7 +177,7 @@ Let's jump back to the Automation account to finish configuring the environment 
 7.  Repeat for steps 4 - 6 for the **PowerShellGet** and **ExchangeOnlineManagement** modules
     
 
-![](../../assets/technology/automation-account-exchange/add-module-exchange.png)
+![Downloading modules in the Automation account](../../assets/technology/automation-account-exchange/add-module-exchange.png)
 
 With the dependencies out of the way we can create the runbook. To expand further, you can think of a runbook as a fancy name for a cloud hosted script.
 
