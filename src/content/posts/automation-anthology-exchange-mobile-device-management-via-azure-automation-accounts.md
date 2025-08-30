@@ -62,7 +62,7 @@ For some reference, below is the manual workflow that will be automated.
 5.  Click **Account Only Remote Wipe Device**
     
 
-![Exchange Online Mobile Device Management](../../assets/technology/automation-account-exchange/opening-mobile-device-exchange-online.png)
+![Exchange Online Mobile Device Management](../../assets/technology/automation-account-exchange/view-devices-exchange.png)
 
 Doing the above is fine for single instances, but this becomes unfeasible in an enterprise environment where there big batches of new and departing users on a recurring basis or circumstances call for time-sensitive actions.
 
@@ -152,7 +152,7 @@ We'll move on to the second part of assigning the role needed to execute actions
 7.  Hit **Select**
     
 
-![Assigning Entra role(s) to a managed identity](../../assets/technology/automation-account-exchange/assign-entra-roles.png)
+![Assigning Entra role to a managed identity](../../assets/technology/automation-account-exchange/assign-exchange-role.png)
 
 This wraps up the roles and permissions part for the managed identity. We'll move to the final phase of creating the runbook within the Automation account.
 
