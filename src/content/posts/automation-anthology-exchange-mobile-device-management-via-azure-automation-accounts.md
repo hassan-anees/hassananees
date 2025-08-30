@@ -111,7 +111,7 @@ We'll start with the first part of assigning the managed identity the permission
 
 ![](../../assets/technology/automation-account-exchange/copying-managed-identity.png)
 
-4.  Open PowerShell as administrator and Execute the script below to assign the **Exchange.ManageAsApp** API permission to the managed identity which allows it call Exchange Online.
+4.  Open PowerShell as administrator and execute the script below to assign the **Exchange.ManageAsApp** API permission to the managed identity which allows it call Exchange Online.
     
     > Note that we are replacing MI\_ID variable with the value obtained from the last step. For more information on this step, use this [reference](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps#step-4-grant-the-exchangemanageasapp-api-permission-for-the-managed-identity-to-call-exchange-online)
     
