@@ -20,7 +20,7 @@ I'm going to walk you through how you can use Azure Automation accounts to tap i
 3.  Create a Runbook that authenticates to and manages Exchange Online
     
 
-You can skip to the [Getting Started](#getting-started) section want to jump into technical weeds and already know the basic requirements. Otherwise, continue on for a softer introduction.
+You can skip to the [Getting Started](#getting-started) section if you want to jump into technical weeds and already know the basic requirements. Otherwise, continue on for a softer introduction.
 
 **What this article is _NOT_**
 
@@ -244,7 +244,7 @@ Let's now add the script to the Automation account.
     
 3.  Select **Save** > Click on **Test pane**
     
-4.  Within **Test pane** enter the user principal name of the target (ex. testaccount@redacted.com)
+4.  Within **Test pane** enter the user principal name of the target (ex. [testaccount@redacted.com](mailto:testaccount@redacted.com))
     
 5.  Click **Start**. Note that the execution will take couple of minutes. To test the PowerShell script more rapidly, you can run the script locally, but you will have to connect with delegated permissions (change line 8).
     
