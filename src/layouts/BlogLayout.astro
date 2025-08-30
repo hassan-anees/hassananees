@@ -17,7 +17,7 @@ const { title, author, description, pubDate, image } = Astro.props;
 const tags = ["Psychology", "Science"];
 ---
 
-<Layout title={title} description={description} image={image}>
+<Layout title={title} description={description} image={image} author={author}>
   <div id="" class="font-semibold text-black">
     <div class="max-w-3xl p-6 md:mx-auto">
       <div class="">
@@ -78,7 +78,31 @@ const tags = ["Psychology", "Science"];
     </Prose>
   </div>
 </Layout>
+<style is:global>
+  /* Define cascade layers with zoom-overlays having highest priority */
+  @layer base, components, zoom-overlays;
 
+  @layer zoom-overlays {
+    .medium-zoom-overlay {
+      z-index: 9999;
+    }
+
+    .medium-zoom-image--opened {
+      z-index: 10000;
+    }
+  }
+
+  /* Fallback for browsers that don't support cascade layers */
+  @supports not (at-rule(@layer)) {
+    .medium-zoom-overlay {
+      z-index: 9999 !important;
+    }
+
+    .medium-zoom-image--opened {
+      z-index: 10000 !important;
+    }
+  }
+</style>
 <script>
   import mediumZoom from "medium-zoom";
 

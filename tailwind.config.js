@@ -20,11 +20,26 @@ export default {
             "h3 + *": {
               marginTop: "0rem",
             },
-            "ul + *": {
-              marginTop: "0rem",
+            // Better list spacing controls - for ol and li
+            "ul > li": {
+              marginTop: "0.25rem", // Adjust this value
+              marginBottom: "0.25rem",
             },
-            "ol + *": {
+            "ol > li": {
+              marginTop: "0.25rem", // Adjust this value
+              marginBottom: "0.25rem",
+            },
+            "li > p": {
               marginTop: "0rem",
+              marginBottom: "0rem",
+            },
+            ul: {
+              marginTop: "0.5rem", // Space before the list
+              marginBottom: "0.5rem", // Space after the list
+            },
+            ol: {
+              marginTop: "0.5rem",
+              marginBottom: "0.5rem",
             },
             p: { color: "rgb(55, 65, 81)" },
             "blockquote p:first-of-type::before": { content: "none" },
