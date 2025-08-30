@@ -253,7 +253,7 @@ Let's now add the script to the Automation account.
 
 > As mentioned earlier, we are primarily concerned with the **ClientType** being **Outlook** as it provides reliable results for wiping the container (mailbox) from the device. The second thing of note is the **Identity** value as this uniquely identifies the mobile device and is used within the **Clear-MobileDevice** command.
 
-![To the left is the PowerShell script within the portal and to the right is the execution of the runbook](../../assets/technology/automation-account-exchange/runbook-execution.png)Once the runbook has executed, you will the Exchange mailbox remove itself from the Outlook application. You also have the option to send a notification for when this the wipe command is executed. Below is an example of the output. Note that you will continuously get this notification each time the end users attempts to sign in into their mailbox.
+![To the left is the PowerShell script within the portal and to the right is the execution of the runbook](../../assets/technology/automation-account-exchange/runbook-execution.png)Once the runbook has executed, you will see the Exchange mailbox remove itself from the Outlook application. You also have the option to send a notification for when this the wipe command is executed. Below is an example of the output. Note that you will continuously get this notification each time the end users attempts to sign in into their mailbox.
 
 ![Wipe confirmation email](../../assets/technology/automation-account-exchange/confirmation.png)
 
