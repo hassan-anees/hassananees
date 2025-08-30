@@ -216,7 +216,7 @@ param (
 )
 
 # Connecting via managed identity. That managed identity is using ExchangeAsApp.api - leveraged from the enterprise application for Exchange Online within Entra
-Connect-ExchangeOnline -ManagedIdentity -Organization "<your-organization>.onmicrosoft.com"
+Connect-ExchangeOnline -ManagedIdentity -Organization <your-organization>.onmicrosoft.com
 
 Get-MobileDevice -Mailbox $UserPrincipalName | ForEach-Object {
     Write-Output "-------------------------------"
@@ -236,15 +236,29 @@ The sample script is intended to be a basic starting point. You can add input va
 | iOS | **✅ (container only wipe)** | ✅ **(container only wipe)** |
 | Android | ✅ **(container only wipe)** | ❌ **(fails container only wipe)** |
 
-Let's now add the script to the Automation account
+Let's now add the script to the Automation account.
 
 1.  Select **Edit** > **Edit in portal**
     
 2.  Add your PowerShell script here
     
+3.  Select **Save** > Click on **Test pane**
+    
+4.  Within **Test pane** enter the user principal name of the target (ex. testaccount@redacted.com)
+    
+5.  Click **Start**. Note that the execution will take couple of minutes. To test the PowerShell script more rapidly, you can run the script locally, but you will have to connect with delegated permissions (change line 8).
+    
+6.  Verify the results are correct and return to the prior screen to click on **Publish** to confirm the changes
+    
 
-![](../../assets/technology/automation-account-exchange/runbook-execution.png)
+> As mentioned earlier, we are primarily concerned with the **ClientType** being **Outlook** as it provides reliable results for wiping the container (mailbox) from the device. The second thing of note is the **Identity** value as this uniquely identifies the mobile device and is used within the **Clear-MobileDevice** command.
 
-You will get a device confirmation
+![To the left is the PowerShell script within the portal and to the right is the execution of the runbook](../../assets/technology/automation-account-exchange/runbook-execution.png)You have the option to send a notification for when this the wipe command is executed. Below is an example of the output. Note that you will continuously get this notification each time the end users attempts to sign in into their mailbox.
 
-![](../../assets/technology/automation-account-exchange/confirmation.png)
+![Wipe confirmation email](../../assets/technology/automation-account-exchange/confirmation.png)
+
+### Takeaways
+
+This walk-through is meant to get you started with how you can leverage existing tools and mend them together. It should serve as a starting point as there are plenty of areas which can adjusted and improved (input validation, error-handling, added functionality). We can even take this a step further and have automation accounts be triggered by playbooks within Sentinel, but maybe that's a topic for another day.
+
+This automation requires a bit of set up but the walk through serves to get you up and running to authenticate and
