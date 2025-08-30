@@ -4,6 +4,7 @@ const {
   description = "I'm a software developer turned security engineer with a background in psychology. I share insights on topics ranging from technology to human behavior.",
   canonical = Astro.url,
   image = "https://hassananees.com/banner-w.png",
+  author = "Hassan Anees",
   ...props
 } = Astro.props;
 ---
@@ -15,6 +16,8 @@ const {
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/svg+xml" href="/favi.svg" />
 <meta name="generator" content={Astro.generator} />
+<!-- Author metadata -->
+<meta name="author" content={author} />
 <!-- Open Graph tags -->
 <meta property="og:title" content={title} />
 <meta property="og:type" content="website" />
@@ -22,3 +25,10 @@ const {
 <meta property="og:description" content={description} />
 <meta property="og:image" content={image} />
 <meta property="og:image:alt" content="" />
+<meta property="og:site_name" content="Hassan Anees" />
+<!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+<meta name="twitter:creator" content="@hassananees" />
