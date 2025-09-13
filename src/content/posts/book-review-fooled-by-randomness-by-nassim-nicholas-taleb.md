@@ -2,8 +2,7 @@
 author: Hassan Anees
 title: "Book Review: Fooled by Randomness by Nassim Nicholas Taleb"
 description: Nassim Nicolas Taleb writes a fascinating book on the role of
-  randomness when it comes risk taking. I'll outline key takeaways and
-  highlights that stood out to me.
+  randomness when it comes risk taking. I outline key takeaways that stood out.
 pubDate: 2025-09-14
 draft: true
 ---
