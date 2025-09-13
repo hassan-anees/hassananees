@@ -7,9 +7,11 @@ description: Most organizations have a gap in the quality of logs coming into
 pubDate: 2025-09-13
 draft: true
 ---
-Logs like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your security team needs all the insight they can get to validate any impact on business critical data. Unfortunately, your environment may be missing such logs since not all event logging is enabled by default if users are being licensed via inheritance. Hence, there might be a gap in your Unified Audit Logs. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
+Logs like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your security team needs all the insight they can get to validate any impact on business critical data. Unfortunately, your environment may be missing such logs since not all event logging in Unified Audit Log (UAL) is enabled by default if users are being licensed via inheritance. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
 
-If you want to skip the "Why" you can jump to the Getting Started section.
+You can jump to solution by the Getting Started section for the solution. Continue for some background on UAL, where you can find them and the use for MailItemsAccessed logs.
+
+You can skip to the [**Getting Started**](#getting-started) section if you want to jump into technical weeds and already know the basic requirements. Otherwise continue on for a softer introduction.
 
 ### Unified Audit What? Mail Items Who?
 
@@ -26,7 +28,7 @@ For those stepping into the Microsoft ecosystem, Unified Audit Log (UAL) is a co
 
 You can find these logs in following locations:
 
-| Source | Table / Tool |
+| Source | Tool / Table |
 | --- | --- |
 | Purview | Audit (_Tool)_ |
 | PowerShell | Microsoft Extractor Suite (_Tool)_ |
