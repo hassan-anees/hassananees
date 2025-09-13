@@ -4,6 +4,7 @@ title: "Book Review: Fooled by Randomness by Nassim Nicholas Taleb"
 description: Nassim Nicolas Taleb writes a fascinating book on the role of
   randomness when it comes risk taking. I'll outline key takeaways and
   highlights that stood out to me.
+pubDate: 2025-09-14
 draft: true
 ---
 Fooled by Randomness by Nassim Nicholas Taleb is a fascinating book which I highly recommend for those interested in understanding hidden risk, misinterpretations of probability, and how randomness is nested in everything we do.
