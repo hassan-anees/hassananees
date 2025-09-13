@@ -1,6 +1,6 @@
 ---
 author: Hassan Anees
-title: "Enrich Your Unified Audit Log with Purview Retention Policies "
+title: "Enrich Unified Audit Log with Purview Retention Policies "
 description: Most organizations have a gap in the quality of logs coming into
   their tenant. This quick walkthrough will ensure critical logs like
   MailItemsAccessed are included in Unified Audit Log.
@@ -13,7 +13,7 @@ Logs that provide insight into a compromised user's Office activity like Outlook
 
 Logs like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your security team needs all the insight they can get to validate any impact on business critical data.
 
-Most organizations have a gap in their logs. Logs like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your security team needs all the insight they can get to validate any impact on business critical data.
+Logs like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your security team needs all the insight they can get to validate any impact on business critical data. Unfortunately, your tenant may not be receiving
 
 's Office activity like Outlook is critical to understand the impact of and incident in the event of a breach. One useful log is the MailItemsAccessed which shows sync and bind activity for a users mailbox. Unfortunately, most tenants may not be ingesting these logs even with correct licensing Microsoft's Premium Audit feature enabled.
 
