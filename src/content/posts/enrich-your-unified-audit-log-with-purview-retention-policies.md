@@ -144,6 +144,11 @@ Creating the audit retention policy
 *   eDiscovery and Audit 
     
 
+```kql
+OfficeActivity
+| where Operation contains "MailItemsAccessed"
+```
+
 References
 
 *    [Manage audit log retention policies | Microsoft Learn](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) 
