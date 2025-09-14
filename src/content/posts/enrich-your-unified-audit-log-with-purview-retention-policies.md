@@ -24,6 +24,8 @@ Unified Audit Log (UAL) is a collection of records of both user and administrati
 *   Teams
     
 
+You can start seeing how useful UAL would be within forensic investigations when your teams needs to activities within the M365 suite. Attacks like Business Email Compromise (BEC) are common across industries making information coming from UAL invaluable when investigating compromised email accounts.
+
 You can access UAL in following methods:
 
 | Source | Tool / Table |
@@ -32,8 +34,6 @@ You can access UAL in following methods:
 | PowerShell | Microsoft Extractor Suite ([_Tool_](https://github.com/invictus-ir/Microsoft-Extractor-Suite)_)_ |
 | Microsoft Sentinel | OfficeActivity (_Table)_ |
 | Defender XDR for Cloud Apps | CloudAppEvents _(Table)_ |
-
-UAL provides context on activities done within the M365 suite and allows teams to correlate those actions with security incidents. Attacks like Business Email Compromise (BEC) are common across industries making information coming from UAL invaluable when investigating compromised email accounts.
 
 One useful audit event to help email compromise investigation is the MailItemsAccessed event which shows sync and bind activity for a users mailbox. Sync operations are generated whenever a mail client application downloads mail items. Bind operations record individual access to an email message. Microsoft has some good [documentation](https://learn.microsoft.com/en-us/purview/audit-log-investigate-accounts) that can help bolster forensic investigations.
 
