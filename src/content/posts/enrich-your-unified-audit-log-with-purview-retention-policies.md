@@ -24,7 +24,7 @@ Unified Audit Log (UAL) is a collection of records of both user and administrati
 *   Teams
     
 
-You can start seeing how useful UAL would be within forensic investigations when your team needs to correlate activities within the M365 suite. Attacks like Business Email Compromise (BEC) are common across industries making information coming from UAL invaluable when investigating compromised email accounts.
+You can start seeing how useful UAL would be within forensic investigations when your team needs to correlate activities within the M365 suite. Attacks like Business Email Compromise (BEC) are common across industries making information coming from UAL invaluable when investigating compromised accounts.
 
 You can access UAL in following methods:
 
@@ -35,9 +35,13 @@ You can access UAL in following methods:
 | Microsoft Sentinel | OfficeActivity (_Table)_ |
 | Defender XDR for Cloud Apps | CloudAppEvents _(Table)_ |
 
-One useful audit event to help email compromise investigation is the MailItemsAccessed event which shows sync and bind activity for a users mailbox. Sync operations are generated whenever a mail client application downloads mail items. Bind operations record individual access to an email message. Microsoft has some good [documentation](https://learn.microsoft.com/en-us/purview/audit-log-investigate-accounts) that can help bolster forensic investigations.
+One useful audit event to help email compromise investigations is the MailItemsAccessed event which shows sync and bind activity for a users mailbox. Sync operations are generated whenever a mail client application downloads mail items. Bind operations record individual access to an email message. Microsoft has some good [documentation](https://learn.microsoft.com/en-us/purview/audit-log-investigate-accounts) that can help bolster forensic investigations.
 
 Unfortunately, your environment may be missing such logs since not all event logging in Unified Audit Log (UAL) is enabled by default if users are being licensed via inheritance. I'll show how to can remediate this by enabling an audit retention policy within Microsoft Purview.
+
+### Purview Audit Retention Policy
+
+I'll give a short intro on Purview and audit retention policies. If you're unfamiliar with and its importance. a brief introIf you're unfamiliar In short, an audit - (good primer that was provided when discussing data sensitivity labels)
 
 ### **Prerequisites**
 
@@ -45,7 +49,7 @@ You will need the following to get rolling:
 
 1.  The _Organization Management_ role (a Purview Portal role) to create [**Audit Retention policies**](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies).
     
-2.  End users require either an E3 or E5 license to see audit events like MailItemsAccessedd
+2.  End users with an E3 or E5 license to see audit events like MailItemsAccessed
     
 
 To assign the role, do the following:
@@ -59,9 +63,13 @@ To assign the role, do the following:
 4.  Click **Organization Management** > **Edit** \> **Choose users** > **Save**
     
 
-> If ou
+> Note that if you have trouble viewing the Role and scopes section within Purview, you likely require an admin with the Global Administrator role to assign you the proper permissions
 
 ### Getting Started
+
+With all the fluff out of the way, let's start creating our Audit Retention Policy. In short, an audit retention policies
+
+An audit log retention policy lets you specify how long to retain audit logs in your organization
 
 Prereq:
 
