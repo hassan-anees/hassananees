@@ -7,13 +7,13 @@ description: Most organizations have a gap in the quality of logs coming into
 pubDate: 2025-09-13
 draft: true
 ---
-Your Azure environment might be missing key audit events within Unified Audit Log (UAL) that are needed for forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your team needs all the insight they can get to validate any impact on business critical data. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
+Your Azure environment might be missing key audit events within Unified Audit Log (UAL) that are needed for forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
 
-You can jump to the [Getting Started](#getting-started) section for the solution. Otherwise, continue on for background on UAL, audit events, retention policies, and why key information may be missing.
+You can jump to the [Getting Started](#getting-started) section for the solution. Otherwise, continue on for background on the UAL, audit events, retention policies, and why key information may be missing.
 
 ### Unified Audit What? Mail Items Who?
 
-Unified Audit Log (UAL) is a collection of records of both user and administrative actions done across the Microsoft 365 suite. UAL contains audit events from the following M365 services:
+The **Unified Audit Log** is a collection of records of both user and administrative actions done across the Microsoft 365 (M365) suite. The collection holds audit events from the following M365 services:
 
 *   Exchange
     
@@ -24,9 +24,9 @@ Unified Audit Log (UAL) is a collection of records of both user and administrati
 *   Teams
     
 
-You can start seeing how useful UAL would be within forensic investigations when your team needs to correlate activities within the M365 suite. Attacks like Business Email Compromise (BEC) are common across industries making information coming from UAL invaluable when investigating compromised accounts.
+These logs are especially useful in forensic investigations when security teams need to correlate activities within the M365 suite and assess impact on business critical data. Attacks like Business Email Compromise (BEC) are common across industries making information coming from the UAL invaluable when investigating compromised accounts.
 
-You can access UAL in following methods:
+You can access the UAL in following methods:
 
 | Source | Tool / Table |
 | --- | --- |
@@ -35,13 +35,20 @@ You can access UAL in following methods:
 | Microsoft Sentinel | OfficeActivity (_Table)_ |
 | Defender XDR for Cloud Apps | CloudAppEvents _(Table)_ |
 
-One useful audit event to help email compromise investigations is the MailItemsAccessed event which shows sync and bind activity for a users mailbox. Sync operations are generated whenever a mail client application downloads mail items. Bind operations record individual access to an email message. If you want more detail, Microsoft has some good [documentation](https://learn.microsoft.com/en-us/purview/audit-log-investigate-accounts) on this.
+One useful audit event to help email compromise investigations is the **MailItemsAccessed** event which shows sync and bind activity for a users mailbox. Sync operations are generated whenever a mail client application downloads mail items. Bind operations record individual access to an email message. If you want more detail, Microsoft has some good [documentation](https://learn.microsoft.com/en-us/purview/audit-log-investigate-accounts) on this.
 
-Unfortunately, most environments are missing these logs since not all event logging in Unified Audit Log (UAL) is enabled by default if users are being licensed via inheritance. I'll show how to can remediate this by enabling an audit retention policy within Microsoft Purview.
+Unfortunately, if users are being licensed (E3/E5) via inheritance then your environment is likely missing these logs. You can quickly check if you have these logs coming in by running the following query within Sentinel.
+
+```kql
+OfficeActivity
+| where Operation contains "MailItemsAccessed"
+```
+
+If they are missing then we can remediate this by enabling an audit retention policy within Microsoft Purview.
 
 ### Purview Audit Retention Policy
 
-I'll give a short intro on Purview and audit retention policies. If you're unfamiliar with and its importance. a brief introIf you're unfamiliar In short, an audit - (good primer that was provided when discussing data sensitivity labels)
+I'll give a short intro on Purview and audit retention policies. If you're unfamiliar with and its importance. A brief introIf you're unfamiliar In short, an audit - (good primer that was provided when discussing data sensitivity labels)
 
 ### Prerequisites
 
@@ -88,60 +95,42 @@ Creating the audit retention policy
 
 *   **Data Security** 
     
-
 *   Infromation Protection (Project 1 - Phase 1 completed, Phase 2 in progress)  
     
-
 *   **Relevant Documents:** 
     
-
 *   Adding an expiration to a document: [Use Case - Document Expiration.docx](https://brocksolutionsinc.sharepoint.com/:w:/r/sites/COCyberSecurity/_layouts/15/Doc.aspx?sourcedoc=%7B9AE82343-2C91-43D6-8DC5-7AD14F21BF6A%7D&file=Use%20Case%20-%20%20Document%20Expiration.docx&action=default&mobileredirect=true&xsdata=MDV8MDJ8fGRjZTdmM2UwMWE4ZjQ1NjkyNWZkMDhkZGJhNzMyOTA3fGM5MTViYjlmYzhhMTQ0M2JhNjNkMzYzODIzODVmOTQwfDB8MHw2Mzg4NzE3MjU5Mjg5NzQ0NDd8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pRMlptWmxabVF5WmpCa09UUXdZbVZpTWprNE16TTBOell4WmprMVl6azVRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpVeE5UYzFOemt5TkRNNXxjOTMzYjQxYjQwZGI0NmMwMjVmZDA4ZGRiYTczMjkwN3w4NGM3YzdiNDFlZDE0N2Q3YWY2MDBmNzY0MDljNTRiMg%3D%3D&sdata=NUJuK0k4dVhYaTlGSW9SUkZuWjgySFpUV251Z2hsNDFma2VPUmplZEd1ST0%3D&ovuser=c915bb9f-c8a1-443b-a63d-36382385f940%2Chanees%40brocksolutions.com)  
     
-
 *   Revoking a document: [Use Case - Document Tracking and Revoking.docx](https://brocksolutionsinc.sharepoint.com/:w:/r/sites/COCyberSecurity/_layouts/15/Doc.aspx?sourcedoc=%7B6d2671d9-a8d7-41a0-a9a9-bb1fef3bfedc%7D&action=edit&wdPid=299e32b3&xsdata=MDV8MDJ8fGRjZTdmM2UwMWE4ZjQ1NjkyNWZkMDhkZGJhNzMyOTA3fGM5MTViYjlmYzhhMTQ0M2JhNjNkMzYzODIzODVmOTQwfDB8MHw2Mzg4NzE3MjU5Mjg5NzQ0NDd8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pRMlptWmxabVF5WmpCa09UUXdZbVZpTWprNE16TTBOell4WmprMVl6azVRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpVeE5UYzFOemt5TkRNNXxjOTMzYjQxYjQwZGI0NmMwMjVmZDA4ZGRiYTczMjkwN3w4NGM3YzdiNDFlZDE0N2Q3YWY2MDBmNzY0MDljNTRiMg%3D%3D&sdata=NUJuK0k4dVhYaTlGSW9SUkZuWjgySFpUV251Z2hsNDFma2VPUmplZEd1ST0%3D&ovuser=c915bb9f-c8a1-443b-a63d-36382385f940%2Chanees%40brocksolutions.com) 
     
-
 *   What each label means: [Brock Sensitivity Labels-v2.pdf](https://brocksolutionsinc.sharepoint.com/:b:/r/sites/COCyberSecurity/Shared%20Documents/Projects/2025%20Project%20Management/Security%20-%20Sensitivity%20Labels%20-%20Phase%201%20\(Files%20%26%20Emails\)/Brock%20Sensitivity%20Labels-v2.pdf?csf=1&web=1&e=kdm0du) 
     
-
 *   Previous PowerPoint for additional reference:    
     [Sensitivity Labels (Files & Emails).pptx](https://brocksolutionsinc.sharepoint.com/:p:/r/sites/COCyberSecurity/_layouts/15/Doc.aspx?sourcedoc=%7BE0B418CA-3664-499A-8A4F-6E36DBB08C6B%7D&file=Sensitivity%20Labels%20\(Files%20%26%20Emails\).pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&ct=1740598702770&wdOrigin=OFFICECOM-WEB.MAIN.REC&cid=9aed248c-20df-4f71-844b-c55a6f3e8a21&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=d10eb231-3219-4a66-9a35-d3b3abca3cd3&xsdata=MDV8MDJ8fGRjZTdmM2UwMWE4ZjQ1NjkyNWZkMDhkZGJhNzMyOTA3fGM5MTViYjlmYzhhMTQ0M2JhNjNkMzYzODIzODVmOTQwfDB8MHw2Mzg4NzE3MjU5Mjg5NzQ0NDd8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pRMlptWmxabVF5WmpCa09UUXdZbVZpTWprNE16TTBOell4WmprMVl6azVRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpVeE5UYzFOemt5TkRNNXxjOTMzYjQxYjQwZGI0NmMwMjVmZDA4ZGRiYTczMjkwN3w4NGM3YzdiNDFlZDE0N2Q3YWY2MDBmNzY0MDljNTRiMg%3D%3D&sdata=ZWhWYzkwOWcxbWZ2eUtaOXZLY29rd3FyQi8reDh6dEZ2WXpMMzEweUlHVT0%3D&ovuser=c915bb9f-c8a1-443b-a63d-36382385f940%2Chanees%40brocksolutions.com) 
     
-
 *   **Upcoming** 
     
-
 *   Naming conventions - Requires executive leadership/business input  
     
-
 *   Extending SharePoint permissions to downloaded documents 
     
-
 *   Final configurations - will be adjusted 
     
-
 *   Data Loss Prevention (Project 2) 
     
-
 *   Insider Risk Management (Project 3) 
     
-
 *   **Data Governance and Discovery** 
     
-
 *   Data Map (Data discovery) - Not licensed/not configured 
     
-
 *   Unified Catalog - Not licensed/not configured 
     
-
 *   **Compliance & Risk Management** 
     
-
 *   Compliance manager 
     
-
-*   eDiscovery and Audit 
+*   eDiscovery and Audit
     
 
 ```kql
