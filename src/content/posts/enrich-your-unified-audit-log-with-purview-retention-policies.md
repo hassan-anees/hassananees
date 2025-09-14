@@ -7,9 +7,9 @@ description: Most organizations have a gap in the quality of logs coming into
 pubDate: 2025-09-13
 draft: true
 ---
-Your environment may be missing key audit events within Unified Audit Log (UAL) that are needed for forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your security team needs all the insight they can get to validate any impact on business critical data. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
+Your Azure environment might be missing key audit events within Unified Audit Log (UAL) that are needed for forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your team needs all the insight they can get to validate any impact on business critical data. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
 
-You can jump to [Getting Started](#getting-started) section for the solution. Otherwise, continue on for some background on UAL, the MailItemsAccessed audit log, and why you may be missing key information within UAL.
+You can jump to the [Getting Started](#getting-started) section for the solution. Otherwise, continue on for background on UAL, audit events, retention policies, and why key information may be missing.
 
 ### Unified Audit What? Mail Items Who?
 
@@ -43,7 +43,7 @@ Unfortunately, your environment may be missing such logs since not all event log
 
 I'll give a short intro on Purview and audit retention policies. If you're unfamiliar with and its importance. a brief introIf you're unfamiliar In short, an audit - (good primer that was provided when discussing data sensitivity labels)
 
-### **Prerequisites**
+### Prerequisites
 
 You will need the following to get rolling:
 
