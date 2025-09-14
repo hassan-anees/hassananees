@@ -24,7 +24,7 @@ Unified Audit Log (UAL) is a collection of records of both user and administrati
 *   Teams
     
 
-You can start seeing how useful UAL would be within forensic investigations when your teams needs to activities within the M365 suite. Attacks like Business Email Compromise (BEC) are common across industries making information coming from UAL invaluable when investigating compromised email accounts.
+You can start seeing how useful UAL would be within forensic investigations when your team needs to correlate activities within the M365 suite. Attacks like Business Email Compromise (BEC) are common across industries making information coming from UAL invaluable when investigating compromised email accounts.
 
 You can access UAL in following methods:
 
