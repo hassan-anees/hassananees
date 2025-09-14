@@ -7,7 +7,7 @@ description: Most organizations have a gap in the quality of logs coming into
 pubDate: 2025-09-13
 draft: true
 ---
-Your environment may be missing key audit events within Unified Audit Log (UAL) that are needed for a forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your security team needs all the insight they can get to validate any impact on business critical data. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
+Your environment may be missing key audit events within Unified Audit Log (UAL) that are needed for forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. In the event of a breach, your security team needs all the insight they can get to validate any impact on business critical data. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
 
 You can jump to [Getting Started](#getting-started) section for the solution. Otherwise, continue on for some background on UAL, the MailItemsAccessed audit log, and why you may be missing key information within UAL.
 
