@@ -37,7 +37,7 @@ You can access UAL in following methods:
 
 One useful audit event to help email compromise investigations is the MailItemsAccessed event which shows sync and bind activity for a users mailbox. Sync operations are generated whenever a mail client application downloads mail items. Bind operations record individual access to an email message. If you want more detail, Microsoft has some good [documentation](https://learn.microsoft.com/en-us/purview/audit-log-investigate-accounts) on this.
 
-Unfortunately, your environment may be missing such logs since not all event logging in Unified Audit Log (UAL) is enabled by default if users are being licensed via inheritance. I'll show how to can remediate this by enabling an audit retention policy within Microsoft Purview.
+Unfortunately, most environments are missing these logs since not all event logging in Unified Audit Log (UAL) is enabled by default if users are being licensed via inheritance. I'll show how to can remediate this by enabling an audit retention policy within Microsoft Purview.
 
 ### Purview Audit Retention Policy
 
