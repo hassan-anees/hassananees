@@ -35,7 +35,7 @@ You can access UAL in following methods:
 | Microsoft Sentinel | OfficeActivity (_Table)_ |
 | Defender XDR for Cloud Apps | CloudAppEvents _(Table)_ |
 
-One useful audit event to help email compromise investigations is the MailItemsAccessed event which shows sync and bind activity for a users mailbox. Sync operations are generated whenever a mail client application downloads mail items. Bind operations record individual access to an email message. Microsoft has some good [documentation](https://learn.microsoft.com/en-us/purview/audit-log-investigate-accounts) that can help bolster forensic investigations.
+One useful audit event to help email compromise investigations is the MailItemsAccessed event which shows sync and bind activity for a users mailbox. Sync operations are generated whenever a mail client application downloads mail items. Bind operations record individual access to an email message. If you want more detail, Microsoft has some good [documentation](https://learn.microsoft.com/en-us/purview/audit-log-investigate-accounts) on this.
 
 Unfortunately, your environment may be missing such logs since not all event logging in Unified Audit Log (UAL) is enabled by default if users are being licensed via inheritance. I'll show how to can remediate this by enabling an audit retention policy within Microsoft Purview.
 
@@ -58,9 +58,9 @@ To assign the role, do the following:
     
 2.  Click on **Settings** on the left
     
-3.  Select **Roles and scopes** \> **Role groups**
+3.  Select **Roles and scopes** > **Role groups**
     
-4.  Click **Organization Management** > **Edit** \> **Choose users** > **Save**
+4.  Click **Organization Management** > **Edit** > **Choose users** > **Save**
     
 
 > Note that if you have trouble viewing the Role and scopes section within Purview, you likely require an admin with the Global Administrator role to assign you the proper permissions
