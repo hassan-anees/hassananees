@@ -5,7 +5,7 @@ description: Most organizations have a gap in the quality of logs coming into
   their tenant. This quick walkthrough will ensure critical logs like
   MailItemsAccessed are included in the Unified Audit Log.
 pubDate: 2025-09-13
-draft: true
+draft: false
 ---
 Your Azure environment might be missing key audit events within the Unified Audit Log (UAL) that are needed for forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. This happens since not all events are enabled or retained by default. I'll show you a simple Purview configuration so your security and compliance teams won't waste a second scrambling for missing puzzle pieces.
 
