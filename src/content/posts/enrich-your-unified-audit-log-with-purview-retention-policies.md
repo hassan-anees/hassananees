@@ -3,7 +3,7 @@ author: Hassan Anees
 title: "Enrich Unified Audit Log with Purview Retention Policies "
 description: Most organizations have a gap in the quality of logs coming into
   their tenant. This quick walkthrough will ensure critical logs like
-  MailItemsAccessed are included in Unified Audit Log.
+  MailItemsAccessed are included in the Unified Audit Log.
 pubDate: 2025-09-13
 draft: true
 ---
