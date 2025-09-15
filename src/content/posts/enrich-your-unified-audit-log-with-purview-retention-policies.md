@@ -99,7 +99,7 @@ With all the fluff out of the way, let's start creating our audit retention poli
     
 7.  Leave the value for **Users** and **Record Type** empty to target all users and records
     
-8.  Set **Duration** to what is necessary for your organization
+8.  Set **Duration** to what is necessary for your organization (this may increase ingestion costs based on the duration)
     
 9.  Click **Save** and leave the policy to marinate over night
     
@@ -108,7 +108,7 @@ With all the fluff out of the way, let's start creating our audit retention poli
 
 ### Querying Audit Events
 
-In the morning we can check within Purview Audit whether we getting audit event logs such as MailItemsAccessed.
+In the morning we can check within Purview Audit whether we are getting audit event logs such as MailItemsAccessed.
 
 1.  Select **Search** within Purview Audit blade
     
