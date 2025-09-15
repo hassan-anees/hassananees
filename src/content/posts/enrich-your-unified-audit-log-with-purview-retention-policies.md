@@ -57,7 +57,7 @@ An audit retention policy is part of Microsoft Purview Audit. If you've used Pur
 3.  Compliance and Risk Management
     
 
-The Purview Audit tool lands in the third category for compliance. [Audit retention policies](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) let you specify how long to retain audit logs for within your organization. These policies are flexible as you can specify retention on all activities in one of more Microsoft Services. You can retain data all the way to 10 years, but of course, you should align with the standard in your industry.
+The Purview Audit tool lands in the third category for compliance. [Audit retention policies](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) let you specify how long to retain audit logs for within your organization. These policies are flexible as you can specify retention on all activities in one or more Microsoft Services. You can retain data all the way to 10 years, but of course, you should align with the standard in your industry.
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ With all the fluff out of the way, let's start creating our audit retention poli
 
 1.  Head over to [purview.microsoft.com](http://purview.microsoft.com)
     
-2.  Select **Solutions** \> **Explore all**
+2.  Select **Solutions** > **Explore all**
     
 3.  Search for **Audit**
     
