@@ -7,9 +7,9 @@ description: Most organizations have a gap in the quality of logs coming into
 pubDate: 2025-09-13
 draft: true
 ---
-Your Azure environment might be missing key audit events within the Unified Audit Log (UAL) that are needed for forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. I'll show you a simple Purview configuration so your compliance and security teams won't waste a second scrambling for missing puzzle pieces.
+Your Azure environment might be missing key audit events within the Unified Audit Log (UAL) that are needed for forensic investigations. Audit events like MailItemsAccessed is a must when investigating a compromised user. This happens since not all events are enabled or retained by default. I'll show you a simple Purview configuration so your security and compliance teams won't waste a second scrambling for missing puzzle pieces.
 
-You can jump to the [Getting Started](#getting-started) section for the solution. Otherwise, continue on for background on the UAL, audit events, retention policies, and why key information may be missing.
+You can jump to the [Getting Started](#getting-started) section for the solution. Otherwise, continue on for background on the UAL, audit events, and retention policies.
 
 ### Unified Audit What? Mail Items Who?
 
@@ -46,7 +46,22 @@ OfficeActivity
 
 If they are missing then we can remediate this by enabling an audit retention policy within Microsoft Purview.
 
-### Purview Audit Retention Policy
+### Audit Retention Policy with Purview
+
+An audit retention policy is part of Microsoft Purview's set of tools that cover data governance and compliance. If you've used Purview before, you understand that its capabilities is split between three areas:
+
+1.  Data Security
+    
+2.  Data Governance and Discovery
+    
+3.  Compliance and Risk Management
+    
+
+The Purview Audit tool lands in the third category for compliance. [Audit retention policies](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) lets you specify how long to retain audit logs for within your organization. You can be very broad or granular on your retention on specific data. Based on your lis180 days for logs generated on or after October 17, 2023
+
+on An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to 10 years. You can create policies based on the following criteria:
+
+We'll dive into audit retention policies within Purview.
 
 I'll give a short intro on Purview and audit retention policies. If you're unfamiliar with and its importance. A brief introIf you're unfamiliar In short, an audit - (good primer that was provided when discussing data sensitivity labels)
 
