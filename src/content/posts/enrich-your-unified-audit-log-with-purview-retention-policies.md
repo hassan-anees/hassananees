@@ -123,7 +123,7 @@ In the morning we can check within Purview Audit whether we getting audit event 
 
 > **Note** that this may take anywhere from a couple seconds to minutes depending on how much data is available in your tenant
 
-![](../../assets/technology/purview-retention-ual/mailitemsaccessed-purview-audit-tool.png)
+![Searching for audit events within Purview Audit](../../assets/technology/purview-retention-ual/mailitemsaccessed-purview-audit-tool.png)
 
 You could also check within Sentinel as well by re-running the query below.
 
