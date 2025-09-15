@@ -93,62 +93,47 @@ With all the fluff out of the way, let's start creating our audit retention poli
     
 4.  Click **Policies**
     
+5.  Select **Create audit retention policy**
+    
+6.  Fill out Policy name and Description
+    
+7.  Leave the value for **Users** and **Record Type** empty to target all users and records
+    
+8.  Set **Duration** to what is necessary for your organization
+    
+9.  Click **Save** and leave the policy to marinate over night
+    
 
-Check within Purview
+![](../../assets/technology/purview-retention-ual/create-audit-retention.png)
+
+### Querying Audit Events
+
+In the morning we can check within Purview Audit whether we getting audit event logs such as MailItemsAccessed.
+
+1.  Select **Search** within Purview Audit blade
+    
+2.  Provide a **time range**
+    
+3.  Type **MailItemsAccessed** under operation names
+    
+4.  Click **Search**
+    
+5.  Click on the result below to show all the audit logs
+    
+
+> **Note** that this may take anywhere from a couple seconds to minutes depending on how much data is available in your tenant
 
 ![](../../assets/technology/purview-retention-ual/mailitemsaccessed-purview-audit-tool.png)
 
-Creating the audit retention policy
-
-![](../../assets/technology/purview-retention-ual/audit-retention-policy.png)
-
-*   **Data Security** 
-    
-*   Infromation Protection (Project 1 - Phase 1 completed, Phase 2 in progress)  
-    
-*   **Relevant Documents:** 
-    
-*   Adding an expiration to a document: [Use Case - Document Expiration.docx](https://brocksolutionsinc.sharepoint.com/:w:/r/sites/COCyberSecurity/_layouts/15/Doc.aspx?sourcedoc=%7B9AE82343-2C91-43D6-8DC5-7AD14F21BF6A%7D&file=Use%20Case%20-%20%20Document%20Expiration.docx&action=default&mobileredirect=true&xsdata=MDV8MDJ8fGRjZTdmM2UwMWE4ZjQ1NjkyNWZkMDhkZGJhNzMyOTA3fGM5MTViYjlmYzhhMTQ0M2JhNjNkMzYzODIzODVmOTQwfDB8MHw2Mzg4NzE3MjU5Mjg5NzQ0NDd8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pRMlptWmxabVF5WmpCa09UUXdZbVZpTWprNE16TTBOell4WmprMVl6azVRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpVeE5UYzFOemt5TkRNNXxjOTMzYjQxYjQwZGI0NmMwMjVmZDA4ZGRiYTczMjkwN3w4NGM3YzdiNDFlZDE0N2Q3YWY2MDBmNzY0MDljNTRiMg%3D%3D&sdata=NUJuK0k4dVhYaTlGSW9SUkZuWjgySFpUV251Z2hsNDFma2VPUmplZEd1ST0%3D&ovuser=c915bb9f-c8a1-443b-a63d-36382385f940%2Chanees%40brocksolutions.com)  
-    
-*   Revoking a document: [Use Case - Document Tracking and Revoking.docx](https://brocksolutionsinc.sharepoint.com/:w:/r/sites/COCyberSecurity/_layouts/15/Doc.aspx?sourcedoc=%7B6d2671d9-a8d7-41a0-a9a9-bb1fef3bfedc%7D&action=edit&wdPid=299e32b3&xsdata=MDV8MDJ8fGRjZTdmM2UwMWE4ZjQ1NjkyNWZkMDhkZGJhNzMyOTA3fGM5MTViYjlmYzhhMTQ0M2JhNjNkMzYzODIzODVmOTQwfDB8MHw2Mzg4NzE3MjU5Mjg5NzQ0NDd8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pRMlptWmxabVF5WmpCa09UUXdZbVZpTWprNE16TTBOell4WmprMVl6azVRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpVeE5UYzFOemt5TkRNNXxjOTMzYjQxYjQwZGI0NmMwMjVmZDA4ZGRiYTczMjkwN3w4NGM3YzdiNDFlZDE0N2Q3YWY2MDBmNzY0MDljNTRiMg%3D%3D&sdata=NUJuK0k4dVhYaTlGSW9SUkZuWjgySFpUV251Z2hsNDFma2VPUmplZEd1ST0%3D&ovuser=c915bb9f-c8a1-443b-a63d-36382385f940%2Chanees%40brocksolutions.com) 
-    
-*   What each label means: [Brock Sensitivity Labels-v2.pdf](https://brocksolutionsinc.sharepoint.com/:b:/r/sites/COCyberSecurity/Shared%20Documents/Projects/2025%20Project%20Management/Security%20-%20Sensitivity%20Labels%20-%20Phase%201%20\(Files%20%26%20Emails\)/Brock%20Sensitivity%20Labels-v2.pdf?csf=1&web=1&e=kdm0du) 
-    
-*   Previous PowerPoint for additional reference:    
-    [Sensitivity Labels (Files & Emails).pptx](https://brocksolutionsinc.sharepoint.com/:p:/r/sites/COCyberSecurity/_layouts/15/Doc.aspx?sourcedoc=%7BE0B418CA-3664-499A-8A4F-6E36DBB08C6B%7D&file=Sensitivity%20Labels%20\(Files%20%26%20Emails\).pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&ct=1740598702770&wdOrigin=OFFICECOM-WEB.MAIN.REC&cid=9aed248c-20df-4f71-844b-c55a6f3e8a21&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=d10eb231-3219-4a66-9a35-d3b3abca3cd3&xsdata=MDV8MDJ8fGRjZTdmM2UwMWE4ZjQ1NjkyNWZkMDhkZGJhNzMyOTA3fGM5MTViYjlmYzhhMTQ0M2JhNjNkMzYzODIzODVmOTQwfDB8MHw2Mzg4NzE3MjU5Mjg5NzQ0NDd8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pRMlptWmxabVF5WmpCa09UUXdZbVZpTWprNE16TTBOell4WmprMVl6azVRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpVeE5UYzFOemt5TkRNNXxjOTMzYjQxYjQwZGI0NmMwMjVmZDA4ZGRiYTczMjkwN3w4NGM3YzdiNDFlZDE0N2Q3YWY2MDBmNzY0MDljNTRiMg%3D%3D&sdata=ZWhWYzkwOWcxbWZ2eUtaOXZLY29rd3FyQi8reDh6dEZ2WXpMMzEweUlHVT0%3D&ovuser=c915bb9f-c8a1-443b-a63d-36382385f940%2Chanees%40brocksolutions.com) 
-    
-*   **Upcoming** 
-    
-*   Naming conventions - Requires executive leadership/business input  
-    
-*   Extending SharePoint permissions to downloaded documents 
-    
-*   Final configurations - will be adjusted 
-    
-*   Data Loss Prevention (Project 2) 
-    
-*   Insider Risk Management (Project 3) 
-    
-*   **Data Governance and Discovery** 
-    
-*   Data Map (Data discovery) - Not licensed/not configured 
-    
-*   Unified Catalog - Not licensed/not configured 
-    
-*   **Compliance & Risk Management** 
-    
-*   Compliance manager 
-    
-*   eDiscovery and Audit
-    
+You could also check within Sentinel as well by rerunning the query below.
 
 ```kql
 OfficeActivity
 | where Operation contains "MailItemsAccessed"
 ```
 
+There's a lot more you can do with the Unified Audit Log and with Purview that was not covered. However, this was a starting point to get going. If you have any questions, I’d love to hear from you. Hope this helped.
+
 References
 
-*    [Manage audit log retention policies | Microsoft Learn](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) 
-    
 *   [https://nathanmcnulty.com/blog/2025/04/comprehensive-guide-to-configuring-advanced-auditing/](https://nathanmcnulty.com/blog/2025/04/comprehensive-guide-to-configuring-advanced-auditing/)
