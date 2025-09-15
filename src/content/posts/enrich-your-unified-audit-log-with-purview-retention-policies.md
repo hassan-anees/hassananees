@@ -48,7 +48,7 @@ If they are missing then we can remediate this by enabling an audit retention po
 
 ### Audit Retention Policy with Purview
 
-An audit retention policy is part of Microsoft Purview's set of tools that cover data governance and compliance. If you've used Purview before, you understand that its capabilities is split between three areas:
+An audit retention policy is part of Microsoft Purview Audit. If you've used Purview before, you understand that its capabilities is split between three areas:
 
 1.  Data Security
     
@@ -57,13 +57,7 @@ An audit retention policy is part of Microsoft Purview's set of tools that cover
 3.  Compliance and Risk Management
     
 
-The Purview Audit tool lands in the third category for compliance. [Audit retention policies](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) lets you specify how long to retain audit logs for within your organization. You can be very broad or granular on your retention on specific data. Based on your lis180 days for logs generated on or after October 17, 2023
-
-on An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to 10 years. You can create policies based on the following criteria:
-
-We'll dive into audit retention policies within Purview.
-
-I'll give a short intro on Purview and audit retention policies. If you're unfamiliar with and its importance. A brief introIf you're unfamiliar In short, an audit - (good primer that was provided when discussing data sensitivity labels)
+The Purview Audit tool lands in the third category for compliance. [Audit retention policies](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) let you specify how long to retain audit logs for within your organization. These policies are flexible as you can specify retention on all activities in one of more Microsoft Services. You can retain data all the way to 10 years, but of course, you should align with the standard in your industry.
 
 ### Prerequisites
 
@@ -89,16 +83,16 @@ To assign the role, do the following:
 
 ### Getting Started
 
-With all the fluff out of the way, let's start creating our Audit Retention Policy. In short, an audit retention policies
+With all the fluff out of the way, let's start creating our audit retention policy.
 
-An audit log retention policy lets you specify how long to retain audit logs in your organization
-
-Prereq:
-
-*   A Global Administrator role is required to assign the Organization Management role to an admin to deploy the policy (this role is required to deploy an audit retention policy) otherwise you will get the following error
+1.  Head over to [purview.microsoft.com](http://purview.microsoft.com)
     
-
-![](../../assets/technology/purview-retention-ual/error-creating-policy.png)
+2.  Select **Solutions** \> **Explore all**
+    
+3.  Search for **Audit**
+    
+4.  Click **Policies**
+    
 
 Check within Purview
 
