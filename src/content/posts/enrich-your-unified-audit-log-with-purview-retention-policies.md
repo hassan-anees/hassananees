@@ -57,7 +57,7 @@ An audit retention policy is part of Microsoft Purview Audit. If you've used Pur
 3.  Compliance and Risk Management
     
 
-The Purview Audit tool lands in the third category for compliance. [Audit retention policies](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) let you specify how long to retain audit logs for within your organization. These policies are flexible as you can specify retention on all activities in one or more Microsoft Services. You can retain data all the way to 10 years, but of course, you should align with the standard in your industry.
+The Purview Audit tool lands in the third category for compliance. [Audit retention policies](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies) let you specify how long to retain audit logs for within your organization. These policies are flexible as you can specify retention on all activities in one or more Microsoft services. You can retain data all the way to 10 years, but of course, you should align with the standard in your industry.
 
 ### Prerequisites
 
@@ -95,7 +95,7 @@ With all the fluff out of the way, let's start creating our audit retention poli
     
 5.  Select **Create audit retention policy**
     
-6.  Fill out Policy name and Description
+6.  Fill out **Policy name** and **Description**
     
 7.  Leave the value for **Users** and **Record Type** empty to target all users and records
     
@@ -104,7 +104,7 @@ With all the fluff out of the way, let's start creating our audit retention poli
 9.  Click **Save** and leave the policy to marinate over night
     
 
-![](../../assets/technology/purview-retention-ual/create-audit-retention.png)
+![Creating an audit retention policy within Purview Audit](../../assets/technology/purview-retention-ual/create-audit-retention.png)
 
 ### Querying Audit Events
 
@@ -125,15 +125,13 @@ In the morning we can check within Purview Audit whether we getting audit event 
 
 ![](../../assets/technology/purview-retention-ual/mailitemsaccessed-purview-audit-tool.png)
 
-You could also check within Sentinel as well by rerunning the query below.
+You could also check within Sentinel as well by re-running the query below.
 
 ```kql
 OfficeActivity
 | where Operation contains "MailItemsAccessed"
 ```
 
+If you would like to go further in-depth with audit retention with PowerShell, Natan Mcnulty has a great [article](https://nathanmcnulty.com/blog/2025/04/comprehensive-guide-to-configuring-advanced-auditing/) that outlines how.
+
 There's a lot more you can do with the Unified Audit Log and with Purview that was not covered. However, this was a starting point to get going. If you have any questions, I’d love to hear from you. Hope this helped.
-
-References
-
-*   [https://nathanmcnulty.com/blog/2025/04/comprehensive-guide-to-configuring-advanced-auditing/](https://nathanmcnulty.com/blog/2025/04/comprehensive-guide-to-configuring-advanced-auditing/)
