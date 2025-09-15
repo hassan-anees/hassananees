@@ -132,6 +132,4 @@ OfficeActivity
 | where Operation contains "MailItemsAccessed"
 ```
 
-If you would like to go further in-depth with audit retention with PowerShell, Natan McNulty has a great [article](https://nathanmcnulty.com/blog/2025/04/comprehensive-guide-to-configuring-advanced-auditing/) that outlines how.
-
-There's a lot more you can do with the Unified Audit Log and with Purview that was not covered. However, this was a starting point to get going. If you have any questions, I’d love to hear from you. Hope this helped.
+If you would like to go further in-depth with audit retention with PowerShell, Natan McNulty has a great [article](https://nathanmcnulty.com/blog/2025/04/comprehensive-guide-to-configuring-advanced-auditing/) that outlines how. And if you would like deeper insight on the Unified Audit Log, I highly recommend Bert-Jan Pals [walkthrough](https://www.youtube.com/watch?v=CLYvovdlThk). If you have any questions, I’d love to hear from you. Hope this helped.
