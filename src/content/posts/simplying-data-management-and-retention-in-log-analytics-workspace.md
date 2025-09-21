@@ -24,8 +24,8 @@ For the purpose of this walk-through, we will focus on adjusting log retention i
 
 Before we actually adjust any policies we need to understand the types of logs held within the Log Analytics workspace. There are three main types of logs:
 
-1.  Analytical: These are your typical logs that readily available (hot storage) for any hunting queries, analytic rules, and workbooks.
+1.  **Analytical** or **Interactive Logs**: These are your typical logs that readily available (hot storage) for any hunting queries, analytic rules, and workbooks.
     
-2.  Basic _aka_ Auxiliary logs:
+2.  **Basic** _aka_ **Auxiliary logs**:
     
-3.  Archive
+3.  **Archive**:
