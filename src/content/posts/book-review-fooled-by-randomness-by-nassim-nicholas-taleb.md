@@ -10,7 +10,7 @@ draft: true
 > 
 > Nicholas Nassim Taleb, **Fooled by Randomness**
 
-The quote above was the source of inspiration for this write-up. I write not only to express what a fantastic book Fooled by Randomness is, but to reflect on the areas of the book the influenced me the most.
+The quote above was the source of inspiration for this write-up. I write not only to express what a fantastic book Fooled by Randomness is, but to reflect on the areas of the book the influenced my thinking the most.
 
 Fooled by Randomness by Nassim Nicholas Taleb is a fascinating book which I highly recommend for those interested in understanding hidden risk, misinterpretations of probability, and how randomness is nested in everything we do.
 
