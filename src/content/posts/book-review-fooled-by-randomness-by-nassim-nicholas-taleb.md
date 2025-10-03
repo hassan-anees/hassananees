@@ -20,7 +20,7 @@ Most of us were taught to not leave a bad impression on others. We were taught t
 
 Most people are hell-bent on making a good impression and do everything to avoid making a bad one. We were taught this from a young age and regardless of whether the action taken to make an impression is rooted in truth. This behavior is evident in all relationships, whether it is personal, business, or political.
 
-You can see this carried out by governments on a large-scale as they usually prioritize visible measures over effective ones. Ross Anderson illustrates this well in his book Security Engineering on the measures taken post 9/11. A notable example from the book is the distribution of security funding by the TSA. The TSA could have reduced most of their risk of hijackers by spending $100m on reinforcing cockpit doors. Instead, to demonstrate a visible measure, they spent the majority of their budget (around 14.7 billion) on passenger screening \[1\].
+You can see this carried out by governments on a large-scale as they usually prioritize visible measures over effective ones. Ross Anderson illustrates this well in his book Security Engineering on the measures taken post 9/11. A notable example from the book is the distribution of security funding by the TSA. The TSA could have reduced most of their risk of hijackers by spending $100m on reinforcing cockpit doors. Instead, to demonstrate a visible measure, they spent the majority of their budget (around 14.7 billion) on passenger screening \[^1\].
 
 TSA has spend billions on passenger screening which is quite ineffective while $100m spent on reinforcing cockpit doors mitigated majority of risks.
 
@@ -44,4 +44,4 @@ Below quote that had me associating this book to my own domain of Information Se
 
 ### References
 
-1.  This is something
+\[^1\]: This is something
