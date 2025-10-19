@@ -27,7 +27,9 @@ For example, the more time I practice painting, the better my paintings will bec
 
 However, let's say that I have the mental toughness to continue on despite no visible results. At the 6th month I have a "aha" moment and I am suddenly able to paint like Bob Ross. This is known as the **tipping** **point** (coined by Malcolm Gladwell) or a **nonlinear outcome**.
 
-Nonlinear outcomes are difficult to comprehend because small changes can lead to disproportionate results. We like linear outcomes because of their predictable nature and ease of understanding. Anything that is easier to understand is using **availability bias**. A natural human tendency to overweigh the importance of information that comes to us more easily.
+Nonlinear outcomes are difficult to comprehend because small changes can lead to disproportionate results. We like linear outcomes because of their predictable nature and ease of understanding. Anything that is easier to understand is using **availability bias**. A natural human tendency to overweigh the importance of information that comes to us more easily. Another way to say this is that we **undervalue** nonlinear outcomes, both in its occurrence and consequence.
+
+You can also look at this inversely aswell
 
 Our bias is towards linear outcomes because they are easier to understand. Due to their ease, they have av
 
