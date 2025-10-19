@@ -23,9 +23,11 @@ The quote above was the inspiration for this write-up. I write to express what a
 
 Your brain has a difficult time understanding nonlinear outcomes. Your emotional circuitry is built to understand linear outputs. Meaning if **x** causes **y** and if I increase **x**, then **y** will **always** increase **x**.
 
-For example, the more time I practice painting, the better my paintings will become. However, I could spent months learning to paint and not a single one of my paintings could show any improvement during that time. We often expect a **linear** **outcome**. That if you practice consistently, you will consistently get better. Nassime Taleb states that we rarely see a satisfying **linear outcome** in reality.
+For example, the more time I practice painting, the better my paintings will become. However, I could spent months learning to paint and not a single one of my paintings could show any improvement during that time. We often expect a **linear** **outcome**. That if you practice consistently, you will consistently get better. Nassim Taleb states that we rarely see a satisfying **linear outcome** in reality.
 
-However, let's say that I have the mental toughness to continue on despite no visible results. At the 6th month I have a "aha" moment and I am suddenly able to paint like Bob Ross. This is known as the **_tipping_** **_point_** famously coined by Malcolm Gladwell. More importantly This is also seen as a nonlinear outcome
+However, let's say that I have the mental toughness to continue on despite no visible results. At the 6th month I have a "aha" moment and I am suddenly able to paint like Bob Ross. This is known as the **tipping** **point** (coined by Malcolm Gladwell) or a **nonlinear outcome**.
+
+Nonlinear outcomes are difficult to comprehend because small changes can lead to disproportionate results. And sometimes those results are not visible until there is a **tipping point**.
 
 This happens more frequently than we imagine and is captured well in Malcolm Gladwell's The Tipping Point.
 
