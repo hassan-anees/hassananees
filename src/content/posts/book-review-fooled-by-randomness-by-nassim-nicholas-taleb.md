@@ -10,19 +10,10 @@ I write to express what a fantastic book Fooled by Randomness is and to reflect 
 
 1.  Our brains suck at **nonlinear** thinking
     
-2.  Why we choose **impressions** over impact
+2.  Why we choose to make good **impressions** over meaningful impact
     
-3.  How noise dissipates with enough time ergodicity averages over time with ergodicity
+3.  How the real signal reveals itself among the noise via **ergodicity**
     
-
-*   Your brain sucks at understanding nonlinearities
-    
-*   Making an impression
-    
-*   Everything is noise until it isn't - **ergodicity**
-    
-
-### Your Brain isn't Built for Nonlinearities
 
 ### Our Brains Suck at Nonlinear Thinking
 
@@ -32,7 +23,7 @@ For example, the more time I practice painting, the better my paintings will bec
 
 However, let's say that I have the mental toughness to continue despite no visible results. At the 6th month I have a "aha" moment and I am suddenly able to paint like Bob Ross. This is known as the **tipping** **point** (coined by Malcolm Gladwell) or a **nonlinear outcome**. We see this all throughout nature as well. An ice cube will not melt at 29°F, 30°F, or 31°F, but at 32°F (0°C).
 
-Nonlinear outcomes are difficult to comprehend because small changes can lead to disproportionate results. We like linear outcomes because of their predictable nature and ease of understanding. Anything that is easier to understand is using **availability bias**. A natural human tendency to overweigh the importance of information that comes to us more easily. We can interpret this inversely aswell, that we **undervalue** nonlinear outcomes, both in its occurrence and consequence (this sentence really needs to embedd rare event).
+Nonlinear outcomes are difficult to comprehend because small changes can lead to disproportionate results. We like linear outcomes because of their predictable nature and ease of understanding. Anything that is easier to understand is using **availability bias**. A natural human tendency to over weigh the importance of information that comes to us more easily. We can interpret this inversely aswell, that we **undervalue** nonlinear outcomes, both in its occurrence and consequence (this sentence really needs to embedd rare event).
 
 You can also look at this inversely aswell
 
