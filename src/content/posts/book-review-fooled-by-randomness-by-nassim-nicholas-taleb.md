@@ -6,11 +6,14 @@ description: Nassim Nicolas Taleb writes a fascinating book on the role of
 pubDate: 2025-09-14
 draft: true
 ---
-> I start with the platitude that one cannot judge a performance in any given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
-> 
-> Nicholas Nassim Taleb, **Fooled by Randomness**
+I write to express what a fantastic book Fooled by Randomness is and to reflect on the areas of the book the influenced my thinking the most. We'll talk about the following:
 
-The quote above was the inspiration for this write-up. I write to express what a fantastic book Fooled by Randomness is and to reflect on the areas of the book the influenced my thinking the most. I'll walk through the following:
+1.  Our brains suck at **nonlinear** thinking
+    
+2.  Why we choose **impressions** over impact
+    
+3.  How noise dissipates with enough time ergodicity averages over time with ergodicity
+    
 
 *   Your brain sucks at understanding nonlinearities
     
@@ -20,6 +23,8 @@ The quote above was the inspiration for this write-up. I write to express what a
     
 
 ### Your Brain isn't Built for Nonlinearities
+
+### Our Brains Suck at Nonlinear Thinking
 
 Your brain has a difficult time understanding nonlinear outcomes. Your emotional circuitry is built to understand linear outputs. Meaning if **x** causes **y** and if I increase **x**, then **y** will **always** increase **x**.
 
@@ -91,7 +96,9 @@ Below quote that had me associating this book to my own domain of Information Se
 
 ### Resonating Quotes
 
-> something
+> I start with the platitude that one cannot judge a performance in any given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
+> 
+> Nicholas Nassim Taleb, **Fooled by Randomness**
 
 ### References
 
