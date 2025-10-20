@@ -25,37 +25,13 @@ However, let's say that I have the mental toughness to continue despite no visib
 
 Nonlinear outcomes are difficult to comprehend because small changes can lead to disproportionate results. We like linear outcomes because of their predictable nature and ease of understanding. Anything that is easier to understand is using **availability bias**. A natural human tendency to over weigh the importance of information that comes to us more easily. We can interpret this inversely aswell, that we **undervalue** nonlinear outcomes, both in its occurrence and consequence (this sentence really needs to embedd rare event).
 
-You can also look at this inversely aswell
-
-Our bias is towards linear outcomes because they are easier to understand. Due to their ease, they have av
-
-Information that is easier more easily to us
-
-And those results are not visible until there is a **tipping point**. We have a bias for linear outcomes because they are easier to understand.
-
 ### Rare Events
-
-This happens more frequently than we imagine and is captured well in Malcolm Gladwell's The Tipping Point.
-
-The same applies to any domain. However, there
-
-From the outside it might seem a waste of time, but at some point I may come to understand the type
-
-The better I will be . However, we all know that reality is far from
-
-Taleb illustrates this example with studying, For example, when it comes to studying, the more we study, the more in proportion.
-
-Nonlinear outcomes mean that a small input results in a
-
-Our brain does a bad job understanding nonlinear outcomes. What I mean by nonlinear outcomes is having
-
-What I mean by non-linear outcomes are A basic example of non-linear outcomes is the result of compound interest.
 
 Our emotional circuitry is tailored to understanding
 
 ### Making an Impression
 
-Most people are hell-bent on making a good impression and do everything to avoid making a bad one. We were taught this from a young age and regardless of whether the action taken to make an impression is rooted in truth. This behavior is visible in all relationships, whether it is personal, business, or political.
+Most people are hell-bent on making a good impression and do everything to avoid making a bad one. This behavior is visible in all relationships, whether it is personal, business, or political.
 
 Within the realm of business, Nassim Taleb hammers against the role of the modern day risk manager within large financial institutions throughout the book. He stresses that their role has more to do with an impression of reducing risk than actual risk reduction. Unfortunately, this type of behavior is carried through many industries.
 
@@ -63,7 +39,7 @@ Within my field of cybersecurity, we typically see this as "security theater" wh
 
 The term was coined by Bruce Schneier his book Beyond Fear.
 
-This might seem odd, but we can see patterns of this behavior
+This might seem odd, but we can see patterns of this behavior all over. Its driven from incentives. Incentive based motivation
 
 While the book concentrates on the financial industry, the underlying principles can be rooted to many domains.
 
@@ -90,6 +66,10 @@ Below quote that had me associating this book to my own domain of Information Se
 > I start with the platitude that one cannot judge a performance in any given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
 > 
 > Nicholas Nassim Taleb, **Fooled by Randomness**
+
+**Backups**
+
+Most people are hell-bent on making a good impression and do everything to avoid making a bad one. We were taught this from a young age and regardless of whether the action taken to make an impression is rooted in truth. This behavior is visible in all relationships, whether it is personal, business, or political.
 
 ### References
 
