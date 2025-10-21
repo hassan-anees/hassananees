@@ -33,7 +33,11 @@ Our emotional circuitry is tailored to understanding
 
 Most people are hell-bent on making a good impression and do everything to avoid making a bad one. This behavior is visible in all relationships, whether it is personal, business, or political.
 
-Within the realm of business, Nassim Taleb hammers against the role of the modern day risk manager within large financial institutions throughout the book. He stresses that their role has more to do with an impression of reducing risk than actual risk reduction. Unfortunately, this type of behavior is carried through many industries.
+Within the realm of business, Nassim Taleb hammers against the role of the modern day risk manager within large financial institutions throughout the book.
+
+> From the standpoint of an institution, the existence of a risk manager has less to do with actual risk reduction than it has to do with the impression of risk reduction.
+
+Unfortunately, this type of behavior is carried through many industries.
 
 Within my field of cybersecurity, we typically see this as "security theater" which means to implement measures that evoke a feeling of security without actually improving security. You can see this carried out by governments on a large-scale as they usually prioritize visible measures over effective ones. Ross Anderson illustrates this well in his book Security Engineering on the measures taken post 9/11. A notable example from the book is the distribution of security funding by the TSA. The TSA could have reduced most of their risk of hijackers by spending $100m on reinforcing cockpit doors. Instead, to demonstrate a visible measure, they spent the majority of their budget (around 14.7 billion) on passenger screening \[^1\].
 
