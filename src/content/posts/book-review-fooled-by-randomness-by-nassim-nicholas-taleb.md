@@ -15,11 +15,7 @@ I write to express what a fantastic book Fooled by Randomness is and to reflect 
 3.  How the real signal reveals itself among the noise via **ergodicity**
     
 
-Many of the topics Nassim Taleb writes pertains to the financial industry and the role randomness plays within the market. However, many of the arguments are deeply rooted in principles statistics and human behavior.
-
-catered to the financial industry and probabilities
-
-While the book focuses on the role of randomness in the financial market, it covers high-level principles rooted in statistics, probability, and psychology which help apply the main takeaways across many domains.
+Many of the topics Nassim Taleb writes pertains to the role randomness plays in financial markets. You learn plenty on common misunderstandings when it comes to statistics and probability. However, to my surprise, many of the arguments made in the book are deeply rooted in timeless principles of human behavior.
 
 ### Our Brains Suck at Nonlinear Thinking
 
