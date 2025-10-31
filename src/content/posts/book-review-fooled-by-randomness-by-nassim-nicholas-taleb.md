@@ -15,11 +15,17 @@ I write to express what a fantastic book Fooled by Randomness is and to reflect 
 3.  How the real signal reveals itself among the noise via **ergodicity**
     
 
+Many of the topics Nassim Taleb writes pertains to the financial industry and the role randomness plays within the market. However, many of the arguments are deeply rooted in principles statistics and human behavior.
+
+catered to the financial industry and probabilities
+
+While the book focuses on the role of randomness in the financial market, it covers high-level principles rooted in statistics, probability, and psychology which help apply the main takeaways across many domains.
+
 ### Our Brains Suck at Nonlinear Thinking
 
 Your brain has a difficult time understanding nonlinear outcomes. Your emotional circuitry is built to understand linear outputs. Meaning if **x** causes **y** and if I increase **x**, then **y** will **always** increase **x**.
 
-For example, the more time I practice painting, the better my paintings will become. However, I could spend months painting and not a single one of my paintings could show any improvement during that time. We often expect a **linear** **outcome**. Meaning that if you practice consistently, you will consistently get better. Nassim Taleb states that we rarely see a satisfying **linear outcome** in reality.
+For example, the more time I practice painting, the better my paintings will become. However, I could spend months painting and not a single one of my paintings could show any improvement during that time. We often expect a **linear** **outcome**. Meaning that if you practice consistently, you will consistently get better. Nassim Taleb states that we rarely see satisfying **linear outcomes** in reality.
 
 However, let's say that I have the mental toughness to continue despite no visible results. At the 6th month I have a "aha" moment and I am suddenly able to paint like Bob Ross. This is known as the **tipping** **point** or a **nonlinear outcome**. We see this all throughout nature as well. An ice cube will not melt at 29°F, 30°F, or 31°F, but at 32°F (0°C).
 
@@ -28,6 +34,8 @@ Nonlinear outcomes are difficult to comprehend because small changes can lead to
 In similar fashion, Nassim Taleb says many people both undervalue and misunderstand nonlinear outcomes. This leads us either blindly ignoring rare events or being ill prepared for them.
 
 ### Making an Impression
+
+Nassim Taleb focuses on rare events and its relationship to prob
 
 Most people are hell-bent on making a good impression and do everything to avoid making a bad one. This behavior is visible in all relationships, whether it is personal, business, or political.
 
