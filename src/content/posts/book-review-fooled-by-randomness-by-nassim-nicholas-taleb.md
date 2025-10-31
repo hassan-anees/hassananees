@@ -17,6 +17,10 @@ I write to express what a fantastic book Fooled by Randomness is and to reflect 
 
 Many of the topics Nassim Taleb writes pertains to the role randomness plays in financial markets. You learn plenty on common misunderstandings of statistics and probability. However, to my surprise (and delight), many of the arguments made in the book are deeply rooted in timeless principles of human behavior.
 
+### From Noise to Signal
+
+Nassim Taleb.
+
 ### Our Brains Suck at Nonlinear Thinking
 
 Your brain has a difficult time understanding nonlinear outcomes. Your emotional circuitry is built to understand linear outputs. Meaning if **x** causes **y** and if I increase **x**, then **y** will **always** increase **x**.
