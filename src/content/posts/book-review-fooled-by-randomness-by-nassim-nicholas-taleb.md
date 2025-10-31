@@ -25,7 +25,7 @@ However, let's say that I have the mental toughness to continue despite no visib
 
 Nonlinear outcomes are difficult to comprehend because small changes can lead to disproportionate results. We like linear outcomes because of their predictable nature and ease of understanding. Anything that is easier to understand is using **availability bias**. A natural human tendency to over weigh the importance of information that comes to us more easily.
 
-In similar fashion, Nassim Taleb says we both undervalue and misunderstand nonlinear outcomes. This leads us either blindly ignoring rare events or being ill prepared for them.
+In similar fashion, Nassim Taleb says many people both undervalue and misunderstand nonlinear outcomes. This leads us either blindly ignoring rare events or being ill prepared for them.
 
 ### Making an Impression
 
