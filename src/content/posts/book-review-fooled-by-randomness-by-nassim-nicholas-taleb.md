@@ -19,7 +19,9 @@ Many of the topics Nassim Taleb writes pertains to the role randomness plays in 
 
 ### From Noise to Signal
 
-Nassim Taleb.
+I enjoyed reading Nassim phrases/states how history on a long of enough scale.
+
+Nassim Taleb discusses the concept of ergodicity.
 
 ### Our Brains Suck at Nonlinear Thinking
 
