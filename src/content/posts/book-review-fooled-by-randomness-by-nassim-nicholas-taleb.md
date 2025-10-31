@@ -19,6 +19,8 @@ Many of the topics Nassim Taleb writes pertains to the role randomness plays in 
 
 ### From Noise to Signal
 
+The way Nassim Taleb describe the process of extracting signal from noise caught my attention. Specfiically he states
+
 I enjoyed reading Nassim phrases/states how history on a long of enough scale.
 
 Nassim Taleb discusses the concept of ergodicity.
