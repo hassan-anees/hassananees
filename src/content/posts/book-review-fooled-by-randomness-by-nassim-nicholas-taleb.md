@@ -37,23 +37,17 @@ Within the realm of business, Nassim Taleb hammers against the role of the moder
 
 Unfortunately, this type of behavior is carried through many industries.
 
-Within my field of cybersecurity, we typically see this as "security theater" which means to implement measures that evoke a feeling of security without actually improving security. You can see this carried out by governments on a large-scale as they usually prioritize visible measures over effective ones. Ross Anderson illustrates this well in his book Security Engineering on the measures taken post 9/11. A notable example from the book is the distribution of security funding by the TSA. The TSA could have reduced most of their risk of hijackers by spending $100m on reinforcing cockpit doors. Instead, to demonstrate a visible measure, they spent the majority of their budget (around 14.7 billion) on passenger screening \[^1\].
+Within the field of cybersecurity, we typically see this as "security theater" which means to implement measures that evoke a feeling of security without actually improving security. You can see this carried out by governments on a large-scale as they usually prioritize visible measures over effective ones.
+
+Ross Anderson illustrates this well in his book Security Engineering on the measures taken post 9/11. A notable example being the distribution of security funding by the TSA. The TSA could have reduced most of their risk of hijackers by spending $100m on reinforcing cockpit doors. Instead, to demonstrate a visible measure, they spent the majority of their budget (around 14.7 billion) on passenger screening \[^1\].
+
+There are many reasons for prioritizing
 
 The term was coined by Bruce Schneier his book Beyond Fear.
 
 This might seem odd, but we can see patterns of this behavior all over. Its driven from incentives. Incentive based motivation
 
 While the book concentrates on the financial industry, the underlying principles can be rooted to many domains.
-
-> From the standpoint of an institution, the existence of a risk manager has less to do with actual risk reduction than it has to do with the impression of risk reduction.
-
-Most people are hell-bent on making a good impression and do everything to avoid making a bad one. We were taught this from a young age and regardless of whether the action taken to make an impression is rooted in truth. This behavior is evident in all relationships, whether it is personal, business, or political.
-
-You can see this carried out by governments on a large-scale as they usually prioritize visible measures over effective ones. Ross Anderson illustrates this well in his book Security Engineering on the measures taken post 9/11. A notable example from the book is the distribution of security funding by the TSA. The TSA could have reduced most of their risk of hijackers by spending $100m on reinforcing cockpit doors. Instead, to demonstrate a visible measure, they spent the majority of their budget (around 14.7 billion) on passenger screening \[^1\].
-
-TSA has spend billions on passenger screening which is quite ineffective while $100m spent on reinforcing cockpit doors mitigated majority of risks.
-
-Everything is carried out by emotions. Actions are carried out by emotions
 
 > From the standpoint of an institution, the existence of a risk manager has less to do with actual risk reduction than it has to do with the impression of risk reduction.
 
