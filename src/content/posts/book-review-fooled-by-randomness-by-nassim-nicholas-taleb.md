@@ -8,14 +8,14 @@ draft: true
 ---
 I write to express what a fantastic book Fooled by Randomness is and to reflect on the areas of the book the influenced my thinking the most. We'll talk about the following:
 
-1.  Our brains suck at **nonlinear** thinking
+1.  How the real signal reveals itself among the noise via **ergodicity**
     
-2.  Why we choose to make good **impressions** over meaningful impact
+2.  Our brains suck at **nonlinear** thinking
     
-3.  How the real signal reveals itself among the noise via **ergodicity**
+3.  Why we choose to make good **impressions** over meaningful impact
     
 
-Many of the topics Nassim Taleb writes pertains to the role randomness plays in financial markets. You learn plenty on common misunderstandings when it comes to statistics and probability. However, to my surprise, many of the arguments made in the book are deeply rooted in timeless principles of human behavior.
+Many of the topics Nassim Taleb writes pertains to the role randomness plays in financial markets. You learn plenty on common misunderstandings of statistics and probability. However, to my surprise (and delight), many of the arguments made in the book are deeply rooted in timeless principles of human behavior.
 
 ### Our Brains Suck at Nonlinear Thinking
 
@@ -31,7 +31,7 @@ In similar fashion, Nassim Taleb says many people both undervalue and misunderst
 
 ### Making an Impression
 
-Nassim Taleb focuses on rare events and its relationship to prob
+This last section leans more into the human behavior concepts that are littered throughout the book.
 
 Most people are hell-bent on making a good impression and do everything to avoid making a bad one. This behavior is visible in all relationships, whether it is personal, business, or political.
 
