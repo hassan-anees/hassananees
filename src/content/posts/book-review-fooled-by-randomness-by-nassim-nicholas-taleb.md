@@ -6,14 +6,24 @@ description: Nassim Nicolas Taleb writes a fascinating book on the role of
 pubDate: 2025-09-14
 draft: true
 ---
-I write to express what a fantastic book Fooled by Randomness is and to reflect on the areas of the book the influenced my thinking the most. We'll talk about the following:
+I write to express what a fantastic book Fooled by Randomness is and to reflect on the areas of the book the influenced my thinking the most. This post is not meant to summarise Nassim Taleb's as he both clear and direct in his literature. Instead, I am here as a student of psychology and a practitioner in security attempting to relate the principles laid out in the book within the field.
 
-1.  How the real signal reveals itself among the noise via **ergodicity**
+We'll talk about the following:
+
+1.  Alternative histories
     
-2.  Our brains suck at **nonlinear** thinking
+2.  How the real signal reveals itself among the noise via **ergodicity**
     
-3.  Why we choose to make good **impressions** over meaningful impact
+3.  Our brains suck at **nonlinear** thinking
     
+4.  Why we choose to make good **impressions** over meaningful impact
+    
+
+One of the most profound states I have read was Taleb's perspective on alternative histories.
+
+> I start with the platitude that one cannot judge a performance in any given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
+
+In truth, the quote above was the sole inspiration for this post. While I am sure Taleb's intention was not hovering over the field of cybersecurity, I find that we can take.
 
 Many of the topics Nassim Taleb writes pertains to the role randomness plays in financial markets. You learn plenty on common misunderstandings of statistics and probability. However, to my surprise (and delight), many of the arguments made in the book are deeply rooted in timeless principles of human behavior.
 
