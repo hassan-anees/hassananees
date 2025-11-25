@@ -10,30 +10,22 @@ I write to express what a fantastic book Fooled by Randomness is and to reflect 
 
 We'll talk about the following:
 
-1.  Alternative histories
+1.  The most impactful quote
     
-2.  How the real signal reveals itself among the noise via **ergodicity**
+2.  Our brains suck at **nonlinear** thinking
     
-3.  Our brains suck at **nonlinear** thinking
-    
-4.  Why we choose to make good **impressions** over meaningful impact
+3.  Why we choose to make good **impressions** over meaningful impact
     
 
-One of the most profound statements I have read was Taleb's perspective on alternative histories.
+**The Most Impactful Quote**
+
+One of the most profound statements I have read was Taleb's perspective on alternative histories and its relation to judging performance.
 
 > I start with the platitude that one cannot judge a performance in any given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
 
-In truth, the quote above was the sole inspiration for this post. While Taleb's thoughts were likely not hovering over the field of cybersecurity, I find that this statement clearly reflects what practitioners in information security keep in mind.
+The quote above was the sole inspiration for this post. It directly applies to the cybersecurity field where practitioners constantly take measures to safeguard sensitive information like your personal, health, and financial data. The goal is always to avoid the costly scenarios such as data breaches and ensuring critical operations stay uninterrupted.
 
-Many of the topics Nassim Taleb writes pertains to the role randomness plays in financial markets. You learn plenty on common misunderstandings of statistics and probability. However, to my surprise (and delight), many of the arguments made in the book are deeply rooted in timeless principles of human behavior.
-
-### From Noise to Signal
-
-The way Nassim Taleb describe the process of extracting signal from noise caught my attention. Specfiically he states
-
-I enjoyed reading Nassim phrases/states how history on a long of enough scale.
-
-Nassim Taleb discusses the concept of ergodicity.
+While the focus on Talebs book pertains to the role randomness plays in financial markets, you learn plenty on common misunderstandings of statistics and probability and how that can apply within any field. To my delight, many of the arguments made in the book are deeply rooted in timeless principles of human behavior which we'll talk about next.
 
 ### Our Brains Suck at Nonlinear Thinking
 
@@ -88,6 +80,8 @@ Below quote that had me associating this book to my own domain of Information Se
 **Backups**
 
 Most people are hell-bent on making a good impression and do everything to avoid making a bad one. We were taught this from a young age and regardless of whether the action taken to make an impression is rooted in truth. This behavior is visible in all relationships, whether it is personal, business, or political.
+
+Many of the topics Nassim Taleb writes pertains to the role randomness plays in financial markets. You learn plenty on common misunderstandings of statistics and probability. However, to my surprise (and delight), many of the arguments made in the book are deeply rooted in timeless principles of human behavior.
 
 ### Further Reading
 
