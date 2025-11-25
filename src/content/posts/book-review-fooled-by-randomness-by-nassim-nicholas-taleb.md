@@ -10,12 +10,14 @@ I write to express what a fantastic book Fooled by Randomness is and to reflect 
 
 We'll talk about the following:
 
-1.  The most impactful quote
+1.  The most **impactful** quote
     
 2.  Our brains suck at **nonlinear** thinking
     
 3.  Why we choose to make good **impressions** over meaningful impact
     
+
+As a very brief overview, Talebs book highlights the role randomness plays in financial markets. You learn plenty on common misunderstandings of statistics and probability and how that can apply within any field. To my delight, many of the arguments made in the book are deeply rooted in timeless principles of human behavior which you'll see sprinkles of through the post.
 
 **The Most Impactful Quote**
 
@@ -23,9 +25,7 @@ One of the most profound statements I have read was Taleb's perspective on alter
 
 > I start with the platitude that one cannot judge a performance in any given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
 
-The quote above was the sole inspiration for this post. It directly applies to the cybersecurity field where practitioners constantly take measures to safeguard sensitive information like your personal, health, and financial data. The goal is always to avoid the costly scenarios such as data breaches and ensuring critical operations stay uninterrupted.
-
-While the focus on Talebs book pertains to the role randomness plays in financial markets, you learn plenty on common misunderstandings of statistics and probability and how that can apply within any field. To my delight, many of the arguments made in the book are deeply rooted in timeless principles of human behavior which we'll talk about next.
+The quote above was the sole inspiration for this post. It directly applies to the cybersecurity field where practitioners constantly take measures to safeguard sensitive information like your personal, health, and financial data. The goal is always to avoid the costly scenarios such as data breaches and ensuring critical operations stay uninterrupted. Yearly reports on the state of cybersecurity largely highlight catastrophe's that were avoided with a sprinkle of new innovations within the field.
 
 ### Our Brains Suck at Nonlinear Thinking
 
