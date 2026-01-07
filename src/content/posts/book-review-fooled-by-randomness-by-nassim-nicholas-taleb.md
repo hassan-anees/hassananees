@@ -3,7 +3,7 @@ author: Hassan Anees
 title: "Book Review: Fooled by Randomness by Nassim Nicholas Taleb"
 description: Nassim Nicolas Taleb writes a fascinating book on the role of
   randomness when it comes risk taking. I outline key takeaways that stood out.
-pubDate: 2025-09-14
+pubDate: 2026-01-07
 draft: true
 ---
 I write to express what a fantastic book Fooled by Randomness is and to reflect on the areas of the book that influenced my thinking the most. This post is not meant to summarize Nassim Taleb's writing as he is clear in his literature. Instead, I am here as a student of psychology and a practitioner in security attempting to relate the principles laid out in the book within my own field.
@@ -17,11 +17,11 @@ We'll talk about the following:
 3.  The most **impactful** quote
     
 
-As a very brief overview, Taleb's book highlights the role randomness plays in financial markets. You learn plenty on common misunderstandings of statistics and probability and how that can apply within any field. To my delight, many of the arguments made in the book are deeply rooted in timeless principles of human behavior which I'll highlight throughout the post.
+As a very brief overview, Taleb's book highlights the role randomness plays in financial markets. You learn about common misunderstandings of statistics and probability and how it applies in any field. Many of the arguments made in the book are deeply rooted in timeless principles of human behavior which I'll highlight throughout the post.
 
 ### Our Brains Suck at Nonlinear Thinking
 
-Your brain has a difficult time understanding nonlinear outcomes because your emotional circuitry is built to understand linear outputs instead. Taleb highlights that when we believe two variables are causally related, then we also believe that a steady increase in one variable will always produce a result in the other variable. The reason this matters is that this causes people to misjudge the likelihood of rare events which leads to overall poor decision making.
+Your brain has a difficult time understanding nonlinear outcomes because your emotional circuitry is built to understand linear outputs instead. Taleb highlights that when we believe two variables are causally related, then we also believe that a steady increase in one variable will always produce a result in the other variable. This concept is important since this causes people to misjudge the likelihood of rare events which leads to overall poor decision making.
 
 We can illustrate this notion with an example of learning to play piano. I would expect the more I practice playing piano, the better my skills will become. However, the reality is that I could spend months practicing and still not be able to play a single song during that time. We often expect a **linear** **outcome**. Meaning that if you practice consistently, you will consistently get better. Taleb states that we rarely see satisfying **linear outcomes** in reality.
 
@@ -57,4 +57,4 @@ The quote above was the sole inspiration for this post. It directly applies to t
 
 ### The Bottom Line
 
-Fooled by Randomness by Nassim Nicholas Taleb is a fascinating book which I highly recommend for those interested in understanding hidden risk, misinterpretations of probability, and how randomness is nested in everything we do.
+Fooled by Randomness by Nassim Nicholas Taleb is a book worth reading for those interested in understanding hidden risk, misinterpretations of probability, and how randomness is nested in everything we do.
