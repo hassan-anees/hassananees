@@ -4,15 +4,15 @@ title: "Book Review: Fooled by Randomness by Nassim Nicholas Taleb"
 description: Nassim Nicolas Taleb writes a fascinating book on the role of
   randomness when it comes risk taking. I outline key takeaways that stood out.
 pubDate: 2026-01-07
-draft: true
+draft: false
 ---
 One of the most profound statements I have read in Fooled by Randomness was how we judge performance in any field.
 
-> I start with the platitude that one cannot judge a performance in any\` given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
+> I start with the platitude that one cannot judge a performance in any given field (war, politics, medicine, investments) by the results, but by the costs of the alternative (i.e., if history played out in a different way). Such substitute courses of events are called alternative histories.
 
 The quote above was the sole inspiration for this post. It applies to the information security field where practitioners constantly take measures to safeguard sensitive information like your personal, health, and financial data. The goal is always to avoid the costly scenarios like data breaches and ensuring critical operations stay uninterrupted.
 
-I write to express what a fantastic book Fooled by Randomness is and to reflect on areas of the book that most influenced my thinking. This post is not meant to summarize Nassim Taleb's writing as he is clear in his literature. Instead, I am here as a student of psychology and a practitioner in security attempting to relate the principles laid out in the book within my own field.
+I write to express what a fantastic book Fooled by Randomness is and to reflect on areas of the book that influenced my thinking. This post is not meant to summarize Nassim Taleb's writing as he is clear in his literature. Instead, I am here as a student of psychology and a practitioner in security attempting to relate the principles laid out in the book within my own field.
 
 We'll talk about two areas:
 
