@@ -6,18 +6,22 @@ description: Nassim Nicolas Taleb writes a fascinating book on the role of
 pubDate: 2026-01-07
 draft: true
 ---
-I write to express what a fantastic book Fooled by Randomness is and to reflect on the areas of the book that influenced my thinking the most. This post is not meant to summarize Nassim Taleb's writing as he is clear in his literature. Instead, I am here as a student of psychology and a practitioner in security attempting to relate the principles laid out in the book within my own field.
+One of the most profound statements I have read in Fooled by Randomness was how we judge performance in any field.
 
-We'll talk about the following:
+> I start with the platitude that one cannot judge a performance in any\` given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
+
+The quote above was the sole inspiration for this post. It applies to the information security field where practitioners constantly take measures to safeguard sensitive information like your personal, health, and financial data. The goal is always to avoid the costly scenarios like data breaches and ensuring critical operations stay uninterrupted.
+
+I write to express what a fantastic book Fooled by Randomness is and to reflect on areas of the book that most influenced my thinking. This post is not meant to summarize Nassim Taleb's writing as he is clear in his literature. Instead, I am here as a student of psychology and a practitioner in security attempting to relate the principles laid out in the book within my own field.
+
+We'll talk about two areas:
 
 1.  Our brains suck at **nonlinear** thinking
     
 2.  Why we choose to make good **impressions** over meaningful impact
     
-3.  The most **impactful** quote
-    
 
-As a very brief overview, Taleb's book highlights the role randomness plays in financial markets. You learn about common misunderstandings of statistics and probability and how it applies in any field. Many of the arguments made in the book are deeply rooted in timeless principles of human behavior which I'll highlight throughout the post.
+As a brief overview, Taleb's book highlights the role randomness plays in financial markets. You learn about common misunderstandings of statistics and probability and how it applies in any field. Many arguments made in the book are rooted in principles of human behavior which I'll highlight throughout the post.
 
 ### Our Brains Suck at Nonlinear Thinking
 
@@ -43,17 +47,9 @@ Within the realm of business, Taleb hammers against the role of the modern day r
 
 Unfortunately, this type of behavior is carried through many industries.
 
-Within the cybersecurity field, we typically see this as "security theater" which means to implement measures that evoke a feeling of security without actually improving security. You can see this carried out by governments on a large-scale as they usually prioritize visible measures over effective ones.
+In the information security field, we typically see this as "security theater" which means to implement measures that evoke a feeling of security without actually improving security. You can see this carried out by governments on a large-scale as they usually prioritize visible measures over effective ones.
 
 Ross Anderson illustrates this well in his book Security Engineering on the measures taken post 9/11. A notable example being the distribution of security funding by the TSA. The TSA could have reduced most of their risk of hijackers by spending $100m on reinforcing cockpit doors. Instead, to demonstrate a visible measure, they spent the majority of their budget (around 14.7 billion) on passenger screening.
-
-### The Most Impactful Quote
-
-One of the most profound statements I read was Taleb's perspective on judging performance and its relation to alternative histories.
-
-> I start with the platitude that one cannot judge a performance in any given field (war, politics, medicine, investments) by the results, but by the costs of the alternative
-
-The quote above was the sole inspiration for this post. It directly applies to the cybersecurity field where practitioners constantly take measures to safeguard sensitive information like your personal, health, and financial data. The goal is always to avoid the costly scenarios such as data breaches and ensuring critical operations stay uninterrupted. Yearly reports on the state of cybersecurity largely highlight catastrophes that were avoided with a sprinkle of new innovations within the field.
 
 ### The Bottom Line
 
