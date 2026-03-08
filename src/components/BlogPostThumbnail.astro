@@ -1,15 +1,23 @@
 ---
-const { url, title, pubDate, description } = Astro.props;
+const { url, title, pubDate, description, draft } = Astro.props;
+const isDev = import.meta.env.DEV;
 ---
 
 <a href={url}>
   <div class="flex flex-col py-5 mt-auto border-b-2 border-gray-100 group">
-    <h3
-      class="text-lg font-bold transition duration-300 ease-in-out text-zinc-900 group-hover:text-cyan-600"
-    >
-      {title}
-    </h3>
-    <p class="font-serif font-light">{description}</p>
+    <div class="flex items-center gap-2">
+      <h3
+        class="text-lg font-bold transition duration-300 ease-in-out text-zinc-900 group-hover:text-cyan-600"
+      >
+        {title}
+      </h3>
+      {isDev && draft && (
+        <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 border border-amber-300 shrink-0">
+          Draft
+        </span>
+      )}
+    </div>
+    <p class="font-serif font-light line-clamp-2">{description}</p>
     <a
       class="font-serif italic text-pink-600 transition-all duration-300 ease-in-out group"
       href={url}
