@@ -43,6 +43,9 @@ content:
               label: Industry
             - value: research
               label: Research
+      - name: startYear
+        label: Start Year
+        type: number
 
   - name: posts
     label: Posts

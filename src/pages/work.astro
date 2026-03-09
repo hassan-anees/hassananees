@@ -3,8 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const allWork = await getCollection("work");
-const industry = allWork.filter((item) => item.data.category === "industry");
-const research = allWork.filter((item) => item.data.category === "research");
+const sortByYear = (a: any, b: any) => b.data.startYear - a.data.startYear;
+const industry = allWork.filter((item) => item.data.category === "industry").sort(sortByYear);
+const research = allWork.filter((item) => item.data.category === "research").sort(sortByYear);
 ---
 
 <Layout title="Work | Hassan Anees">

@@ -3,4 +3,5 @@ title: Backend Engineer
 organization: Curetrax
 period: "2023"
 category: industry
+startYear: 2023
 ---

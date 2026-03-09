@@ -26,6 +26,7 @@ const workCollection = defineCollection({
     organization: z.string(),
     period: z.string(),
     category: z.enum(["industry", "research"]),
+    startYear: z.number(),
   }),
 });
 
