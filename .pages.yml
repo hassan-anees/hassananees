@@ -18,23 +18,31 @@ media:
 content:
   - name: work
     label: Work
-    type: file
-    path: src/data/work.json
+    type: collection
+    path: src/content/work
+    filename: '{primary}.md'
+    view:
+      fields: [title, organization, period, category]
+      primary: title
     fields:
-      - name: industry
-        label: Industry
-        type: list
-        fields:
-          - { name: title, label: Title, type: string }
-          - { name: organization, label: Organization, type: string }
-          - { name: period, label: Period, type: string }
-      - name: research
-        label: Research
-        type: list
-        fields:
-          - { name: title, label: Title, type: string }
-          - { name: organization, label: Organization, type: string }
-          - { name: period, label: Period, type: string }
+      - name: title
+        label: Title
+        type: string
+      - name: organization
+        label: Organization
+        type: string
+      - name: period
+        label: Period
+        type: string
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - value: industry
+              label: Industry
+            - value: research
+              label: Research
 
   - name: posts
     label: Posts

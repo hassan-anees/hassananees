@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import work from "../data/work.json";
+import { getCollection } from "astro:content";
+
+const allWork = await getCollection("work");
+const industry = allWork.filter((item) => item.data.category === "industry");
+const research = allWork.filter((item) => item.data.category === "research");
 ---
 
 <Layout title="Work | Hassan Anees">
@@ -15,11 +19,11 @@ import work from "../data/work.json";
       <div class="text-gray-600">
         <div id="industry" class="mb-10">
           <h4 class="text-xl font-bold text-black">Industry</h4>
-          {work.industry.map((item, i) => (
-            <div class={i < work.industry.length - 1 ? "border-b-2 border-gray-100" : ""}>
+          {industry.map((item, i) => (
+            <div class={i < industry.length - 1 ? "border-b-2 border-gray-100" : ""}>
               <div class="my-4">
-                <h2 class="text-lg font-semibold">{item.title}</h2>
-                <h3 class="font-semibold text-gray-400">{item.organization}, {item.period}</h3>
+                <h2 class="text-lg font-semibold">{item.data.title}</h2>
+                <h3 class="font-semibold text-gray-400">{item.data.organization}, {item.data.period}</h3>
               </div>
             </div>
           ))}
@@ -27,11 +31,11 @@ import work from "../data/work.json";
 
         <div id="research">
           <h4 class="text-xl font-bold text-black">Research</h4>
-          {work.research.map((item, i) => (
-            <div class={i < work.research.length - 1 ? "border-b-2 border-gray-100" : ""}>
+          {research.map((item, i) => (
+            <div class={i < research.length - 1 ? "border-b-2 border-gray-100" : ""}>
               <div class="my-4">
-                <h2 class="text-lg font-semibold">{item.title}</h2>
-                <h3 class="font-semibold text-gray-400">{item.organization}, {item.period}</h3>
+                <h2 class="text-lg font-semibold">{item.data.title}</h2>
+                <h3 class="font-semibold text-gray-400">{item.data.organization}, {item.data.period}</h3>
               </div>
             </div>
           ))}

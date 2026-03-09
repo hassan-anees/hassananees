@@ -19,7 +19,18 @@ const postsCollection = defineCollection({
     draft: z.boolean().optional(),
   }),
 });
+const workCollection = defineCollection({
+  loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/work/" }),
+  schema: z.object({
+    title: z.string(),
+    organization: z.string(),
+    period: z.string(),
+    category: z.enum(["industry", "research"]),
+  }),
+});
+
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   posts: postsCollection,
+  work: workCollection,
 };
