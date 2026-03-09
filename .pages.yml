@@ -16,6 +16,26 @@ media:
     input: public/covers
     output: ../../../public/covers
 content:
+  - name: work
+    label: Work
+    type: file
+    path: src/data/work.json
+    fields:
+      - name: industry
+        label: Industry
+        type: list
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: organization, label: Organization, type: string }
+          - { name: period, label: Period, type: string }
+      - name: research
+        label: Research
+        type: list
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: organization, label: Organization, type: string }
+          - { name: period, label: Period, type: string }
+
   - name: posts
     label: Posts
     type: collection
