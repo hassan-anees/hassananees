@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui"
   },
   "engines": {
     "node": ">=18.20.8 <21"
@@ -31,6 +33,7 @@
   "devDependencies": {
     "@iconify-json/logos": "^1.1.42",
     "@iconify-json/mdi": "^1.1.64",
+    "@playwright/test": "^1.58.2",
     "@tailwindcss/typography": "^0.5.12",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0"
