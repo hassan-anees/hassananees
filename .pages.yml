@@ -48,7 +48,7 @@ content:
         type: number
 
   - name: posts
-    label: Posts
+    label: Writing
     type: collection
     path: src/content/posts
     filename: '{primary}.md'
