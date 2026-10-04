@@ -19,7 +19,7 @@ No linting or testing scripts are configured.
 **Routing:**
 - `src/pages/index.astro` — Home (Hero, About, Speaking, RecentWork, OpenSource sections)
 - `src/pages/work.astro` — Work/experience page
-- `src/pages/writing/[...page].astro` — Paginated blog list (5 posts/page)
+- `src/pages/writing/[...page].astro` — Paginated blog list (4 posts/page)
 - `src/pages/posts/[...slug].astro` — Individual blog post pages
 
 **Content Collections:** Blog posts live in `src/content/posts/` as `.md`/`.mdx` files. The schema is defined in `src/content.config.ts` with fields: `title`, `pubDate`, `description`, `author`, `image`, `tags`, `draft`. Draft posts are hidden in production (`import.meta.env.PROD`).
