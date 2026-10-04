@@ -95,6 +95,7 @@ content:
       - name: author
         label: Author
         type: string
+        default: Hassan Anees
       - name: title
         label: Title
         type: string
