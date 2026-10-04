@@ -92,13 +92,17 @@ content:
         order: desc
       fields: [ cover, title, body, date, published, pubDate, draft ] # title is the first entry and thus will be set to primary
     fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+    
       - name: author
         label: Author
         type: string
         default: Hassan Anees
-      - name: title
-        label: Title
-        type: string
       - name: description
         label: Description
         type: string
@@ -123,7 +127,3 @@ content:
         options:
           multiple: true
           media: documents
-      - name: body
-        label: Body
-        type: rich-text
-    
