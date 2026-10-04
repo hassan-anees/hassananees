@@ -13,7 +13,7 @@ actions:
     ref: current
     confirm:
       title: Build preview?
-      message: Takes 1-2 minutes, drafts included. View it at [preview.hassananees.pages.dev](https://preview.hassananees.pages.dev) (private, requires login).
+      message: Takes 1-2 minutes, drafts included. View it at https://preview.hassananees.pages.dev (private, requires login).
       button: Build preview
 
 media:
@@ -74,7 +74,7 @@ content:
         ref: current
         confirm:
           title: Build preview?
-          message: Takes 1-2 minutes, drafts included. View it at [preview.hassananees.pages.dev](https://preview.hassananees.pages.dev) (private, requires login).
+          message: Takes 1-2 minutes, drafts included. View it at https://preview.hassananees.pages.dev (private, requires login).
           button: Build preview
     view:
       fields: [ cover, title, body, date, published, pubDate, draft ] # title is the first entry and thus will be set to primary
