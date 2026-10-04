@@ -1,6 +1,6 @@
 actions:
   - name: publish
-    label: 🚀 Publish site
+    label: Publish site
     workflow: deploy-cloudflare.yml
     ref: current
     confirm:
@@ -8,7 +8,7 @@ actions:
       message: Builds the site and deploys it live. Draft posts stay hidden.
       button: Publish
   - name: preview
-    label: 👀 Preview site
+    label: Preview site
     workflow: deploy-cloudflare.yml
     ref: current
     confirm:
@@ -68,7 +68,7 @@ content:
     filename: '{primary}.md'
     actions:
       - name: preview
-        label: 👀 Preview site
+        label: Preview site
         scope: entry
         workflow: deploy-cloudflare.yml
         ref: current
@@ -76,6 +76,15 @@ content:
           title: Build preview?
           message: Takes 1-2 minutes, drafts included. View it at https://preview.hassananees.pages.dev (private, requires login).
           button: Build preview
+      - name: publish
+        label: Publish site
+        scope: entry
+        workflow: deploy-cloudflare.yml
+        ref: current
+        confirm:
+          title: Publish to production?
+          message: Builds the site and deploys it live. Draft posts stay hidden.
+          button: Publish
     view:
       fields: [ cover, title, body, date, published, pubDate, draft ] # title is the first entry and thus will be set to primary
     fields:
