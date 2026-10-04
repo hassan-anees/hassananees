@@ -2,10 +2,11 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import BlogPostThumbnail from "../../components/BlogPostThumbnail.astro";
+import { showDrafts } from "../../utils/drafts";
 
 export async function getStaticPaths({ paginate }) {
   const allPosts = (await getCollection("posts"))
-    .filter((post) => (import.meta.env.PROD ? post.data.draft !== true : true))
+    .filter((post) => (showDrafts ? true : post.data.draft !== true))
     .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
   return paginate(allPosts, { pageSize: 5 });

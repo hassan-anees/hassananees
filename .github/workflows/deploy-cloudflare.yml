@@ -1,13 +1,35 @@
 name: Deploy to Cloudflare Pages
 
+# Triggered from Pages CMS actions (Publish / Preview) or manually from GitHub.
+# Manual runs without a payload deploy to production.
 on:
   workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS payload as JSON
+        required: false
+        type: string
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Determine mode
+        id: mode
+        env:
+          PAYLOAD: ${{ inputs.payload }}
+        run: |
+          MODE=production
+          if [ -n "$PAYLOAD" ]; then
+            echo "$PAYLOAD" | jq .
+            NAME=$(echo "$PAYLOAD" | jq -r '.action.name // .name // empty')
+            if [ "$NAME" = "preview" ]; then
+              MODE=preview
+            fi
+          fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-node@v4
         with:
@@ -17,6 +39,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          PUBLIC_SHOW_DRAFTS: ${{ steps.mode.outputs.mode == 'preview' && 'true' || 'false' }}
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
@@ -24,4 +48,12 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=hassananees
+          command: pages deploy dist --project-name=hassananees --branch=${{ steps.mode.outputs.mode == 'preview' && 'preview' || 'main' }}
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.mode.outputs.mode }}" = "preview" ]; then
+            echo "Preview deployed: https://preview.hassananees.pages.dev (private)" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Published to production" >> "$GITHUB_STEP_SUMMARY"
+          fi

@@ -1,7 +1,18 @@
-nav:
-  - label: 🚀 Publish Site
-    url: https://github.com/hassan-anees/hassananees/actions/workflows/deploy-cloudflare.yml
-    
+actions:
+  - name: publish
+    label: 🚀 Publish site
+    workflow: deploy-cloudflare.yml
+    ref: current
+    confirm:
+      title: Publish to production?
+      message: Builds the site and deploys it live. Draft posts stay hidden.
+      button: Publish
+  - name: preview
+    label: 👀 Preview site
+    workflow: deploy-cloudflare.yml
+    ref: current
+    confirm: false
+
 media:
   - name: images
     label: Images
@@ -52,6 +63,13 @@ content:
     type: collection
     path: src/content/posts
     filename: '{primary}.md'
+    actions:
+      - name: preview
+        label: 👀 Preview site
+        scope: entry
+        workflow: deploy-cloudflare.yml
+        ref: current
+        confirm: false
     view:
       fields: [ cover, title, body, date, published, pubDate, draft ] # title is the first entry and thus will be set to primary
     fields:

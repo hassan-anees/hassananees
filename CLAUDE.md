@@ -37,6 +37,6 @@ No linting or testing scripts are configured.
 
 **Styling:** Tailwind with `@tailwindcss/typography` for prose. Font is Urbanist (`@fontsource-variable/urbanist`). Custom typography overrides are in `tailwind.config.js`.
 
-**Deployment:** Manual via GitHub Actions (`deploy-cloudflare.yml`, `workflow_dispatch`). The "Publish" button in the nav links to this GitHub Action.
+**Deployment:** Manual via GitHub Actions (`deploy-cloudflare.yml`, `workflow_dispatch`), triggered from Pages CMS actions defined in `.pages.yml`. The workflow takes the Pages CMS `payload` input: the `publish` action deploys to production (`--branch=main`); the `preview` action builds with `PUBLIC_SHOW_DRAFTS=true` (drafts visible, see `src/utils/drafts.ts`) and deploys to the Cloudflare preview alias `preview.hassananees.pages.dev` (`--branch=preview`, not a git branch). Previews are restricted with Cloudflare Access (Pages → Settings → Preview access). A manual run with no payload deploys to production.
 
 **CMS:** Decap CMS configured in `.pages.yml` for managing blog posts through a UI.
