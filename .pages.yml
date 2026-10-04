@@ -25,10 +25,6 @@ media:
     label: Documents
     input: public/documents
     output: ../../../public/documents
-  - name: covers
-    label: Covers
-    input: public/covers
-    output: ../../../public/covers
 content:
   - name: work
     label: Work
@@ -90,7 +86,7 @@ content:
       default:
         sort: pubDate
         order: desc
-      fields: [ cover, title, body, date, published, pubDate, draft ] # title is the first entry and thus will be set to primary
+      fields: [ title, body, date, published, pubDate, draft ] # title is the first entry and thus will be set to primary
     fields:
       - name: body
         label: Body
@@ -116,13 +112,6 @@ content:
         label: Draft
         type: boolean
         default: true
-      - name: cover
-        hidden: true
-        label: Cover Image
-        type: image
-        options:
-          multiple: false
-          media: covers
       - name: attachments
         hidden: true
         label: Attachments
